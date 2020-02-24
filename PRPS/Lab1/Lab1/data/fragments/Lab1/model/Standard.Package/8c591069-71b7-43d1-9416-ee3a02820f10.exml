@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Main" version="4">
+  <OBJECT>
+    <ID name="Main" mc="Standard.Package" uid="8c591069-71b7-43d1-9416-ee3a02820f10"/>
+    <PID name="Lab1" mc="Standard.Project" uid="f58f91d0-14dd-418f-b48d-6be55e3061e8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Main]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Обработать данные" mc="Standard.UseCase" uid="73ed6de4-b981-465c-a6f4-8fcaabb6e1df"/>
+        <COMPID name="передать/получить данные" mc="Standard.UseCase" uid="76928163-67c0-41e2-a9c1-5a597cafda0e"/>
+        <COMPID name="Сервер" mc="Standard.Actor" uid="388b837c-fa21-4283-b2ed-5c32ea5291b3"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Main use-case diagram" mc="Standard.UseCaseDiagram" uid="e49dee42-6892-4b03-88d7-48b03329ef2e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

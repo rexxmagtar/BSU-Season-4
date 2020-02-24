@@ -1,0 +1,6 @@
+report of file: TestBin.bin
+ employee's number, employee's name, hours, salary
+ 2,  John,  10.000000, 40.000000
+ 4,  Kate,  10.000000, 40.000000
+ 2,  Fred,  3.000000, 12.000000
+ 2,  den,  13.000000, 52.000000

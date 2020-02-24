@@ -1,0 +1,6 @@
+report of file: Nddsdf.bin
+ employee's number, employee's name, hours, salary
+ 1,  aaa,  1.100000, 440.000000
+ 2,  bbb,  2.200000, 880.000000
+ 3,  ccc,  3.300000, 1320.000000
+ 4,  ddd,  4.400000, 1760.000000
