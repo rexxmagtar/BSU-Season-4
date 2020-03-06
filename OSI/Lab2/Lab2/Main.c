@@ -1,87 +1,76 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<float.h>
 #include"windows.h"
 #pragma warning(disable:4996)
 
+int minIndex = 0;
+int maxIndex = 0;
+float averageValue;
+int arraySize = 0;
 
-
-int *vector;
-int *resultVector;
-int matrixSize = 0;
-
-
-void WINAPI MulFunc(LPVOID params) {
-	int sumResult=0;
-
-	for (int i = 0; i < matrixSize; i++) {
-		sumResult += ((int*)params)[i] * vector[i];
-	}
-	int index = ((int*)params)[matrixSize];
-	resultVector[index] = sumResult;
-
-	printf("multiplication raw %d on vector equal: %d\n", index, sumResult);
-	Sleep(7);
-}
+extern void WINAPI min_max(LPVOID params);
+extern void WINAPI average(LPVOID params);
 
 int main() {
 
 
 	
 
-	printf("write matrix size\n");
-	scanf("%d", &matrixSize);
+	printf("write array size\n");
+	scanf("%d", &arraySize);
 
-	HANDLE  *threadArray = (HANDLE*)calloc(matrixSize, sizeof(HANDLE));
-	int **matrix = (int**)calloc(matrixSize, sizeof(int*));
-	for (int i = 0; i < matrixSize; i++) {
-		matrix[i]= (int*)calloc(matrixSize+1, sizeof(int));
-	}
-	vector = (int*)calloc(matrixSize, sizeof(int));
-	resultVector = (int*)calloc(matrixSize, sizeof(int));
+	HANDLE  *threadArray = (HANDLE*)calloc(arraySize, sizeof(HANDLE));
+	HANDLE MinMaxThread;
+	HANDLE AverageThread;
+	float *array = (float*)calloc(arraySize, sizeof(float));
 
 
-	for (int i = 0; i < matrixSize; i++) {
 
-		for (size_t j = 0; j < matrixSize; j++)
-		{
-			int value = 0;
-			printf("write matrix [%d][%d] element value\n", 1 + i , 1 + j);
-			scanf("%d", &value);
-			matrix[i][j] = value;
-		}
-		matrix[i][matrixSize] = i;
+	for (int i = 0; i < arraySize; i++) {
+
+
+			float value = 0;
+			printf("write array [%d] element value\n", i);
+			scanf("%f", &value);
+			array[i] = value;
+
 
 	}
 
-	printf("--------------------");
+	printf("--------------------\n");
 
-	for (int i = 0; i < matrixSize; i++) {
 
-		int value = 0;
-		printf("write vector [%d] element value\n", i + 1);
-		scanf("%d", &value);
-		vector[i] = value;
-	}
 
-	for (size_t i = 0; i < matrixSize; i++)
-	{
-		threadArray[i] = CreateThread(
+
+		MinMaxThread = CreateThread(
 			NULL,                   // default security attributes
 			0,                      // use default stack size  
-			MulFunc,       // thread function name
-			matrix[i],          // argument to thread function 
+			min_max,       // thread function name
+			array,          // argument to thread function 
 			0,                      // use default creation flags 
 			NULL);   // returns the thread identifier 
 
-	}
 
-	WaitForMultipleObjects(matrixSize, threadArray, TRUE, INFINITE);
+		AverageThread = CreateThread(
+			NULL,                   // default security attributes
+			0,                      // use default stack size  
+			average,       // thread function name
+			array,          // argument to thread function 
+			0,                      // use default creation flags 
+			NULL);   // returns the thread identifier 
+	
 
-	printf("Result vector:\n");
-	for (size_t i = 0; i < matrixSize; i++)
+		WaitForSingleObject(MinMaxThread, INFINITE);
+		WaitForSingleObject(AverageThread, INFINITE);
+
+		array[minIndex] = averageValue;
+		array[maxIndex] = averageValue;
+	printf("Result array:\n");
+	for (size_t i = 0; i < arraySize; i++)
 	{
-		printf("%d ", resultVector[i]);
+		printf("%f ", array[i]);
 	}
 
 	system("pause");
