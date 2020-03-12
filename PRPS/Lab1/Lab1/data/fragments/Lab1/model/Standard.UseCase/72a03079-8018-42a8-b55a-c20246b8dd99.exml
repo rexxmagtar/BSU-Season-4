@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Регистрация перподавателя" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Регистрация/удаление перподавателя" version="4">
   <OBJECT>
-    <ID name="Регистрация перподавателя" mc="Standard.UseCase" uid="72a03079-8018-42a8-b55a-c20246b8dd99"/>
+    <ID name="Регистрация/удаление перподавателя" mc="Standard.UseCase" uid="72a03079-8018-42a8-b55a-c20246b8dd99"/>
     <PID name="Buisness" mc="Standard.Package" uid="496fb545-c61d-4774-a273-799b83fe415f"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Регистрация перподавателя]]></ATT>
+      <ATT name="Name"><![CDATA[Регистрация/удаление перподавателя]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -97,7 +97,7 @@
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="90411c04-a28d-4f0d-9c30-8b96718463c0"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[Администратор регистрирует преподавателя в системе. Дает ему возможность оформить свой план работы ]]></ATT>
+            <ATT name="Content"><![CDATA[Администратор регистрирует/удаляет преподавателя в системе. Дает ему возможность оформить свой план работы ]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>

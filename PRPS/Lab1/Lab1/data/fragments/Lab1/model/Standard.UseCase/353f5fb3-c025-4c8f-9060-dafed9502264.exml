@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Уведомление об окончании работы" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Уведомление об фактической выполненной работе" version="4">
   <OBJECT>
-    <ID name="Уведомление об окончании работы" mc="Standard.UseCase" uid="353f5fb3-c025-4c8f-9060-dafed9502264"/>
+    <ID name="Уведомление об фактической выполненной работе" mc="Standard.UseCase" uid="353f5fb3-c025-4c8f-9060-dafed9502264"/>
     <PID name="Buisness" mc="Standard.Package" uid="496fb545-c61d-4774-a273-799b83fe415f"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Уведомление об окончании работы]]></ATT>
+      <ATT name="Name"><![CDATA[Уведомление об фактической выполненной работе]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -97,7 +97,7 @@
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="2becd5d1-d0da-454b-855e-382dfd6ec9ed"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[Преподаватель уведомляет систему о выполнении определенной работы. Результат регистрируется в системе.
+            <ATT name="Content"><![CDATA[Преподаватель уведомляет систему о фактическом выполнении определенной работы. Результат регистрируется в системе.
 ]]></ATT>
             <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
             <ATT name="Name"></ATT>

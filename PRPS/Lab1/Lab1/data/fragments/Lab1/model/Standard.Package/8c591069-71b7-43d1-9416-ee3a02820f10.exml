@@ -14,8 +14,6 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Обработать данные" mc="Standard.UseCase" uid="73ed6de4-b981-465c-a6f4-8fcaabb6e1df"/>
-        <COMPID name="передать/получить данные" mc="Standard.UseCase" uid="76928163-67c0-41e2-a9c1-5a597cafda0e"/>
         <COMPID name="Сервер" mc="Standard.Actor" uid="388b837c-fa21-4283-b2ed-5c32ea5291b3"/>
       </COMP>
       <COMP relation="Product">
