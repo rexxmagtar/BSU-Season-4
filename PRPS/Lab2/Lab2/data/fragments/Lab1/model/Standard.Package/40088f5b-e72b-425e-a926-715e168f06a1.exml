@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Activity" version="4">
+  <OBJECT>
+    <ID name="Activity" mc="Standard.Package" uid="40088f5b-e72b-425e-a926-715e168f06a1"/>
+    <PID name="Logical View" mc="Standard.Package" uid="8124ea1f-641f-4633-8087-27a840b8326f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Activity]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Регистрация преподавателя" mc="Standard.Package" uid="ede4da30-fc08-4c8c-9279-ac37f3c6a48f"/>
+        <COMPID name="Уведомление об фактической выполненной работе" mc="Standard.Package" uid="73558872-497e-434a-bdb0-2e8df83f1acc"/>
+        <COMPID name="Получить итоговую сумму преподавателя" mc="Standard.Package" uid="36d8ba1a-4c15-436b-8728-81cfc1100d8a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

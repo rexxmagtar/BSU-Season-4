@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Удаление/добавление преподавателя" version="4">
+  <OBJECT>
+    <ID name="Удаление/добавление преподавателя" mc="Standard.Package" uid="7b421c03-91b2-4cd8-be9d-3396472acdb6"/>
+    <PID name="Additional" mc="Standard.Package" uid="e175fa1f-804d-4c0e-a88f-a3b3c57a4f7a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Удаление/добавление преподавателя]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Админ" mc="Standard.Actor" uid="5419f7c1-0f28-4e97-ada0-f29b0880cb03"/>
+        <COMPID name="Назначение количества часов для преподавателя" mc="Standard.UseCase" uid="ec264b6b-3fc3-472d-b82b-7f35e133c0a4"/>
+        <COMPID name="Генерация данных необходимых для входа систему" mc="Standard.UseCase" uid="0ea9417c-473a-4241-9ddf-451fd121a56e"/>
+        <COMPID name="Удаление плана" mc="Standard.UseCase" uid="46c6c90f-24d7-412c-9a31-b63f7c87d9d7"/>
+        <COMPID name="Удалить преподавателя из системы" mc="Standard.UseCase" uid="5daa13ef-4d75-461a-ae0e-e7215153fcc1"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Регистрация/удаление приподавателя" mc="Standard.UseCaseDiagram" uid="23cd96a5-2f6f-491d-9c56-b02f784c63f1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

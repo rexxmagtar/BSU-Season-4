@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Получить итоговую сумму преподавателя" version="4">
+  <OBJECT>
+    <ID name="Получить итоговую сумму преподавателя" mc="Standard.Package" uid="36d8ba1a-4c15-436b-8728-81cfc1100d8a"/>
+    <PID name="Activity" mc="Standard.Package" uid="40088f5b-e72b-425e-a926-715e168f06a1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Получить итоговую сумму преподавателя]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="763bcb32-547a-4411-af36-46f641719b3c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

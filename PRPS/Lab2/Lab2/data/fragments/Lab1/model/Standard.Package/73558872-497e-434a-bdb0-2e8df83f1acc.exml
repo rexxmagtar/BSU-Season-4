@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Уведомление об фактической выполненной работе" version="4">
+  <OBJECT>
+    <ID name="Уведомление об фактической выполненной работе" mc="Standard.Package" uid="73558872-497e-434a-bdb0-2e8df83f1acc"/>
+    <PID name="Activity" mc="Standard.Package" uid="40088f5b-e72b-425e-a926-715e168f06a1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Уведомление об фактической выполненной работе]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="da3ba2f9-54cd-4d9f-bec7-7dd71065688a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
