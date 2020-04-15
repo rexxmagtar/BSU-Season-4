@@ -1,0 +1,12 @@
+#Wed Apr 15 02:35:26 MSK 2020
+org.modelio.module.propertytab.JavaDesigner\ v3.9.00\ GModule\ @file\:///C\:/Users/redex/.modelio/4.0/modules/JavaDesigner_3.9.00/JavaDesigner_3.9.00.jmdac\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.module.propertytab.JavaDesigner\ v3.9.00\ GModule\ @file\:///C\:/Users/redex/.modelio/4.0/modules/JavaDesigner_3.9.00/JavaDesigner_3.9.00.jmdac\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.module.propertytab.JavaDesigner\ v3.9.00\ GModule\ @file\:///C\:/Users/redex/.modelio/4.0/modules/JavaDesigner_3.9.00/JavaDesigner_3.9.00.jmdac\ runtime\ module_.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.diagram.editor.OpenedDiagrams6='Count diagram' {53f28674-088a-432a-95e3-8f91075e5201} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='\u0412\u044B\u0434\u0430\u0442\u044C \u043F\u0440\u0430\u0432\u0430' {0ce2fee1-e811-4c8d-8294-39ea419daaed} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Object Diagram Object diagram' {c6260913-42a8-4e82-a87b-f7e5170514c4} Standard.ObjectDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='Add Customer inf Class Diagram' {4c90d35a-d5a4-4770-80f8-705ff334c1b6} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='Give rigth to employee' {de1583fb-f154-4005-aed1-e06f3d927768} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Main diagramm' {b6a64838-53a8-4763-ba41-c8c8ace3e41f} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='Use Case View Use Case diagram' {a72ab2a3-cb9f-45ab-82f2-7eec13db87bd} Standard.UseCaseDiagram
+org.modelio.module.propertytab.JavaDesigner\ v3.9.00\ GModule\ @file\:///C\:/Users/redex/.modelio/4.0/modules/JavaDesigner_3.9.00/JavaDesigner_3.9.00.jmdac\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Sequnce diagrams" version="4">
+  <OBJECT>
+    <ID name="Sequnce diagrams" mc="Standard.Package" uid="0ef1e155-5097-48ff-a5ad-e1835942fe91"/>
+    <PID name="Lab1" mc="Standard.Project" uid="f58f91d0-14dd-418f-b48d-6be55e3061e8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Sequnce diagrams]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Add report" mc="Standard.Interaction" uid="a7feb910-66b1-4b2d-b1f5-cd4bc9d735f9"/>
+        <COMPID name="Close report" mc="Standard.Interaction" uid="27028964-6eef-4f6a-853c-a4e01b3c7ed5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ngqK0GNhEeqcd4MiP38yHw" name="ais">
+  <eAnnotations xmi:id="_ngqK0WNhEeqcd4MiP38yHw" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_ngqK0mNhEeqcd4MiP38yHw" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ngqK02NhEeqcd4MiP38yHw" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ngqK1GNhEeqcd4MiP38yHw" name="Главная диаграмма">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqK1WNhEeqcd4MiP38yHw" name="Магазин">
+      <generalization xmi:id="_ngqK1mNhEeqcd4MiP38yHw" general="_ngqK12NhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqK12NhEeqcd4MiP38yHw" name="Сотрудник магазина"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqK2GNhEeqcd4MiP38yHw" memberEnd="_ngqK2WNhEeqcd4MiP38yHw _ngqK22NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqK2WNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqK2WNhEeqcd4MiP38yHw" visibility="public" type="_ngqLBmNhEeqcd4MiP38yHw" association="_ngqK2GNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK2mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqK22NhEeqcd4MiP38yHw" visibility="public" type="_ngqK12NhEeqcd4MiP38yHw" association="_ngqK2GNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK3GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqK3WNhEeqcd4MiP38yHw" memberEnd="_ngqK3mNhEeqcd4MiP38yHw _ngqK4GNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqK3mNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqK3mNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDmNhEeqcd4MiP38yHw" association="_ngqK3WNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK32NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqK4GNhEeqcd4MiP38yHw" visibility="public" type="_ngqK12NhEeqcd4MiP38yHw" association="_ngqK3WNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK4WNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqK4mNhEeqcd4MiP38yHw" memberEnd="_ngqK42NhEeqcd4MiP38yHw _ngqK5WNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqK42NhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqK42NhEeqcd4MiP38yHw" visibility="public" type="_ngqLGmNhEeqcd4MiP38yHw" association="_ngqK4mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK5GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqK5WNhEeqcd4MiP38yHw" visibility="public" type="_ngqK12NhEeqcd4MiP38yHw" association="_ngqK4mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK5mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqK52NhEeqcd4MiP38yHw" memberEnd="_ngqK6GNhEeqcd4MiP38yHw _ngqK6mNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqK6GNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqK6GNhEeqcd4MiP38yHw" visibility="public" type="_ngqLJmNhEeqcd4MiP38yHw" association="_ngqK52NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK6WNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqK6mNhEeqcd4MiP38yHw" visibility="public" type="_ngqK12NhEeqcd4MiP38yHw" association="_ngqK52NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK62NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqK7GNhEeqcd4MiP38yHw" memberEnd="_ngqK7WNhEeqcd4MiP38yHw _ngqK72NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqK7WNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqK7WNhEeqcd4MiP38yHw" visibility="public" type="_ngqLMmNhEeqcd4MiP38yHw" association="_ngqK7GNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK7mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqK72NhEeqcd4MiP38yHw" visibility="public" type="_ngqK12NhEeqcd4MiP38yHw" association="_ngqK7GNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK8GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqK8WNhEeqcd4MiP38yHw" name="Администратор"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqK8mNhEeqcd4MiP38yHw" memberEnd="_ngqK82NhEeqcd4MiP38yHw _ngqK9WNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqK82NhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqK82NhEeqcd4MiP38yHw" visibility="public" type="_ngqLPmNhEeqcd4MiP38yHw" association="_ngqK8mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK9GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqK9WNhEeqcd4MiP38yHw" visibility="public" type="_ngqK8WNhEeqcd4MiP38yHw" association="_ngqK8mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK9mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqK92NhEeqcd4MiP38yHw" memberEnd="_ngqK-GNhEeqcd4MiP38yHw _ngqK-mNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqK-GNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqK-GNhEeqcd4MiP38yHw" visibility="public" type="_ngqLSmNhEeqcd4MiP38yHw" association="_ngqK92NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK-WNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqK-mNhEeqcd4MiP38yHw" visibility="public" type="_ngqK8WNhEeqcd4MiP38yHw" association="_ngqK92NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK-2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqK_GNhEeqcd4MiP38yHw" memberEnd="_ngqK_WNhEeqcd4MiP38yHw _ngqK_2NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqK_WNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqK_WNhEeqcd4MiP38yHw" visibility="public" type="_ngqLVmNhEeqcd4MiP38yHw" association="_ngqK_GNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqK_mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqK_2NhEeqcd4MiP38yHw" visibility="public" type="_ngqK8WNhEeqcd4MiP38yHw" association="_ngqK_GNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLAGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLAWNhEeqcd4MiP38yHw" memberEnd="_ngqLAmNhEeqcd4MiP38yHw _ngqLBGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLAmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLAmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLBmNhEeqcd4MiP38yHw" association="_ngqLAWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLA2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLBGNhEeqcd4MiP38yHw" visibility="public" type="_ngqK8WNhEeqcd4MiP38yHw" association="_ngqLAWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLBWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLBmNhEeqcd4MiP38yHw" name="Войти в систему">
+      <ownedComment xmi:id="_ngqLB2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLCGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLCWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLCmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLC2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLDGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqLDWNhEeqcd4MiP38yHw" name="Система (БД)"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLDmNhEeqcd4MiP38yHw" name="Внести в систему сведения о поступивших товарах">
+      <ownedComment xmi:id="_ngqLD2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLEGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLEWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLEmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLE2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLFGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLFWNhEeqcd4MiP38yHw" memberEnd="_ngqLFmNhEeqcd4MiP38yHw _ngqLGGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLFmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLFmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDWNhEeqcd4MiP38yHw" association="_ngqLFWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLF2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLGGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDmNhEeqcd4MiP38yHw" association="_ngqLFWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLGWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLGmNhEeqcd4MiP38yHw" name="Внести сведения о покупателях">
+      <ownedComment xmi:id="_ngqLG2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLHGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLHWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLHmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLH2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLIGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLIWNhEeqcd4MiP38yHw" memberEnd="_ngqLImNhEeqcd4MiP38yHw _ngqLJGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLImNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLImNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDWNhEeqcd4MiP38yHw" association="_ngqLIWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLI2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLJGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLGmNhEeqcd4MiP38yHw" association="_ngqLIWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLJWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLJmNhEeqcd4MiP38yHw" name="Рассчитать скидку постоянного покупателя">
+      <ownedComment xmi:id="_ngqLJ2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLKGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLKWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLKmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLK2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLLGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLLWNhEeqcd4MiP38yHw" memberEnd="_ngqLLmNhEeqcd4MiP38yHw _ngqLMGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLLmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLLmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDWNhEeqcd4MiP38yHw" association="_ngqLLWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLL2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLMGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLJmNhEeqcd4MiP38yHw" association="_ngqLLWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLMWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLMmNhEeqcd4MiP38yHw" name="Получить сведения о покупателях">
+      <ownedComment xmi:id="_ngqLM2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLNGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLNWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLNmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLN2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLOGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLOWNhEeqcd4MiP38yHw" memberEnd="_ngqLOmNhEeqcd4MiP38yHw _ngqLPGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLOmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLOmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDWNhEeqcd4MiP38yHw" association="_ngqLOWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLO2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLPGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLMmNhEeqcd4MiP38yHw" association="_ngqLOWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLPWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLPmNhEeqcd4MiP38yHw" name="Выдать права на редактирование БД сотруднику">
+      <ownedComment xmi:id="_ngqLP2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLQGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLQWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLQmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLQ2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLRGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLRWNhEeqcd4MiP38yHw" memberEnd="_ngqLRmNhEeqcd4MiP38yHw _ngqLSGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLRmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLRmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDWNhEeqcd4MiP38yHw" association="_ngqLRWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLR2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLSGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLPmNhEeqcd4MiP38yHw" association="_ngqLRWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLSWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLSmNhEeqcd4MiP38yHw" name="Забрать права на редактирование БД у сотрудника">
+      <ownedComment xmi:id="_ngqLS2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLTGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLTWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLTmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLT2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLUGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLUWNhEeqcd4MiP38yHw" memberEnd="_ngqLUmNhEeqcd4MiP38yHw _ngqLVGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLUmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLUmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDWNhEeqcd4MiP38yHw" association="_ngqLUWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLU2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLVGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLSmNhEeqcd4MiP38yHw" association="_ngqLUWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLVWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLVmNhEeqcd4MiP38yHw" name="Сформировать отчёт">
+      <ownedComment xmi:id="_ngqLV2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLWGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLWWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLWmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLW2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLXGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLXWNhEeqcd4MiP38yHw" memberEnd="_ngqLXmNhEeqcd4MiP38yHw _ngqLYGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLXmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLXmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLDWNhEeqcd4MiP38yHw" association="_ngqLXWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLX2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLYGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLVmNhEeqcd4MiP38yHw" association="_ngqLXWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLYWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ngqLYmNhEeqcd4MiP38yHw" name="Бизнес-диаграмма">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqLY2NhEeqcd4MiP38yHw" name="Покупатель"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLZGNhEeqcd4MiP38yHw" memberEnd="_ngqLZWNhEeqcd4MiP38yHw _ngqLZ2NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLZWNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLZWNhEeqcd4MiP38yHw" visibility="public" type="_ngqLiGNhEeqcd4MiP38yHw" association="_ngqLZGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLZmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLZ2NhEeqcd4MiP38yHw" visibility="public" type="_ngqLY2NhEeqcd4MiP38yHw" association="_ngqLZGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLaGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLaWNhEeqcd4MiP38yHw" memberEnd="_ngqLamNhEeqcd4MiP38yHw _ngqLbGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLamNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLamNhEeqcd4MiP38yHw" visibility="public" type="_ngqLlWNhEeqcd4MiP38yHw" association="_ngqLaWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLa2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLbGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLY2NhEeqcd4MiP38yHw" association="_ngqLaWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLbWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqLbmNhEeqcd4MiP38yHw" name="Магазин"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLb2NhEeqcd4MiP38yHw" memberEnd="_ngqLcGNhEeqcd4MiP38yHw _ngqLcmNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLcGNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLcGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLoWNhEeqcd4MiP38yHw" association="_ngqLb2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLcWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLcmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLbmNhEeqcd4MiP38yHw" association="_ngqLb2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLc2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLdGNhEeqcd4MiP38yHw" memberEnd="_ngqLdWNhEeqcd4MiP38yHw _ngqLd2NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLdWNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLdWNhEeqcd4MiP38yHw" visibility="public" type="_ngqLrWNhEeqcd4MiP38yHw" association="_ngqLdGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLdmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLd2NhEeqcd4MiP38yHw" visibility="public" type="_ngqLbmNhEeqcd4MiP38yHw" association="_ngqLdGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLeGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLeWNhEeqcd4MiP38yHw" memberEnd="_ngqLemNhEeqcd4MiP38yHw _ngqLfGNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLemNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLemNhEeqcd4MiP38yHw" visibility="public" type="_ngqLuWNhEeqcd4MiP38yHw" association="_ngqLeWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLe2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLfGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLbmNhEeqcd4MiP38yHw" association="_ngqLeWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLfWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLfmNhEeqcd4MiP38yHw" memberEnd="_ngqLf2NhEeqcd4MiP38yHw _ngqLgWNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLf2NhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLf2NhEeqcd4MiP38yHw" visibility="public" type="_ngqLxWNhEeqcd4MiP38yHw" association="_ngqLfmNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLgGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLgWNhEeqcd4MiP38yHw" visibility="public" type="_ngqLbmNhEeqcd4MiP38yHw" association="_ngqLfmNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLgmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLg2NhEeqcd4MiP38yHw" memberEnd="_ngqLhGNhEeqcd4MiP38yHw _ngqLhmNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLhGNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLhGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLlWNhEeqcd4MiP38yHw" association="_ngqLg2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLhWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLhmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLbmNhEeqcd4MiP38yHw" association="_ngqLg2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLh2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLiGNhEeqcd4MiP38yHw" name="Купить товар">
+      <ownedComment xmi:id="_ngqLiWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLimNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLi2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLjGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLjWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLjmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLj2NhEeqcd4MiP38yHw" memberEnd="_ngqLkGNhEeqcd4MiP38yHw _ngqLkmNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLkGNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLkGNhEeqcd4MiP38yHw" visibility="public" type="_ngqLlGNhEeqcd4MiP38yHw" association="_ngqLj2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLkWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLkmNhEeqcd4MiP38yHw" visibility="public" type="_ngqLiGNhEeqcd4MiP38yHw" association="_ngqLj2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLk2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqLlGNhEeqcd4MiP38yHw" name="Учётная книга"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLlWNhEeqcd4MiP38yHw" name="Получить дисконтную карту">
+      <ownedComment xmi:id="_ngqLlmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLl2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLmGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLmWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLmmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLm2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLnGNhEeqcd4MiP38yHw" memberEnd="_ngqLnWNhEeqcd4MiP38yHw _ngqLn2NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLnWNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLnWNhEeqcd4MiP38yHw" visibility="public" type="_ngqLlGNhEeqcd4MiP38yHw" association="_ngqLnGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLnmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLn2NhEeqcd4MiP38yHw" visibility="public" type="_ngqLlWNhEeqcd4MiP38yHw" association="_ngqLnGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLoGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLoWNhEeqcd4MiP38yHw" name="Записать сведения о поступивших товарах">
+      <ownedComment xmi:id="_ngqLomNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLo2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLpGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLpWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLpmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLp2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLqGNhEeqcd4MiP38yHw" memberEnd="_ngqLqWNhEeqcd4MiP38yHw _ngqLq2NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLqWNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLqWNhEeqcd4MiP38yHw" visibility="public" type="_ngqLlGNhEeqcd4MiP38yHw" association="_ngqLqGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLqmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLq2NhEeqcd4MiP38yHw" visibility="public" type="_ngqLoWNhEeqcd4MiP38yHw" association="_ngqLqGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLrGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLrWNhEeqcd4MiP38yHw" name="Записать сведения о проданных товарах">
+      <ownedComment xmi:id="_ngqLrmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLr2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLsGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLsWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLsmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLs2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLtGNhEeqcd4MiP38yHw" memberEnd="_ngqLtWNhEeqcd4MiP38yHw _ngqLt2NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLtWNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLtWNhEeqcd4MiP38yHw" visibility="public" type="_ngqLlGNhEeqcd4MiP38yHw" association="_ngqLtGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLtmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLt2NhEeqcd4MiP38yHw" visibility="public" type="_ngqLrWNhEeqcd4MiP38yHw" association="_ngqLtGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLuGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLuWNhEeqcd4MiP38yHw" name="Посмотреть сведения о покупателях">
+      <ownedComment xmi:id="_ngqLumNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLu2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLvGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLvWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLvmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLv2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLwGNhEeqcd4MiP38yHw" memberEnd="_ngqLwWNhEeqcd4MiP38yHw _ngqLw2NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLwWNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLwWNhEeqcd4MiP38yHw" visibility="public" type="_ngqLlGNhEeqcd4MiP38yHw" association="_ngqLwGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLwmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLw2NhEeqcd4MiP38yHw" visibility="public" type="_ngqLuWNhEeqcd4MiP38yHw" association="_ngqLwGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLxGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqLxWNhEeqcd4MiP38yHw" name="Рассчитать скидку для покупателя">
+      <ownedComment xmi:id="_ngqLxmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLx2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLyGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLyWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLymNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqLy2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqLzGNhEeqcd4MiP38yHw" memberEnd="_ngqLzWNhEeqcd4MiP38yHw _ngqLz2NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqLzWNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqLzWNhEeqcd4MiP38yHw" visibility="public" type="_ngqLlGNhEeqcd4MiP38yHw" association="_ngqLzGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqLzmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqLz2NhEeqcd4MiP38yHw" visibility="public" type="_ngqLxWNhEeqcd4MiP38yHw" association="_ngqLzGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL0GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqL0WNhEeqcd4MiP38yHw" name="Администратор"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqL0mNhEeqcd4MiP38yHw" memberEnd="_ngqL02NhEeqcd4MiP38yHw _ngqL1WNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqL02NhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqL02NhEeqcd4MiP38yHw" visibility="public" type="_ngqL12NhEeqcd4MiP38yHw" association="_ngqL0mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL1GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqL1WNhEeqcd4MiP38yHw" visibility="public" type="_ngqL0WNhEeqcd4MiP38yHw" association="_ngqL0mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL1mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqL12NhEeqcd4MiP38yHw" name="Сформировать отчёт">
+      <ownedComment xmi:id="_ngqL2GNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL2WNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL2mNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL22NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL3GNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL3WNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqL3mNhEeqcd4MiP38yHw" memberEnd="_ngqL32NhEeqcd4MiP38yHw _ngqL4WNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqL32NhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqL32NhEeqcd4MiP38yHw" visibility="public" type="_ngqLlGNhEeqcd4MiP38yHw" association="_ngqL3mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL4GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqL4WNhEeqcd4MiP38yHw" visibility="public" type="_ngqL12NhEeqcd4MiP38yHw" association="_ngqL3mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL4mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ngqL42NhEeqcd4MiP38yHw" name="Войти в систему">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqL5GNhEeqcd4MiP38yHw" name="Магазин"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqL5WNhEeqcd4MiP38yHw" memberEnd="_ngqL5mNhEeqcd4MiP38yHw _ngqL6GNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqL5mNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqL5mNhEeqcd4MiP38yHw" visibility="public" type="_ngqMAGNhEeqcd4MiP38yHw" association="_ngqL5WNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL52NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqL6GNhEeqcd4MiP38yHw" visibility="public" type="_ngqL5GNhEeqcd4MiP38yHw" association="_ngqL5WNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL6WNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqL6mNhEeqcd4MiP38yHw" memberEnd="_ngqL62NhEeqcd4MiP38yHw _ngqL7WNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqL62NhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqL62NhEeqcd4MiP38yHw" visibility="public" type="_ngqMCGNhEeqcd4MiP38yHw" association="_ngqL6mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL7GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqL7WNhEeqcd4MiP38yHw" visibility="public" type="_ngqL5GNhEeqcd4MiP38yHw" association="_ngqL6mNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL7mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqL72NhEeqcd4MiP38yHw" memberEnd="_ngqL8GNhEeqcd4MiP38yHw _ngqL8mNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqL8GNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqL8GNhEeqcd4MiP38yHw" visibility="public" type="_ngqMEGNhEeqcd4MiP38yHw" association="_ngqL72NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL8WNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqL8mNhEeqcd4MiP38yHw" visibility="public" type="_ngqL5GNhEeqcd4MiP38yHw" association="_ngqL72NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL82NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqL9GNhEeqcd4MiP38yHw" memberEnd="_ngqL9WNhEeqcd4MiP38yHw _ngqL92NhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqL9WNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqL9WNhEeqcd4MiP38yHw" visibility="public" type="_ngqMGGNhEeqcd4MiP38yHw" association="_ngqL9GNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL9mNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqL92NhEeqcd4MiP38yHw" visibility="public" type="_ngqL5GNhEeqcd4MiP38yHw" association="_ngqL9GNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqL-GNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqL-WNhEeqcd4MiP38yHw" name="Войти в систему">
+      <ownedComment xmi:id="_ngqL-mNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL-2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL_GNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL_WNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL_mNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqL_2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMAGNhEeqcd4MiP38yHw" name="Внести в систему сведения о поступивших товарах">
+      <ownedComment xmi:id="_ngqMAWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMAmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMA2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMBGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMBWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMBmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngqMB2NhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqL-WNhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMCGNhEeqcd4MiP38yHw" name="Рассчитать скидку постоянного покупателя">
+      <ownedComment xmi:id="_ngqMCWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMCmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMC2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMDGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMDWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMDmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngqMD2NhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqL-WNhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMEGNhEeqcd4MiP38yHw" name="Внести сведения о покупателях">
+      <ownedComment xmi:id="_ngqMEWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMEmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqME2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMFGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMFWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMFmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngqMF2NhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqL-WNhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMGGNhEeqcd4MiP38yHw" name="Получить сведения о покупателях">
+      <ownedComment xmi:id="_ngqMGWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMGmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMG2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMHGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMHWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMHmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngqMH2NhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqL-WNhEeqcd4MiP38yHw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ngqMIGNhEeqcd4MiP38yHw" name="Получить дисконтную карту \ Увеличить процент скидки">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngqMIWNhEeqcd4MiP38yHw" name="Покупатель"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngqMImNhEeqcd4MiP38yHw" memberEnd="_ngqMI2NhEeqcd4MiP38yHw _ngqMJWNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngqMI2NhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngqMI2NhEeqcd4MiP38yHw" visibility="public" type="_ngqML2NhEeqcd4MiP38yHw" association="_ngqMImNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqMJGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngqMJWNhEeqcd4MiP38yHw" visibility="public" type="_ngqMIWNhEeqcd4MiP38yHw" association="_ngqMImNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngqMJmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMJ2NhEeqcd4MiP38yHw" name="Получить дисконтную карту">
+      <ownedComment xmi:id="_ngqMKGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMKWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMKmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMK2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMLGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMLWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngqMLmNhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqMRmNhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqML2NhEeqcd4MiP38yHw" name="Увеличить процент скидки">
+      <ownedComment xmi:id="_ngqMMGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMMWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMMmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMM2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMNGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMNWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngqMNmNhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqMOGNhEeqcd4MiP38yHw"/>
+      <include xmi:id="_ngqMN2NhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqMJ2NhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMOGNhEeqcd4MiP38yHw" name="Приобрести товар">
+      <ownedComment xmi:id="_ngqMOWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMOmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMO2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMPGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMPWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMPmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMP2NhEeqcd4MiP38yHw" name="Посмотреть сведения о покупателях">
+      <ownedComment xmi:id="_ngqMQGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMQWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMQmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMQ2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMRGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMRWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMRmNhEeqcd4MiP38yHw" name="Рассчитать скидку для покупателя">
+      <ownedComment xmi:id="_ngqMR2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMSGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMSWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMSmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMS2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMTGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngqMTWNhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqMP2NhEeqcd4MiP38yHw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ngqMTmNhEeqcd4MiP38yHw" name="Сформировать отчёт">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMT2NhEeqcd4MiP38yHw" name="Сформировать отчёт">
+      <ownedComment xmi:id="_ngqMUGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMUWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMUmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMU2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMVGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMVWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngqMVmNhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqMV2NhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMV2NhEeqcd4MiP38yHw" name="Войти в систему">
+      <ownedComment xmi:id="_ngqMWGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMWWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMWmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMW2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMXGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMXWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngqMXmNhEeqcd4MiP38yHw" name="Выбрать параметры для отчёта">
+      <ownedComment xmi:id="_ngqMX2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMYGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMYWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMYmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngqMY2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDUGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngvDUWNhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqMT2NhEeqcd4MiP38yHw"/>
+      <extend xmi:id="_ngvDUmNhEeqcd4MiP38yHw" name="UseCaseDependency" extendedCase="_ngvDW2NhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngvDU2NhEeqcd4MiP38yHw" name="Сформировать отчёт на основе шаблона">
+      <ownedComment xmi:id="_ngvDVGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDVWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDVmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDV2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDWGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDWWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <include xmi:id="_ngvDWmNhEeqcd4MiP38yHw" name="UseCaseDependency" addition="_ngqMT2NhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngvDW2NhEeqcd4MiP38yHw" name="Добавить в список шаблонов для отчётов">
+      <ownedComment xmi:id="_ngvDXGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDXWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDXmNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDX2NhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDYGNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+      <ownedComment xmi:id="_ngvDYWNhEeqcd4MiP38yHw">
+        <body>...</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngvDYmNhEeqcd4MiP38yHw" name="Администратор"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngvDY2NhEeqcd4MiP38yHw" memberEnd="_ngvDZGNhEeqcd4MiP38yHw _ngvDZmNhEeqcd4MiP38yHw" navigableOwnedEnd="_ngvDZGNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngvDZGNhEeqcd4MiP38yHw" visibility="public" type="_ngqMT2NhEeqcd4MiP38yHw" association="_ngvDY2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDZWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ngvDZmNhEeqcd4MiP38yHw" visibility="public" type="_ngvDYmNhEeqcd4MiP38yHw" association="_ngvDY2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDZ2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ngvDaGNhEeqcd4MiP38yHw" name="БД">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ngvDaWNhEeqcd4MiP38yHw" name="Store">
+      <ownedComment xmi:id="_ngvDamNhEeqcd4MiP38yHw">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_ngvDa2NhEeqcd4MiP38yHw" name="waybill" visibility="public" type="_ngvDeGNhEeqcd4MiP38yHw" association="_ngvDcmNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDbGNhEeqcd4MiP38yHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDbWNhEeqcd4MiP38yHw" name="client" visibility="public" type="_ngvDkWNhEeqcd4MiP38yHw" association="_ngvDdWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDbmNhEeqcd4MiP38yHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDb2NhEeqcd4MiP38yHw" name="Code" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDcGNhEeqcd4MiP38yHw" name="Name" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDcWNhEeqcd4MiP38yHw" name="ShortName" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngvDcmNhEeqcd4MiP38yHw" memberEnd="_ngvDa2NhEeqcd4MiP38yHw _ngvDc2NhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngvDc2NhEeqcd4MiP38yHw" visibility="public" type="_ngvDaWNhEeqcd4MiP38yHw" association="_ngvDcmNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDdGNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngvDdWNhEeqcd4MiP38yHw" memberEnd="_ngvDbWNhEeqcd4MiP38yHw _ngvDdmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngvDdmNhEeqcd4MiP38yHw" visibility="public" type="_ngvDaWNhEeqcd4MiP38yHw" association="_ngvDdWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDd2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ngvDeGNhEeqcd4MiP38yHw" name="Waybill">
+      <ownedAttribute xmi:id="_ngvDeWNhEeqcd4MiP38yHw" name="waybill position" visibility="public" type="_ngvDgGNhEeqcd4MiP38yHw" association="_ngvDfWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDemNhEeqcd4MiP38yHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDe2NhEeqcd4MiP38yHw" name="Number" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDfGNhEeqcd4MiP38yHw" name="Date" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngvDfWNhEeqcd4MiP38yHw" memberEnd="_ngvDeWNhEeqcd4MiP38yHw _ngvDfmNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngvDfmNhEeqcd4MiP38yHw" visibility="public" type="_ngvDeGNhEeqcd4MiP38yHw" association="_ngvDfWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDf2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ngvDgGNhEeqcd4MiP38yHw" name="WaybillPosition">
+      <ownedAttribute xmi:id="_ngvDgWNhEeqcd4MiP38yHw" name="product" visibility="public" type="_ngvDjGNhEeqcd4MiP38yHw" association="_ngvDiWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDgmNhEeqcd4MiP38yHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDg2NhEeqcd4MiP38yHw" name="number" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDhGNhEeqcd4MiP38yHw" name="product" visibility="public" type="_ngvDjGNhEeqcd4MiP38yHw" isUnique="false"/>
+      <ownedAttribute xmi:id="_ngvDhWNhEeqcd4MiP38yHw" name="quantity" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDhmNhEeqcd4MiP38yHw" name="Unit" visibility="public" type="_ngvDiGNhEeqcd4MiP38yHw" isUnique="false"/>
+      <ownedAttribute xmi:id="_ngvDh2NhEeqcd4MiP38yHw" name="Price" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_ngvDiGNhEeqcd4MiP38yHw" name="Enumeration"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngvDiWNhEeqcd4MiP38yHw" memberEnd="_ngvDgWNhEeqcd4MiP38yHw _ngvDimNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngvDimNhEeqcd4MiP38yHw" visibility="public" type="_ngvDgGNhEeqcd4MiP38yHw" association="_ngvDiWNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDi2NhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ngvDjGNhEeqcd4MiP38yHw" name="Product">
+      <ownedComment xmi:id="_ngvDjWNhEeqcd4MiP38yHw">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_ngvDjmNhEeqcd4MiP38yHw" name="product_type" visibility="public" type="_ngvDkGNhEeqcd4MiP38yHw" isUnique="false"/>
+      <ownedAttribute xmi:id="_ngvDj2NhEeqcd4MiP38yHw" name="item_of_goods" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_ngvDkGNhEeqcd4MiP38yHw" name="Enumeration"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ngvDkWNhEeqcd4MiP38yHw" name="Client">
+      <ownedAttribute xmi:id="_ngvDkmNhEeqcd4MiP38yHw" name="passportData" visibility="public" type="_ngvDnmNhEeqcd4MiP38yHw" association="_ngvDmGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDk2NhEeqcd4MiP38yHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDlGNhEeqcd4MiP38yHw" name="discountCard" visibility="public" type="_ngvDpmNhEeqcd4MiP38yHw" association="_ngvDm2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDlWNhEeqcd4MiP38yHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDlmNhEeqcd4MiP38yHw" name="passport_data" visibility="public" type="_ngvDnmNhEeqcd4MiP38yHw" isUnique="false"/>
+      <ownedAttribute xmi:id="_ngvDl2NhEeqcd4MiP38yHw" name="Card" visibility="public" type="_ngvDpmNhEeqcd4MiP38yHw" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngvDmGNhEeqcd4MiP38yHw" memberEnd="_ngvDkmNhEeqcd4MiP38yHw _ngvDmWNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngvDmWNhEeqcd4MiP38yHw" visibility="public" type="_ngvDkWNhEeqcd4MiP38yHw" association="_ngvDmGNhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDmmNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ngvDm2NhEeqcd4MiP38yHw" memberEnd="_ngvDlGNhEeqcd4MiP38yHw _ngvDnGNhEeqcd4MiP38yHw">
+      <ownedEnd xmi:id="_ngvDnGNhEeqcd4MiP38yHw" visibility="public" type="_ngvDkWNhEeqcd4MiP38yHw" association="_ngvDm2NhEeqcd4MiP38yHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ngvDnWNhEeqcd4MiP38yHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ngvDnmNhEeqcd4MiP38yHw" name="PassportData">
+      <ownedAttribute xmi:id="_ngvDn2NhEeqcd4MiP38yHw" name="first_name" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDoGNhEeqcd4MiP38yHw" name="surname" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDoWNhEeqcd4MiP38yHw" name="patronymic" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDomNhEeqcd4MiP38yHw" name="series" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDo2NhEeqcd4MiP38yHw" name="number" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDpGNhEeqcd4MiP38yHw" name="date_of_issue" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDpWNhEeqcd4MiP38yHw" name="issued_by" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ngvDpmNhEeqcd4MiP38yHw" name="DiscountCard">
+      <ownedAttribute xmi:id="_ngvDp2NhEeqcd4MiP38yHw" name="Number" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ngvDqGNhEeqcd4MiP38yHw" name="amount_of_discount" visibility="public" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <defaultValue xmi:type="uml:Expression" xmi:id="_ngvDqWNhEeqcd4MiP38yHw" symbol="[0-5]"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ngvDqmNhEeqcd4MiP38yHw" name="State Machine Diagram">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_ngvDq2NhEeqcd4MiP38yHw" name="Внести сведения о покупателях">
+      <region xmi:id="_ngvDrGNhEeqcd4MiP38yHw">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ngvDrWNhEeqcd4MiP38yHw" name="Ввод данных покупателя">
+          <ownedComment xmi:id="_ngvDrmNhEeqcd4MiP38yHw">
+            <body>Ввод данных покупателя</body>
+          </ownedComment>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDr2NhEeqcd4MiP38yHw" name="Ожидание ввода"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDsGNhEeqcd4MiP38yHw" name="Проверка данных"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ngvDsWNhEeqcd4MiP38yHw" name="Choice" kind="choice"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDsmNhEeqcd4MiP38yHw" name="Отправка запроса БД"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_ngvDs2NhEeqcd4MiP38yHw" name="Изменение данных покупателя">
+          <ownedComment xmi:id="_ngvDtGNhEeqcd4MiP38yHw">
+            <body>Изменение данных покупателя</body>
+          </ownedComment>
+          <ownedComment xmi:id="_ngvDtWNhEeqcd4MiP38yHw">
+            <body>Успех
+</body>
+          </ownedComment>
+        </subvertex>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ngvDtmNhEeqcd4MiP38yHw" name="Choice1" kind="choice"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDt2NhEeqcd4MiP38yHw" name="Ожидание ответа от БД"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDuGNhEeqcd4MiP38yHw" name="Вывод сообщения пользователю об успешном сохранении данных"/>
+        <transition xmi:id="_ngvDuWNhEeqcd4MiP38yHw" name="Transition" source="_ngvDrWNhEeqcd4MiP38yHw" target="_ngvDr2NhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDumNhEeqcd4MiP38yHw" name="Пользователь ввёл данные" source="_ngvDr2NhEeqcd4MiP38yHw" target="_ngvDsGNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDu2NhEeqcd4MiP38yHw" name="Transition" source="_ngvDsGNhEeqcd4MiP38yHw" target="_ngvDsWNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDvGNhEeqcd4MiP38yHw" name="Данные введены верно" source="_ngvDsWNhEeqcd4MiP38yHw" target="_ngvDsmNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDvWNhEeqcd4MiP38yHw" name="Данные введены неверно" source="_ngvDsWNhEeqcd4MiP38yHw" target="_ngvDr2NhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDvmNhEeqcd4MiP38yHw" name="Запрос отправлен БД" source="_ngvDsmNhEeqcd4MiP38yHw" target="_ngvDt2NhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDv2NhEeqcd4MiP38yHw" name="Запрос не обработан базой данных" source="_ngvDtmNhEeqcd4MiP38yHw" target="_ngvDsmNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDwGNhEeqcd4MiP38yHw" name="Transition1" source="_ngvDtmNhEeqcd4MiP38yHw" target="_ngvDuGNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDwWNhEeqcd4MiP38yHw" name="Transition" source="_ngvDt2NhEeqcd4MiP38yHw" target="_ngvDtmNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvDwmNhEeqcd4MiP38yHw" name="Transition" source="_ngvDuGNhEeqcd4MiP38yHw" target="_ngvDs2NhEeqcd4MiP38yHw"/>
+      </region>
+    </packagedElement>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_ngvDw2NhEeqcd4MiP38yHw" name="State Machine">
+      <region xmi:id="_ngvDxGNhEeqcd4MiP38yHw">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ngvDxWNhEeqcd4MiP38yHw" name="Получение данных покупателя"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDxmNhEeqcd4MiP38yHw" name="Ожидание ввода"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDx2NhEeqcd4MiP38yHw" name="Проверка введённых данных"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ngvDyGNhEeqcd4MiP38yHw" name="Choice" kind="choice"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDyWNhEeqcd4MiP38yHw" name="Отправка запроса к БД"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDymNhEeqcd4MiP38yHw" name="Вывод результата"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_ngvDy2NhEeqcd4MiP38yHw" name="Отображение данных покупателя">
+          <ownedComment xmi:id="_ngvDzGNhEeqcd4MiP38yHw">
+            <body>Успех
+</body>
+          </ownedComment>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_ngvDzWNhEeqcd4MiP38yHw" name="Ожидание ответа от БД"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ngvDzmNhEeqcd4MiP38yHw" name="Choice1" kind="choice"/>
+        <transition xmi:id="_ngvDz2NhEeqcd4MiP38yHw" name="Transition" source="_ngvDxWNhEeqcd4MiP38yHw" target="_ngvDxmNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD0GNhEeqcd4MiP38yHw" name="Пользователь ввёл данные" source="_ngvDxmNhEeqcd4MiP38yHw" target="_ngvDx2NhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD0WNhEeqcd4MiP38yHw" name="Transition" source="_ngvDx2NhEeqcd4MiP38yHw" target="_ngvDyGNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD0mNhEeqcd4MiP38yHw" name="Данные введены верно" source="_ngvDyGNhEeqcd4MiP38yHw" target="_ngvDyWNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD02NhEeqcd4MiP38yHw" name="Данные введены неверно" source="_ngvDyGNhEeqcd4MiP38yHw" target="_ngvDxmNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD1GNhEeqcd4MiP38yHw" name="Отправлен запрос к БД" source="_ngvDyWNhEeqcd4MiP38yHw" target="_ngvDzWNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD1WNhEeqcd4MiP38yHw" name="Transition" source="_ngvDymNhEeqcd4MiP38yHw" target="_ngvDy2NhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD1mNhEeqcd4MiP38yHw" name="Transition" source="_ngvDzWNhEeqcd4MiP38yHw" target="_ngvDzmNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD12NhEeqcd4MiP38yHw" name="Запрос обработан БД успешно, данные получены системой" source="_ngvDzmNhEeqcd4MiP38yHw" target="_ngvDymNhEeqcd4MiP38yHw"/>
+        <transition xmi:id="_ngvD2GNhEeqcd4MiP38yHw" name="Запрос не обработан базой данных" source="_ngvDzmNhEeqcd4MiP38yHw" target="_ngvDyWNhEeqcd4MiP38yHw"/>
+      </region>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ngvD2WNhEeqcd4MiP38yHw" name="Activity Diagram">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_ngvD2mNhEeqcd4MiP38yHw" name="Activity Выдать права пользователю">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ngvqYGNhEeqcd4MiP38yHw" name="locals"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_ngvqYWNhEeqcd4MiP38yHw" name="Initial Node" outgoing="_ngvqeWNhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqYmNhEeqcd4MiP38yHw" name="Войти в систему" outgoing="_ngvqe2NhEeqcd4MiP38yHw" incoming="_ngvqeWNhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqY2NhEeqcd4MiP38yHw" name="Выбрать действие &quot;выдать права на редактирование БД сотруднику&quot;" outgoing="_ngvqfWNhEeqcd4MiP38yHw" incoming="_ngvqkGNhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqZGNhEeqcd4MiP38yHw" name="Отметить нужных сотрудников" outgoing="_ngvqf2NhEeqcd4MiP38yHw" incoming="_ngvqlmNhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqZWNhEeqcd4MiP38yHw" name="Выдать абсолютные права" outgoing="_ngvqgWNhEeqcd4MiP38yHw" incoming="_ngvqiWNhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqZmNhEeqcd4MiP38yHw" name="Выдать ограниченные права" outgoing="_ngvqg2NhEeqcd4MiP38yHw" incoming="_ngvqi2NhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqZ2NhEeqcd4MiP38yHw" name="Выбрать нужные ограничения прав" outgoing="_ngvqhWNhEeqcd4MiP38yHw" incoming="_ngvqlGNhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqaGNhEeqcd4MiP38yHw" name="Запрос на сохранение данных в системе" outgoing="_ngvqh2NhEeqcd4MiP38yHw" incoming="_ngvqgWNhEeqcd4MiP38yHw _ngvqhWNhEeqcd4MiP38yHw _ngvqomNhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:ForkNode" xmi:id="_ngvqaWNhEeqcd4MiP38yHw" name="Fork/Join" outgoing="_ngvqiWNhEeqcd4MiP38yHw _ngvqi2NhEeqcd4MiP38yHw" incoming="_ngvqf2NhEeqcd4MiP38yHw" inPartition="_ngvqpGNhEeqcd4MiP38yHw">
+        <eAnnotations xmi:id="_ngvqamNhEeqcd4MiP38yHw" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_ngvqa2NhEeqcd4MiP38yHw" name="JoinSpecification">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ngvqbGNhEeqcd4MiP38yHw" value="and"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_ngvqbWNhEeqcd4MiP38yHw" name="isCombineDuplicate"/>
+        </eAnnotations>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqbmNhEeqcd4MiP38yHw" name="Запрос логина и пароля" outgoing="_ngvqjWNhEeqcd4MiP38yHw" incoming="_ngvqe2NhEeqcd4MiP38yHw" inPartition="_ngvqpWNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqb2NhEeqcd4MiP38yHw" name="Вывести меню" outgoing="_ngvqkGNhEeqcd4MiP38yHw" incoming="_ngvqjWNhEeqcd4MiP38yHw" inPartition="_ngvqpWNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqcGNhEeqcd4MiP38yHw" name="Запросить список сотрудников (у БД), не имеющих прав в системе" outgoing="_ngvqkmNhEeqcd4MiP38yHw" incoming="_ngvqfWNhEeqcd4MiP38yHw _ngvqnmNhEeqcd4MiP38yHw" inPartition="_ngvqpWNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqcWNhEeqcd4MiP38yHw" name="Вывести список возможных действий пользователя в системе" outgoing="_ngvqlGNhEeqcd4MiP38yHw" incoming="_ngvqg2NhEeqcd4MiP38yHw" inPartition="_ngvqpWNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ngvqcmNhEeqcd4MiP38yHw" name="Activity Final Node" incoming="_ngvqoGNhEeqcd4MiP38yHw" inPartition="_ngvqpWNhEeqcd4MiP38yHw">
+        <ownedComment xmi:id="_ngvqc2NhEeqcd4MiP38yHw">
+          <body>Успех
+</body>
+        </ownedComment>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqdGNhEeqcd4MiP38yHw" name="Отобразить список сотрудников" outgoing="_ngvqlmNhEeqcd4MiP38yHw" incoming="_ngvqnGNhEeqcd4MiP38yHw" inPartition="_ngvqpWNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqdWNhEeqcd4MiP38yHw" name="Сохранение данных" outgoing="_ngvqmGNhEeqcd4MiP38yHw" incoming="_ngvqh2NhEeqcd4MiP38yHw" inPartition="_ngvqpmNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqdmNhEeqcd4MiP38yHw" name="Выдать список сотрудников" outgoing="_ngvqmmNhEeqcd4MiP38yHw" incoming="_ngvqkmNhEeqcd4MiP38yHw" inPartition="_ngvqpmNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ngvqd2NhEeqcd4MiP38yHw" name="Decision-Merge" outgoing="_ngvqnGNhEeqcd4MiP38yHw _ngvqnmNhEeqcd4MiP38yHw" incoming="_ngvqmmNhEeqcd4MiP38yHw" inPartition="_ngvqpmNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ngvqeGNhEeqcd4MiP38yHw" name="Decision-Merge1" outgoing="_ngvqoGNhEeqcd4MiP38yHw _ngvqomNhEeqcd4MiP38yHw" incoming="_ngvqmGNhEeqcd4MiP38yHw" inPartition="_ngvqpmNhEeqcd4MiP38yHw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqeWNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqYWNhEeqcd4MiP38yHw" target="_ngvqYmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqemNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqe2NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqYmNhEeqcd4MiP38yHw" target="_ngvqbmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqfGNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqfWNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqY2NhEeqcd4MiP38yHw" target="_ngvqcGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqfmNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqf2NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqZGNhEeqcd4MiP38yHw" target="_ngvqaWNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqgGNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqgWNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqZWNhEeqcd4MiP38yHw" target="_ngvqaGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqgmNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqg2NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqZmNhEeqcd4MiP38yHw" target="_ngvqcWNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqhGNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqhWNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqZ2NhEeqcd4MiP38yHw" target="_ngvqaGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqhmNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqh2NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqaGNhEeqcd4MiP38yHw" target="_ngvqdWNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqiGNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqiWNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqaWNhEeqcd4MiP38yHw" target="_ngvqZWNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqimNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqi2NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqaWNhEeqcd4MiP38yHw" target="_ngvqZmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqjGNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqjWNhEeqcd4MiP38yHw" name="Если вход выполнен успешно" source="_ngvqbmNhEeqcd4MiP38yHw" target="_ngvqb2NhEeqcd4MiP38yHw">
+        <ownedComment xmi:id="_ngvqjmNhEeqcd4MiP38yHw">
+          <body>Если вход выполнен успешно</body>
+        </ownedComment>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqj2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqkGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqb2NhEeqcd4MiP38yHw" target="_ngvqY2NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqkWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqkmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqcGNhEeqcd4MiP38yHw" target="_ngvqdmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqk2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqlGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqcWNhEeqcd4MiP38yHw" target="_ngvqZ2NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqlWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqlmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqdGNhEeqcd4MiP38yHw" target="_ngvqZGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvql2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqmGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqdWNhEeqcd4MiP38yHw" target="_ngvqeGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqmWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqmmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqdmNhEeqcd4MiP38yHw" target="_ngvqd2NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqm2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqnGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqd2NhEeqcd4MiP38yHw" target="_ngvqdGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqnWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqnmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqd2NhEeqcd4MiP38yHw" target="_ngvqcGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqn2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqoGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqeGNhEeqcd4MiP38yHw" target="_ngvqcmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqoWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqomNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqeGNhEeqcd4MiP38yHw" target="_ngvqaGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqo2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvqpGNhEeqcd4MiP38yHw" name="Пользователь" node="_ngvqYWNhEeqcd4MiP38yHw _ngvqYmNhEeqcd4MiP38yHw _ngvqY2NhEeqcd4MiP38yHw _ngvqZGNhEeqcd4MiP38yHw _ngvqZWNhEeqcd4MiP38yHw _ngvqZmNhEeqcd4MiP38yHw _ngvqZ2NhEeqcd4MiP38yHw _ngvqaGNhEeqcd4MiP38yHw _ngvqaWNhEeqcd4MiP38yHw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvqpWNhEeqcd4MiP38yHw" name="Система" node="_ngvqbmNhEeqcd4MiP38yHw _ngvqb2NhEeqcd4MiP38yHw _ngvqcGNhEeqcd4MiP38yHw _ngvqcWNhEeqcd4MiP38yHw _ngvqcmNhEeqcd4MiP38yHw _ngvqdGNhEeqcd4MiP38yHw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvqpmNhEeqcd4MiP38yHw" name="БД" node="_ngvqdWNhEeqcd4MiP38yHw _ngvqdmNhEeqcd4MiP38yHw _ngvqd2NhEeqcd4MiP38yHw _ngvqeGNhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_ngvqp2NhEeqcd4MiP38yHw" name="Вход в систему">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ngvqqGNhEeqcd4MiP38yHw" name="locals"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_ngvqqWNhEeqcd4MiP38yHw" name="Initial Node" outgoing="_ngvqtmNhEeqcd4MiP38yHw" inPartition="_ngvq0GNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqqmNhEeqcd4MiP38yHw" name="Вход в систему" outgoing="_ngvquGNhEeqcd4MiP38yHw" incoming="_ngvqtmNhEeqcd4MiP38yHw" inPartition="_ngvq0GNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqq2NhEeqcd4MiP38yHw" name="Ввод логина и пароля" outgoing="_ngvqumNhEeqcd4MiP38yHw" incoming="_ngvqwmNhEeqcd4MiP38yHw" inPartition="_ngvq0GNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqrGNhEeqcd4MiP38yHw" name="Выбрать действие" outgoing="_ngvqvGNhEeqcd4MiP38yHw" incoming="_ngvqxmNhEeqcd4MiP38yHw" inPartition="_ngvq0GNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ngvqrWNhEeqcd4MiP38yHw" name="Decision-Merge" outgoing="_ngvqvmNhEeqcd4MiP38yHw _ngvqwGNhEeqcd4MiP38yHw" incoming="_ngvqvGNhEeqcd4MiP38yHw" inPartition="_ngvq0GNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqrmNhEeqcd4MiP38yHw" name="Запросить логин и пароль" outgoing="_ngvqwmNhEeqcd4MiP38yHw" incoming="_ngvquGNhEeqcd4MiP38yHw _ngvqvmNhEeqcd4MiP38yHw" inPartition="_ngvq0WNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqr2NhEeqcd4MiP38yHw" name="Проверить на правильность ввода логин и пароль" outgoing="_ngvqxGNhEeqcd4MiP38yHw" incoming="_ngvqumNhEeqcd4MiP38yHw" inPartition="_ngvq0WNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqsGNhEeqcd4MiP38yHw" name="Вывести предупреждение" outgoing="_ngvqxmNhEeqcd4MiP38yHw" incoming="_ngvqzGNhEeqcd4MiP38yHw" inPartition="_ngvq0WNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqsWNhEeqcd4MiP38yHw" name="Вывести меню системы" outgoing="_ngvqyGNhEeqcd4MiP38yHw" incoming="_ngvqzmNhEeqcd4MiP38yHw" inPartition="_ngvq0WNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ngvqsmNhEeqcd4MiP38yHw" name="Activity Final Node" incoming="_ngvqwGNhEeqcd4MiP38yHw" inPartition="_ngvq0WNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ngvqs2NhEeqcd4MiP38yHw" name="Activity Final Node1" incoming="_ngvqyGNhEeqcd4MiP38yHw" inPartition="_ngvq0WNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvqtGNhEeqcd4MiP38yHw" name="Поиск логина и пароля" outgoing="_ngvqymNhEeqcd4MiP38yHw" incoming="_ngvqxGNhEeqcd4MiP38yHw" inPartition="_ngvq0mNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ngvqtWNhEeqcd4MiP38yHw" name="Decision-Merge" outgoing="_ngvqzGNhEeqcd4MiP38yHw _ngvqzmNhEeqcd4MiP38yHw" incoming="_ngvqymNhEeqcd4MiP38yHw" inPartition="_ngvq0mNhEeqcd4MiP38yHw"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqtmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqqWNhEeqcd4MiP38yHw" target="_ngvqqmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqt2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvquGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqqmNhEeqcd4MiP38yHw" target="_ngvqrmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvquWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqumNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqq2NhEeqcd4MiP38yHw" target="_ngvqr2NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqu2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqvGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqrGNhEeqcd4MiP38yHw" target="_ngvqrWNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqvWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqvmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqrWNhEeqcd4MiP38yHw" target="_ngvqrmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqv2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqwGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqrWNhEeqcd4MiP38yHw" target="_ngvqsmNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqwWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqwmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqrmNhEeqcd4MiP38yHw" target="_ngvqq2NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqw2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqxGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqr2NhEeqcd4MiP38yHw" target="_ngvqtGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqxWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqxmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqsGNhEeqcd4MiP38yHw" target="_ngvqrGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqx2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqyGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqsWNhEeqcd4MiP38yHw" target="_ngvqs2NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqyWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqymNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqtGNhEeqcd4MiP38yHw" target="_ngvqtWNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqy2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqzGNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqtWNhEeqcd4MiP38yHw" target="_ngvqsGNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqzWNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvqzmNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvqtWNhEeqcd4MiP38yHw" target="_ngvqsWNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvqz2NhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvq0GNhEeqcd4MiP38yHw" name="Пользователь" node="_ngvqqWNhEeqcd4MiP38yHw _ngvqqmNhEeqcd4MiP38yHw _ngvqq2NhEeqcd4MiP38yHw _ngvqrGNhEeqcd4MiP38yHw _ngvqrWNhEeqcd4MiP38yHw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvq0WNhEeqcd4MiP38yHw" name="Система" node="_ngvqrmNhEeqcd4MiP38yHw _ngvqr2NhEeqcd4MiP38yHw _ngvqsGNhEeqcd4MiP38yHw _ngvqsWNhEeqcd4MiP38yHw _ngvqsmNhEeqcd4MiP38yHw _ngvqs2NhEeqcd4MiP38yHw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvq0mNhEeqcd4MiP38yHw" name="База данных" node="_ngvqtGNhEeqcd4MiP38yHw _ngvqtWNhEeqcd4MiP38yHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_ngvq02NhEeqcd4MiP38yHw" name="Activity Внести сведения в систему">
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ngvq1GNhEeqcd4MiP38yHw" name="locals"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq1WNhEeqcd4MiP38yHw" name="Войти в систему" outgoing="_ngvq42NhEeqcd4MiP38yHw" incoming="_ngvq5WNhEeqcd4MiP38yHw" inPartition="_ngvq_2NhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:InitialNode" xmi:id="_ngvq1mNhEeqcd4MiP38yHw" name="Initial Node" outgoing="_ngvq5WNhEeqcd4MiP38yHw" inPartition="_ngvq_2NhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq12NhEeqcd4MiP38yHw" name="Выбрать действие &quot;Внести сведения о поступивших товарах&quot;" outgoing="_ngvq52NhEeqcd4MiP38yHw" incoming="_ngvq8WNhEeqcd4MiP38yHw" inPartition="_ngvq_2NhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq2GNhEeqcd4MiP38yHw" name="Внести данные о поступивших товарах" outgoing="_ngvq6WNhEeqcd4MiP38yHw" incoming="_ngvq72NhEeqcd4MiP38yHw _ngvq82NhEeqcd4MiP38yHw" inPartition="_ngvq_2NhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq2WNhEeqcd4MiP38yHw" name="Выбрать действие" outgoing="_ngvq62NhEeqcd4MiP38yHw" incoming="_ngvq92NhEeqcd4MiP38yHw" inPartition="_ngvq_2NhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ngvq2mNhEeqcd4MiP38yHw" name="Decision-Merge" outgoing="_ngvq7WNhEeqcd4MiP38yHw _ngvq72NhEeqcd4MiP38yHw" incoming="_ngvq62NhEeqcd4MiP38yHw" inPartition="_ngvq_2NhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq22NhEeqcd4MiP38yHw" name="Вывести меню" outgoing="_ngvq8WNhEeqcd4MiP38yHw" incoming="_ngvq42NhEeqcd4MiP38yHw" inPartition="_ngvrAGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq3GNhEeqcd4MiP38yHw" name="Вывести диалоговое окно с полями для ввода информации" outgoing="_ngvq82NhEeqcd4MiP38yHw" incoming="_ngvq52NhEeqcd4MiP38yHw" inPartition="_ngvrAGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq3WNhEeqcd4MiP38yHw" name="Проверить введённые данные" outgoing="_ngvq9WNhEeqcd4MiP38yHw" incoming="_ngvq6WNhEeqcd4MiP38yHw" inPartition="_ngvrAGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ngvq3mNhEeqcd4MiP38yHw" name="Activity Final Node" incoming="_ngvq_WNhEeqcd4MiP38yHw" inPartition="_ngvrAGNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq32NhEeqcd4MiP38yHw" name="Вывести предупреждение" outgoing="_ngvq92NhEeqcd4MiP38yHw" incoming="_ngvq-WNhEeqcd4MiP38yHw" inPartition="_ngvrAGNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_ngvq4GNhEeqcd4MiP38yHw" name="Activity Final Node1" incoming="_ngvq7WNhEeqcd4MiP38yHw" inPartition="_ngvrAGNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ngvq4WNhEeqcd4MiP38yHw" name="Decision-Merge" outgoing="_ngvq-WNhEeqcd4MiP38yHw _ngvq-2NhEeqcd4MiP38yHw" incoming="_ngvq9WNhEeqcd4MiP38yHw" inPartition="_ngvrAGNhEeqcd4MiP38yHw"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ngvq4mNhEeqcd4MiP38yHw" name="Сохранить данные" outgoing="_ngvq_WNhEeqcd4MiP38yHw" incoming="_ngvq-2NhEeqcd4MiP38yHw" inPartition="_ngvrAWNhEeqcd4MiP38yHw">
+        <body></body>
+      </node>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq42NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq1WNhEeqcd4MiP38yHw" target="_ngvq22NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq5GNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq5WNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq1mNhEeqcd4MiP38yHw" target="_ngvq1WNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq5mNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq52NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq12NhEeqcd4MiP38yHw" target="_ngvq3GNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq6GNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq6WNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq2GNhEeqcd4MiP38yHw" target="_ngvq3WNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq6mNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq62NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq2WNhEeqcd4MiP38yHw" target="_ngvq2mNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq7GNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq7WNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq2mNhEeqcd4MiP38yHw" target="_ngvq4GNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq7mNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq72NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq2mNhEeqcd4MiP38yHw" target="_ngvq2GNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq8GNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq8WNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq22NhEeqcd4MiP38yHw" target="_ngvq12NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq8mNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq82NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq3GNhEeqcd4MiP38yHw" target="_ngvq2GNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq9GNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq9WNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq3WNhEeqcd4MiP38yHw" target="_ngvq4WNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq9mNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq92NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq32NhEeqcd4MiP38yHw" target="_ngvq2WNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq-GNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq-WNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq4WNhEeqcd4MiP38yHw" target="_ngvq32NhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq-mNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq-2NhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq4WNhEeqcd4MiP38yHw" target="_ngvq4mNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq_GNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ngvq_WNhEeqcd4MiP38yHw" name="ControlFlow" source="_ngvq4mNhEeqcd4MiP38yHw" target="_ngvq3mNhEeqcd4MiP38yHw">
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ngvq_mNhEeqcd4MiP38yHw" value="1"/>
+      </edge>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvq_2NhEeqcd4MiP38yHw" name="Пользователь" node="_ngvq1WNhEeqcd4MiP38yHw _ngvq1mNhEeqcd4MiP38yHw _ngvq12NhEeqcd4MiP38yHw _ngvq2GNhEeqcd4MiP38yHw _ngvq2WNhEeqcd4MiP38yHw _ngvq2mNhEeqcd4MiP38yHw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvrAGNhEeqcd4MiP38yHw" name="Система" node="_ngvq22NhEeqcd4MiP38yHw _ngvq3GNhEeqcd4MiP38yHw _ngvq3WNhEeqcd4MiP38yHw _ngvq3mNhEeqcd4MiP38yHw _ngvq32NhEeqcd4MiP38yHw _ngvq4GNhEeqcd4MiP38yHw _ngvq4WNhEeqcd4MiP38yHw"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_ngvrAWNhEeqcd4MiP38yHw" name="База данных" node="_ngvq4mNhEeqcd4MiP38yHw"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

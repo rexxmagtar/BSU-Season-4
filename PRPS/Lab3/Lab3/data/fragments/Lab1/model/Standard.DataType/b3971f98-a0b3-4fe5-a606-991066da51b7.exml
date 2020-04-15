@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Reposters:List&lt;&gt;" version="4">
+  <OBJECT>
+    <ID name="Reposters:List&lt;&gt;" mc="Standard.DataType" uid="b3971f98-a0b3-4fe5-a606-991066da51b7"/>
+    <PID name="ReportController" mc="Standard.Class" uid="5e899051-b22b-405c-af34-81398788e9fe"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Reposters:List<>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

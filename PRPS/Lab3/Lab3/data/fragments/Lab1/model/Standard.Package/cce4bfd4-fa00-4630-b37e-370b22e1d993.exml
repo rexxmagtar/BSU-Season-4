@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Уведомление об фактической выполненной работе" version="4">
+  <OBJECT>
+    <ID name="Уведомление об фактической выполненной работе" mc="Standard.Package" uid="cce4bfd4-fa00-4630-b37e-370b22e1d993"/>
+    <PID name="Additional" mc="Standard.Package" uid="e175fa1f-804d-4c0e-a88f-a3b3c57a4f7a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Уведомление об фактической выполненной работе]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Преподаватель" mc="Standard.Actor" uid="7f36744e-7c1a-42c0-88eb-42eaefdd8af3"/>
+        <COMPID name="Уведомить систему о получении новых рабочих часов сверх плана" mc="Standard.UseCase" uid="e55a6ed4-b3e7-4d48-a16b-3dbe440d1ec2"/>
+        <COMPID name="Указать количество свободных часов, так же комментируя их возникновение " mc="Standard.UseCase" uid="cf4e1be4-be7c-4196-9eb2-e7b9dc6238d6"/>
+        <COMPID name="Указать количество невыполненных часов, комментируя причины невыполнения." mc="Standard.UseCase" uid="ff7684c7-3922-410c-aede-f2cfdf53feac"/>
+        <COMPID name="Указать количество выполенных по плану часов." mc="Standard.UseCase" uid="a3d65a60-8777-43be-8e27-922f538a3d2a"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Уведомление об фактической выполненной работе" mc="Standard.UseCaseDiagram" uid="64693ec7-5b56-4852-8782-fb002f041fa4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

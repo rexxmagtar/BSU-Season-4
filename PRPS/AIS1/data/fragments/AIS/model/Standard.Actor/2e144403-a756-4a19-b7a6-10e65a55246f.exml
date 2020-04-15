@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Система (БД)" version="4">
+  <OBJECT>
+    <ID name="Система (БД)" mc="Standard.Actor" uid="2e144403-a756-4a19-b7a6-10e65a55246f"/>
+    <PID name="Use Case View" mc="Standard.Package" uid="0f2f6ff6-367d-4b4e-a0be-17b3c3fdafe4"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Система (БД)]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

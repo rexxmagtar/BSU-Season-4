@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Сформировать отчёт" version="4">
+  <OBJECT>
+    <ID name="Сформировать отчёт" mc="Standard.Package" uid="167f662f-f7fc-4b7e-b29a-293505fdbf37"/>
+    <PID name="Use Case View" mc="Standard.Package" uid="93d77606-e0c0-47a1-aa0d-06c8a53d545e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Сформировать отчёт]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Сформировать отчёт" mc="Standard.UseCase" uid="60d5df2e-1b58-478e-b67b-e26e2e3e77d2"/>
+        <COMPID name="Войти в систему" mc="Standard.UseCase" uid="fd231078-e32f-4437-b4b6-f94e88b273e2"/>
+        <COMPID name="Выбрать параметры для отчёта" mc="Standard.UseCase" uid="6e185a1c-262f-4af6-87db-b7c18fe7cf6b"/>
+        <COMPID name="Сформировать отчёт на основе шаблона" mc="Standard.UseCase" uid="8e8dd568-5db3-4951-ba84-febcf34c8dd2"/>
+        <COMPID name="Добавить в список шаблонов для отчётов" mc="Standard.UseCase" uid="950b3c16-eed0-48c8-9013-cd0b5bd8261e"/>
+        <COMPID name="Администратор" mc="Standard.Actor" uid="af58091f-43d9-4df7-bd84-c0b6b0e7f0ac"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Сформировать отчёт Use Case diagram" mc="Standard.UseCaseDiagram" uid="16e964b8-b14f-4b59-846b-198c137a90c3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

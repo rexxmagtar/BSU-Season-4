@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Учётная книга" version="4">
+  <OBJECT>
+    <ID name="Учётная книга" mc="Standard.Actor" uid="15a3308e-ad58-46f4-92a3-0bcb1a7f9037"/>
+    <PID name="Business case" mc="Standard.Package" uid="a3e777d6-253a-4bd8-bc33-4c834120ffd7"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Учётная книга]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Получение контрольной суммы преподавателя" version="4">
+  <OBJECT>
+    <ID name="Получение контрольной суммы преподавателя" mc="Standard.Package" uid="d3c1f73b-763f-4564-a31e-7176d4ff187f"/>
+    <PID name="Additional" mc="Standard.Package" uid="e175fa1f-804d-4c0e-a88f-a3b3c57a4f7a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Получение контрольной суммы преподавателя]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Пользователь системы" mc="Standard.Actor" uid="00014949-b8c9-4976-a08f-dc0ef23934ce"/>
+        <COMPID name="Получить запланированное колличество рабочих часов" mc="Standard.UseCase" uid="a6d6f6fe-6195-4722-9de4-b72b467c4e0a"/>
+        <COMPID name="Получить количество выполненных запланированных часов" mc="Standard.UseCase" uid="c3a66270-cb7a-47bd-a8b9-541c8543c1a7"/>
+        <COMPID name="Получить количество выполненных незапланированных часов" mc="Standard.UseCase" uid="9b8f810c-731a-482d-a671-cdcd77ce5ce0"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Получение контрольной суммы преподавателя" mc="Standard.UseCaseDiagram" uid="dc359ad4-4fc0-4e9e-89cd-aaabfb8ee1bd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

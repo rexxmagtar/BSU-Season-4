@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Use Case View" version="4">
+  <OBJECT>
+    <ID name="Use Case View" mc="Standard.Package" uid="1474c462-9bb9-4a1e-a785-ef87f21d8ed7"/>
+    <PID name="Lab1" mc="Standard.Project" uid="f58f91d0-14dd-418f-b48d-6be55e3061e8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Use Case View]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Main" mc="Standard.Package" uid="8c591069-71b7-43d1-9416-ee3a02820f10"/>
+        <COMPID name="Buisness" mc="Standard.Package" uid="496fb545-c61d-4774-a273-799b83fe415f"/>
+        <COMPID name="Additional" mc="Standard.Package" uid="e175fa1f-804d-4c0e-a88f-a3b3c57a4f7a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Professor" version="4">
+  <OBJECT>
+    <ID name="Professor" mc="Standard.Class" uid="dbb599d2-00d1-47ce-aee3-48b6a3cb47a1"/>
+    <PID name="Class diagrams" mc="Standard.Package" uid="27ca9424-07e4-456e-bfed-cf882ccd52ac"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Professor]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Standard.Generalization" uid="dd41e028-f744-4afc-a1f7-298f07db86b3"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="System user" mc="Standard.Class" uid="57a8316e-9314-495a-9af6-27bbb1fb6053"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Generalization" mc="Standard.Generalization" uid="343e1e1e-9e5d-467b-b926-65a91545df2a"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="System user" mc="Standard.Class" uid="49d45105-87d3-41c3-8904-f0f054fb347a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="PatternRoot" mc="Infrastructure.Stereotype" uid="ad46ab04-9310-11df-a4cf-0014224f9977"/>
+        <ID name="Entity" mc="Infrastructure.Stereotype" uid="cd12236e-1d70-4945-8650-96ae1e84367f"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

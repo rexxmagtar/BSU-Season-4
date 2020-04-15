@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="State" version="4">
+  <OBJECT>
+    <ID name="State" mc="Standard.Package" uid="ddb6b05e-1b45-4d6f-a2bd-a672cab62720"/>
+    <PID name="Logical View" mc="Standard.Package" uid="8124ea1f-641f-4633-8087-27a840b8326f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[State]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Получить список преподавателей по критерию " mc="Standard.StateMachine" uid="73d4b0b7-19fd-44b0-ad7a-993c7b177fed"/>
+        <COMPID name="Создать план" mc="Standard.StateMachine" uid="a732808b-648f-4add-94d9-ec173ff22f45"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

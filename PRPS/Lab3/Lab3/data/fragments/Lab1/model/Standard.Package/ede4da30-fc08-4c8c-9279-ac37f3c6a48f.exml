@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Регистрация преподавателя" version="4">
+  <OBJECT>
+    <ID name="Регистрация преподавателя" mc="Standard.Package" uid="ede4da30-fc08-4c8c-9279-ac37f3c6a48f"/>
+    <PID name="Activity" mc="Standard.Package" uid="40088f5b-e72b-425e-a926-715e168f06a1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Регистрация преподавателя]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="8785c348-7f9c-4306-baa3-b54f9ad87a1e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

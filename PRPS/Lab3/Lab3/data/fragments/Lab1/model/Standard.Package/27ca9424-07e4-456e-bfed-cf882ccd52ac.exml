@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Class diagrams" version="4">
+  <OBJECT>
+    <ID name="Class diagrams" mc="Standard.Package" uid="27ca9424-07e4-456e-bfed-cf882ccd52ac"/>
+    <PID name="Lab1" mc="Standard.Project" uid="f58f91d0-14dd-418f-b48d-6be55e3061e8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Class diagrams]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="System user" mc="Standard.Class" uid="57a8316e-9314-495a-9af6-27bbb1fb6053"/>
+        <COMPID name="Report" mc="Standard.Class" uid="0b0f57dd-7fed-43aa-b38a-cbcaf62e7b3f"/>
+        <COMPID name="Admin" mc="Standard.Class" uid="9d071b33-3b36-472e-8bff-96e34f41fc10"/>
+        <COMPID name="Professor" mc="Standard.Class" uid="dbb599d2-00d1-47ce-aee3-48b6a3cb47a1"/>
+        <COMPID name="Report" mc="Standard.Class" uid="77143fa3-0045-4f88-a976-85b112e2af2e"/>
+        <COMPID name="ReportController" mc="Standard.Class" uid="5e899051-b22b-405c-af34-81398788e9fe"/>
+        <COMPID name="System user" mc="Standard.Class" uid="49d45105-87d3-41c3-8904-f0f054fb347a"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="General Class diagram" mc="Standard.ClassDiagram" uid="f3343975-55e1-474b-8918-ae108d8ba512"/>
+        <COMPID name="Report Class diagram" mc="Standard.ClassDiagram" uid="8029ee27-9037-4cc5-879f-4051ca25ec18"/>
+        <COMPID name="User Class diagram" mc="Standard.ClassDiagram" uid="e7f8a5ca-250a-4b26-b610-a8125b414895"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

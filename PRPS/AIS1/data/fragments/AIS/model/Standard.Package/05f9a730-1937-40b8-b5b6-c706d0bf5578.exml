@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Войти в систему" version="4">
+  <OBJECT>
+    <ID name="Войти в систему" mc="Standard.Package" uid="05f9a730-1937-40b8-b5b6-c706d0bf5578"/>
+    <PID name="Use Case View" mc="Standard.Package" uid="93d77606-e0c0-47a1-aa0d-06c8a53d545e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Войти в систему]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Магазин" mc="Standard.Actor" uid="aaaab285-447a-48cd-af00-3bba600cd1e7"/>
+        <COMPID name="Войти в систему" mc="Standard.UseCase" uid="fca86b94-43d5-4cc6-bd86-d2404bfdf27c"/>
+        <COMPID name="Внести в систему сведения о поступивших товарах" mc="Standard.UseCase" uid="1d98393e-5489-435e-a89e-90239e0d7bcf"/>
+        <COMPID name="Рассчитать скидку постоянного покупателя" mc="Standard.UseCase" uid="19267fa2-2acf-43be-8143-d79a9efa48ca"/>
+        <COMPID name="Внести сведения о покупателях" mc="Standard.UseCase" uid="a87c27bc-b1b4-4c3a-b352-fe2eb090b1c5"/>
+        <COMPID name="Получить сведения о покупателях" mc="Standard.UseCase" uid="8438874d-5b64-4c14-8d8b-1687d62964d7"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Войти в систему Use Case diagram" mc="Standard.UseCaseDiagram" uid="e6731b53-77c9-4040-b4e7-578c1e9d857d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

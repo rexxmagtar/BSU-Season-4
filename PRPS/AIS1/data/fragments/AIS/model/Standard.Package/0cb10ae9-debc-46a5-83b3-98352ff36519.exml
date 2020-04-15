@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="БД" version="4">
+  <OBJECT>
+    <ID name="БД" mc="Standard.Package" uid="0cb10ae9-debc-46a5-83b3-98352ff36519"/>
+    <PID name="ais" mc="Standard.Package" uid="5b7e1d00-a34e-4161-9b29-9c3b46798cbf"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[БД]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Store" mc="Standard.Class" uid="60f9896d-e380-4e19-8d5d-1451661d5f6c"/>
+        <COMPID name="Waybill" mc="Standard.Class" uid="eac61be4-4f2e-4b4e-a8e1-db20493c81a5"/>
+        <COMPID name="WaybillPosition" mc="Standard.Class" uid="1f17177f-0a1b-40f5-82e8-a6f8f12563df"/>
+        <COMPID name="Product" mc="Standard.Class" uid="6fdc4efa-14f9-4de2-b592-f50fa151b8ab"/>
+        <COMPID name="Client" mc="Standard.Class" uid="4a417b1e-034f-4878-8271-be25c17a870e"/>
+        <COMPID name="PassportData" mc="Standard.Class" uid="6c71e876-4a33-4e99-a825-1bb05647d570"/>
+        <COMPID name="DiscountCard" mc="Standard.Class" uid="995a5136-f07f-4362-b0aa-55487a8884e1"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="ais Class diagram" mc="Standard.ClassDiagram" uid="487f78f2-301f-424e-b991-27beb4fbf7f9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
