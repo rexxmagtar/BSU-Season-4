@@ -1,4 +1,5 @@
 
+#include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include "windows.h"
@@ -9,10 +10,16 @@ int main()
 {
 	FILE* binaryFile = NULL;
 
+	HANDLE mutex = CreateMutexA(NULL, FALSE, "m1");
+
+	HANDLE semaphoreSender;
+	HANDLE semaphoreReceiver;
+
+
 	char binFileName[30];
 	int binFileMessagesCount = 0;
-	int receiversCount = 0;
-	
+	int sendersCount = 0;
+
 	printf("Insert binary file's name\n");
 	scanf("%s", &binFileName);
 
@@ -21,29 +28,32 @@ int main()
 	printf("Insert binary file's messages count\n");
 	scanf("%d", &binFileMessagesCount);
 
-	printf("Insert receivers count\n");
-	scanf("%d", &receiversCount);
+	printf("Insert senders count\n");
+	scanf("%d", &sendersCount);
+
+	semaphoreSender = CreateSemaphoreA(NULL, binFileMessagesCount, binFileMessagesCount, "semSender");
+    semaphoreReceiver = CreateSemaphoreA(NULL, 0, 1, "semReceiver");
 
 
-	for (int i = 0; i < receiversCount; i++) {
+	for (int i = 0; i < sendersCount; i++) {
 		char senderFullName[500];
 
-		sprintf(senderFullName, "Sender.exe %s", binFileName);
+		sprintf(senderFullName, "Sender.exe %s %d", binFileName, binFileMessagesCount);
 
 		STARTUPINFO cif;
 		ZeroMemory(&cif, sizeof(STARTUPINFO));
 		cif.cb = (sizeof(STARTUPINFO));
 		PROCESS_INFORMATION pi;
 
-		if(!CreateProcess(NULL,
+		if (!CreateProcess(NULL,
 			senderFullName,
-			NULL, 
-			NULL, 
-			FALSE,
-			CREATE_NEW_CONSOLE, 
 			NULL,
 			NULL,
-			&cif, 
+			TRUE,
+			CREATE_NEW_CONSOLE,
+			NULL,
+			NULL,
+			&cif,
 			&pi))
 		{
 			printf("Could not create process\n");
@@ -60,70 +70,41 @@ int main()
 
 		scanf("%d", &option);
 
-		switch(option)
+		switch (option)
 		{
 		case 1:
-			{
+		{
+			WaitForSingleObject(semaphoreReceiver, INFINITY);
+
+			WaitForSingleObject(mutex, INFINITY);
+
+			binaryFile = fopen(binFileName, "rb");
 			char line[100];
+			int msgCount = 0;
 			while (fgets(line, 100, binaryFile))
 			{
-				fprintf("%s\n", line);
+				msgCount++;
+				printf("%s", line);
 			}
-			}
+				
+			fopen(binFileName, "wb");
+
+			ReleaseMutex(mutex);
+
+			ReleaseSemaphore(semaphoreSender, msgCount, NULL);
+
+			break;
+
+
+		}
 		case 2:
-			{
+		{
 			return 0;
-			}
+				break;
+		}
 		}
 
 	}
-	
+
 }
 
-
-
-//#include <windows.h>
-//#include <stdio.h>
-//#include <tchar.h>
-//
-//int main(int argc, char **argv)
-//{
-//    STARTUPINFO si;
-//    PROCESS_INFORMATION pi;
-//
-//    ZeroMemory(&si, sizeof(si));
-//    si.cb = sizeof(si);
-//    ZeroMemory(&pi, sizeof(pi));
-//    char path[40];
-//    strcpy(path, "Sender.exe");
-//    int a = strcmp(path, argv[1]);
-// /*   if (argc != 2)
-//    {
-//        printf("Usage: %s [cmdline]\n", argv[0]);
-//        return;
-//    }*/
-//
-//    // Start the child process. 
-//    if (!CreateProcess(NULL,   // No module name (use command line)
-//       (LPWSTR)path,        // Command line
-//        NULL,           // Process handle not inheritable
-//        NULL,           // Thread handle not inheritable
-//        FALSE,          // Set handle inheritance to FALSE
-//        0,              // No creation flags
-//        NULL,           // Use parent's environment block
-//        NULL,           // Use parent's starting directory 
-//        &si,            // Pointer to STARTUPINFO structure
-//        &pi)           // Pointer to PROCESS_INFORMATION structure
-//        )
-//    {
-//        printf("CreateProcess failed (%d).\n", GetLastError());
-//        return;
-//    }
-//
-//    // Wait until child process exits.
-//    WaitForSingleObject(pi.hProcess, INFINITE);
-//
-//    // Close process and thread handles. 
-//    CloseHandle(pi.hProcess);
-//    CloseHandle(pi.hThread);
-//}
