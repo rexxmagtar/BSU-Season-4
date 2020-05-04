@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Logical View" version="4">
+  <OBJECT>
+    <ID name="Logical View" mc="Standard.Package" uid="8124ea1f-641f-4633-8087-27a840b8326f"/>
+    <PID name="Lab1" mc="Standard.Project" uid="f58f91d0-14dd-418f-b48d-6be55e3061e8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Logical View]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Activity" mc="Standard.Package" uid="40088f5b-e72b-425e-a926-715e168f06a1"/>
+        <COMPID name="State" mc="Standard.Package" uid="ddb6b05e-1b45-4d6f-a2bd-a672cab62720"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

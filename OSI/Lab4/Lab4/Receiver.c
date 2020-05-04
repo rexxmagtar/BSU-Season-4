@@ -10,8 +10,9 @@ int main()
 {
 	FILE* binaryFile = NULL;
 
-	HANDLE mutex = CreateMutexA(NULL, FALSE, "m1");
-
+	HANDLE fileAccessMutex = CreateMutexA(NULL, FALSE, "m1");
+	HANDLE waitAllSemaphore;
+	
 	HANDLE semaphoreSender;
 	HANDLE semaphoreReceiver;
 
@@ -21,18 +22,32 @@ int main()
 	int sendersCount = 0;
 
 	printf("Insert binary file's name\n");
-	scanf("%s", &binFileName);
+	if(!scanf("%s", &binFileName))
+	{
+		printf("Error scanf\n");
+	}
 
 	binaryFile = fopen(binFileName, "w+");
 
 	printf("Insert binary file's messages count\n");
-	scanf("%d", &binFileMessagesCount);
+	if(!scanf("%d", &binFileMessagesCount))
+	{
+		printf("Error scanf\n");
+	}
 
 	printf("Insert senders count\n");
-	scanf("%d", &sendersCount);
+	if(!scanf("%d", &sendersCount))
+	{
+		printf("Error scanf\n");
+	}
 
 	semaphoreSender = CreateSemaphoreA(NULL, binFileMessagesCount, binFileMessagesCount, "semSender");
     semaphoreReceiver = CreateSemaphoreA(NULL, 0, 1, "semReceiver");
+
+	//waits for all processes to start.
+	waitAllSemaphore = CreateSemaphoreA(NULL, 0,sendersCount,"waitAllSemaphore");
+
+	
 
 
 	for (int i = 0; i < sendersCount; i++) {
@@ -60,6 +75,12 @@ int main()
 		}
 	}
 
+	//Wating for all processes to start
+	for (int i=0;i<sendersCount;i++)
+	{
+		WaitForSingleObject(waitAllSemaphore, INFINITE);
+	}
+
 	while (1)
 	{
 		printf("choose option\n");
@@ -68,15 +89,18 @@ int main()
 
 		int option = 0;
 
-		scanf("%d", &option);
+		if(!scanf("%d", &option))
+		{
+			printf("Scanf error");
+		}
 
 		switch (option)
 		{
 		case 1:
 		{
-			WaitForSingleObject(semaphoreReceiver, INFINITY);
+			WaitForSingleObject(semaphoreReceiver, INFINITE);
 
-			WaitForSingleObject(mutex, INFINITY);
+			WaitForSingleObject(fileAccessMutex, INFINITE);
 
 			binaryFile = fopen(binFileName, "rb");
 			char line[100];
@@ -87,9 +111,12 @@ int main()
 				printf("%s", line);
 			}
 				
-			fopen(binFileName, "wb");
+			if(!fopen(binFileName, "wb"))
+			{
+				printf("Fopen error\n");
+			}
 
-			ReleaseMutex(mutex);
+			ReleaseMutex(fileAccessMutex);
 
 			ReleaseSemaphore(semaphoreSender, msgCount, NULL);
 
@@ -99,6 +126,7 @@ int main()
 		}
 		case 2:
 		{
+				
 			return 0;
 				break;
 		}

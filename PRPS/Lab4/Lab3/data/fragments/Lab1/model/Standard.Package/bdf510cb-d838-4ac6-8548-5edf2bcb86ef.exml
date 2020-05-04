@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="IdentificationProvider" version="4">
+  <OBJECT>
+    <ID name="IdentificationProvider" mc="Standard.Package" uid="bdf510cb-d838-4ac6-8548-5edf2bcb86ef"/>
+    <PID name="Package diagram" mc="Standard.Package" uid="01e347ca-6532-4bd8-a3ac-8139b6bac613"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[IdentificationProvider]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="System user" mc="Standard.Class" uid="49d45105-87d3-41c3-8904-f0f054fb347a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

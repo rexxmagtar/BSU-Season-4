@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Package diagram" version="4">
+  <OBJECT>
+    <ID name="Package diagram" mc="Standard.Package" uid="01e347ca-6532-4bd8-a3ac-8139b6bac613"/>
+    <PID name="Lab1" mc="Standard.Project" uid="f58f91d0-14dd-418f-b48d-6be55e3061e8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Package diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="DbDataConnector" mc="Standard.Package" uid="256984ad-bf68-4749-9aa1-88cd4d5a6d9b"/>
+        <COMPID name="Entities" mc="Standard.Package" uid="7c05d9ef-3684-4ad9-8215-411a10216611"/>
+        <COMPID name="IdentificationProvider" mc="Standard.Package" uid="bdf510cb-d838-4ac6-8548-5edf2bcb86ef"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Package diagram Class diagram" mc="Standard.ClassDiagram" uid="4eaece2d-ec14-4a84-a138-b594ca674569"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Buisness" version="4">
+  <OBJECT>
+    <ID name="Buisness" mc="Standard.Package" uid="496fb545-c61d-4774-a273-799b83fe415f"/>
+    <PID name="Use Case View" mc="Standard.Package" uid="1474c462-9bb9-4a1e-a785-ef87f21d8ed7"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Buisness]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Админ" mc="Standard.Actor" uid="f98e2af3-e1a6-4820-8a3b-af9ef8b46975"/>
+        <COMPID name="Регистрация/удаление перподавателя" mc="Standard.UseCase" uid="72a03079-8018-42a8-b55a-c20246b8dd99"/>
+        <COMPID name="Преподаватель" mc="Standard.Actor" uid="dd7a032e-624e-4f91-84f1-33f3c6135843"/>
+        <COMPID name="Уведомление об фактической выполненной работе" mc="Standard.UseCase" uid="353f5fb3-c025-4c8f-9060-dafed9502264"/>
+        <COMPID name="получить список преподавателей, у которых фактическое значение выполненных работ превышает плановое" mc="Standard.UseCase" uid="563b6397-4aa6-4853-b0df-6de2f2aec2a8"/>
+        <COMPID name="получить список преподавателей заданной кафедры, имеющих заданную ученую степень на заданную дату" mc="Standard.UseCase" uid="9b3d069f-800d-4556-977e-d642bbc7de5d"/>
+        <COMPID name="Создать план работы" mc="Standard.UseCase" uid="8914bea4-86fb-42c9-92ee-7d8d3fcff146"/>
+        <COMPID name="Пользователь системы" mc="Standard.Actor" uid="a0f8cd9e-0589-46b8-9824-d19f73a93263"/>
+        <COMPID name="Получение итоговой суммы перподавателя" mc="Standard.UseCase" uid="5f87a165-8afe-4649-bc6c-335b083e8f99"/>
+        <COMPID name="Обработать данные" mc="Standard.UseCase" uid="5da6f954-67c9-430e-a65a-d2ff8146eec0"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Buisness Use Case diagram" mc="Standard.UseCaseDiagram" uid="54911391-3dd4-4f1b-b0a4-42a70457d7ec"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Report.cs" version="4">
+  <OBJECT>
+    <ID name="Report.cs" mc="Standard.Component" uid="b815b5ba-be06-456d-82fd-d8563bcf8b63"/>
+    <PID name="Component View" mc="Standard.Package" uid="3222b0e5-f874-4e1c-b883-5a1077cdef8b"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Report.cs]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Realization">
+        <OBJECT>
+          <ID name="" mc="Standard.ComponentRealization" uid="a7a2022b-ece6-4a1d-b3a7-2d541a6cd1eb"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="RealizingClassifier">
+              <ID name="UniveritySystem.sln" mc="Standard.Component" uid="daa80a86-0cc7-450b-b7d9-c6e93b5ae421"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

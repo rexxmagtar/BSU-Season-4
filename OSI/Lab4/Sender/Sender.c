@@ -13,7 +13,9 @@ int main(int argc, char** argv)
 
 	HANDLE semaphoreSender = CreateSemaphoreA(NULL, messageCount, messageCount, "semSender");
 	HANDLE semaphoreReceiver = CreateSemaphoreA(NULL, 0, 1, "semReceiver");
+	HANDLE waitAllSemaphore = CreateSemaphoreA(NULL, 0, 2, "waitAllSemaphore");
 
+	ReleaseSemaphore(waitAllSemaphore, 1, NULL);
 	while (1)
 	{
 		printf("choose option\n");
@@ -22,7 +24,10 @@ int main(int argc, char** argv)
 
 		int option = 0;
 
-		scanf("%d", &option);
+		if(!scanf("%d", &option))
+		{
+			printf("Scanf error\n");
+		}
 
 		switch (option)
 		{
@@ -31,12 +36,15 @@ int main(int argc, char** argv)
 			char msg[20];
 			printf("Insert message\n");
 
-			scanf("%s", &msg);
+			if(!scanf("%s", &msg))
+			{
+				printf("Scanf error\n");
+			}
 
 
-			WaitForSingleObject(semaphoreSender, INFINITY);
+			WaitForSingleObject(semaphoreSender, INFINITE);
 
-			WaitForSingleObject(mutex, INFINITY);
+			WaitForSingleObject(mutex, INFINITE);
 
 			fprintf(binFile, "%s\n", msg);
 			fflush(binFile);

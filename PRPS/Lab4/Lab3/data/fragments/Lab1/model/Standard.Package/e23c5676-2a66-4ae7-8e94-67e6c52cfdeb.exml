@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Application" version="4">
+  <OBJECT>
+    <ID name="Application" mc="Standard.Package" uid="e23c5676-2a66-4ae7-8e94-67e6c52cfdeb"/>
+    <PID name="Deployment View" mc="Standard.Package" uid="c95a71d8-c8d9-4549-845c-80587303863f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Application]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="UI" mc="Standard.Artifact" uid="dc6bf343-e47c-45dc-b66a-ba0d670e6819"/>
+        <COMPID name="MainDomen" mc="Standard.Artifact" uid="88baf39f-6ada-4fc9-b2e7-1833d331456d"/>
+        <COMPID name="Database" mc="Standard.Artifact" uid="4ce9b405-55df-4bd5-b86f-40c26f3b7135"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

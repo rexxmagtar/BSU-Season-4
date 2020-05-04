@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Component View" version="4">
+  <OBJECT>
+    <ID name="Component View" mc="Standard.Package" uid="3222b0e5-f874-4e1c-b883-5a1077cdef8b"/>
+    <PID name="Lab1" mc="Standard.Project" uid="f58f91d0-14dd-418f-b48d-6be55e3061e8"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Component View]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="UniveritySystem.sln" mc="Standard.Component" uid="daa80a86-0cc7-450b-b7d9-c6e93b5ae421"/>
+        <COMPID name="Professor.cs" mc="Standard.Component" uid="54e449d6-fc1a-478e-9f23-8ff2e3b0a5f1"/>
+        <COMPID name="Admin.cs" mc="Standard.Component" uid="236fbe54-7323-432d-bce5-ff28f2d44429"/>
+        <COMPID name="Report.cs" mc="Standard.Component" uid="b815b5ba-be06-456d-82fd-d8563bcf8b63"/>
+        <COMPID name="ReportController.cs" mc="Standard.Component" uid="89c62517-99c7-4d75-9b3f-dcc944a212b5"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Component View Class diagram" mc="Standard.ClassDiagram" uid="b53235c6-ff18-434f-bb34-d0b59940be07"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
