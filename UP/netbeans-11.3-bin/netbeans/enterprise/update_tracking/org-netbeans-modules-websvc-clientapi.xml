@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.websvc.clientapi">
+    <module_version install_time="1582292088175" last="true" origin="installer" specification_version="1.39">
+        <file crc="1364666903" name="config/Modules/org-netbeans-modules-websvc-clientapi.xml"/>
+        <file crc="2312627218" name="modules/org-netbeans-modules-websvc-clientapi.jar"/>
+    </module_version>
+</module>

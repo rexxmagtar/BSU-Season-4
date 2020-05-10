@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.editor.search">
+    <module_version install_time="1582291333492" last="true" origin="installer" specification_version="1.32.0.0.55">
+        <file crc="4056457626" name="config/Modules/org-netbeans-modules-editor-search.xml"/>
+        <file crc="4138281094" name="modules/org-netbeans-modules-editor-search.jar"/>
+    </module_version>
+</module>

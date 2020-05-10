@@ -18,6 +18,9 @@
     <ClCompile Include="Server.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="handleClient.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h">

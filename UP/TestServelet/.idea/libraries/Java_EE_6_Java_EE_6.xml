@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="Java EE 6-Java EE 6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.transaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/FirstProject/WEB-INF/src/test/com" />
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/IvanLab" />
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/docs/appdev/sample/src" />
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/examples/WEB-INF/classes" />
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/examples/WEB-INF/jsp/applet" />
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/examples/jsp/plugin/applet" />
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/work/Catalina/localhost/ROOT" />
+      <root url="file://C:/Program Files/Apache Software Foundation/Tomcat 8.5/work/Catalina/localhost/manager" />
+    </SOURCES>
+  </library>
+</component>

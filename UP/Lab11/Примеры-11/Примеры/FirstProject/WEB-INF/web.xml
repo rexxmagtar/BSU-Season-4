@@ -1,0 +1,28 @@
+<web-app>
+  <servlet>
+    <servlet-name>FirstServletname</servlet-name>
+    <display-name>FirstServletdisplay</display-name>
+    <servlet-class>test.com.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServletname</servlet-name>
+    <url-pattern>/FirstServlettest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyForm</servlet-name>
+    <servlet-class>test.com.FormRequest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyForm</servlet-name>
+    <url-pattern>/testform</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>InfoFromRequestname</servlet-name>
+    <display-name>InfoFromRequestdisplay</display-name>
+    <servlet-class>test.com.InfoFromRequest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InfoFromRequestname</servlet-name>
+    <url-pattern>/InfoFromRequesttest</url-pattern>
+  </servlet-mapping>
+</web-app>

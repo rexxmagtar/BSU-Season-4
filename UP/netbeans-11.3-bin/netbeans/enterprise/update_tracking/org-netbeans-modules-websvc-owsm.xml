@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.websvc.owsm">
+    <module_version install_time="1582292218737" last="true" origin="installer" specification_version="1.20">
+        <file crc="1567152457" name="config/Modules/org-netbeans-modules-websvc-owsm.xml"/>
+        <file crc="1863462993" name="modules/org-netbeans-modules-websvc-owsm.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.libs.jstestdriver">
+    <module_version install_time="1582291866609" last="true" origin="installer" specification_version="1.17">
+        <file crc="3514044679" name="config/Modules/org-netbeans-libs-jstestdriver.xml"/>
+        <file crc="6958483" name="modules/ext/libs.jstestdriver-ext.jar"/>
+        <file crc="3593937916" name="modules/org-netbeans-libs-jstestdriver.jar"/>
+    </module_version>
+</module>

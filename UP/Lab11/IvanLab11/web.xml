@@ -1,0 +1,11 @@
+<web-app>
+  <servlet>
+    <servlet-name>FontsServletname</servlet-name>
+    <display-name>FontsServletdisplay</display-name>
+    <servlet-class>FontsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FontsServletname</servlet-name>
+    <url-pattern>/FontsServlettest</url-pattern>
+  </servlet-mapping>
+</web-app>

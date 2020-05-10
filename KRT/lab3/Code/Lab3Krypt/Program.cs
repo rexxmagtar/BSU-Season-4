@@ -40,10 +40,6 @@ namespace Lab3Krypt
                 MMMBinarysequence.Add(points[i] > 0.5 ? 1 : 0);
             }
 
-            for (int i = 0; i < 1000000; i++)
-            {
-                binarySequence[i] = 1;
-            }
 
             double Pvalue = TestLongestRunOfOnesInaBlock(binarySequence);
 
@@ -139,7 +135,7 @@ namespace Lab3Krypt
             double obs = 0;
             for (int i = 0; i <= K; i++)
             {
-                obs += (double)Math.Pow((vFrequency[i] - N * vPi[i]), 2) / N * vPi[i];
+                obs += (double)Math.Pow((vFrequency[i] - N * vPi[i]), 2) /( N * vPi[i]);
             }
 
             double pvalue = (double)alglib.incompletegammac(K / 2.0f, obs / 2);

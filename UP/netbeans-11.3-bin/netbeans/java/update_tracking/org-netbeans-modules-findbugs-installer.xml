@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.findbugs.installer">
+    <module_version install_time="1582291539654" last="true" origin="installer" specification_version="1.23">
+        <file crc="2316065516" name="config/Modules/org-netbeans-modules-findbugs-installer.xml"/>
+        <file crc="3236243308" name="modules/org-netbeans-modules-findbugs-installer.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.utilities/1">
+    <module_version install_time="1582291372197" last="true" origin="installer" specification_version="1.68">
+        <file crc="754223576" name="config/Modules/org-netbeans-modules-utilities.xml"/>
+        <file crc="2998600838" name="modules/org-netbeans-modules-utilities.jar"/>
+    </module_version>
+</module>

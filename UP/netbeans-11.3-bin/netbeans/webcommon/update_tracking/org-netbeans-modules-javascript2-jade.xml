@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.javascript2.jade/1">
+    <module_version install_time="1582291872038" last="true" origin="installer" specification_version="0.13">
+        <file crc="2288655960" name="config/Modules/org-netbeans-modules-javascript2-jade.xml"/>
+        <file crc="669826751" name="modules/org-netbeans-modules-javascript2-jade.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.j2ee.ejbjarproject">
+    <module_version install_time="1582292100579" last="true" origin="installer" specification_version="1.60">
+        <file crc="2236791138" name="config/Modules/org-netbeans-modules-j2ee-ejbjarproject.xml"/>
+        <file crc="3239668771" name="modules/org-netbeans-modules-j2ee-ejbjarproject.jar"/>
+    </module_version>
+</module>

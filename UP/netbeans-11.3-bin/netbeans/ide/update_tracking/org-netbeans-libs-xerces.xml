@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.libs.xerces/1">
+    <module_version install_time="1582292153757" last="true" origin="installer" specification_version="1.45.0.281">
+        <file crc="1807597417" name="config/Modules/org-netbeans-libs-xerces.xml"/>
+        <file crc="674624388" name="modules/ext/xerces-2.8.0.jar"/>
+        <file crc="1444235780" name="modules/org-netbeans-libs-xerces.jar"/>
+    </module_version>
+</module>

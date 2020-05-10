@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.javaee.project">
+    <module_version install_time="1582292296254" last="true" origin="installer" specification_version="1.26">
+        <file crc="3492940449" name="config/Modules/org-netbeans-modules-javaee-project.xml"/>
+        <file crc="2648865314" name="modules/org-netbeans-modules-javaee-project.jar"/>
+    </module_version>
+</module>
