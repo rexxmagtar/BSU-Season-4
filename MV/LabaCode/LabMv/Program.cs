@@ -347,7 +347,7 @@ namespace LabMv
             return max;
         }
 
-        public static float[] SolveWithReflectionMethod(float[,] A, float[] B)
+        public static float[] SolveWithReflectionMethod(float[,] A, float[] B, ref float[] Q, ref float[] R)
         {
             A = (float[,])A.Clone();
 

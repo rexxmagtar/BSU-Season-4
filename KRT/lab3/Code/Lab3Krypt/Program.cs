@@ -45,7 +45,6 @@ namespace Lab3Krypt
 
 
             StreamReader reader = new StreamReader("e.txt");
-            char symbol = '1';
 
             Console.WriteLine($"P Linear  = {Pvalue}");
 
@@ -65,7 +64,7 @@ namespace Lab3Krypt
 
             Console.WriteLine($"P MM = {Pvalue}");
 
-             binarySequence = new List<int>();
+            binarySequence = new List<int>();
 
             Random rng = new Random(2019);
 
@@ -143,5 +142,67 @@ namespace Lab3Krypt
             return pvalue;
 
         }
+
+        static double TestLongestRunOfOnesInaBlockM8(List<int> sequence)
+        {
+            int N = 16;
+            int K = 3;
+            int M = 8;
+
+            int blockCount = sequence.Count / M;
+
+            int[] vFrequency = new int[K+1];
+            double[] vPi = new double[K+1];
+
+            List<int> maxBlocksOneSequenceCounts = new List<int>();
+
+            int currentIndex = 0;
+
+            for (int i = 0; i < blockCount; i++)
+            {
+                int onesCount = 0;
+                int onesMaxCount = int.MinValue;
+
+                for (int j = 0; j < M; j++)
+                {
+                    if (sequence[currentIndex] == 1)
+                    {
+                        onesCount++;
+                    }
+                    else
+                    {
+                        onesMaxCount = Math.Max(onesCount, onesMaxCount);
+                        onesCount = 0;
+                    }
+                    currentIndex++;
+                }
+
+                maxBlocksOneSequenceCounts.Add(Math.Max(onesMaxCount, onesCount));
+            }
+
+
+            vFrequency[0] = maxBlocksOneSequenceCounts.FindAll(number => number <= 1).Count;
+            vFrequency[1] = maxBlocksOneSequenceCounts.FindAll(number => number == 2).Count;
+            vFrequency[2] = maxBlocksOneSequenceCounts.FindAll(number => number == 3).Count;
+            vFrequency[3] = maxBlocksOneSequenceCounts.FindAll(number => number >= 4).Count;
+
+            vPi[0] = 0.2148f;
+            vPi[1] = 0.3672f;
+            vPi[2] = 0.2305f;
+            vPi[3] = 0.1875f;
+
+            double obs = 0;
+            for (int i = 0; i <= K; i++)
+            {
+                obs += (double)Math.Pow((vFrequency[i] - N * vPi[i]), 2) / (N * vPi[i]);
+            }
+
+            double pvalue = (double)alglib.incompletegammac(K / 2.0f, obs / 2);
+
+            return pvalue;
+
+        }
+
+
     }
 }
