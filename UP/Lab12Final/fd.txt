@@ -1,0 +1,128 @@
+ public static Tuple<Complex, Complex[]>[] GetMaxEigenValues(double[,] A_)
+        {
+            Complex[,] A = ToComplex(A_);
+
+            // initial approximation
+            Complex[] u = new Complex[A.GetLength(0)];
+            u[0] = 0.01;
+
+
+            List<Complex[]> vNorm = new List<Complex[]>();
+            List<Complex[]> uNorm = new List<Complex[]>();
+
+            uNorm.Add(u);
+
+            int iterationCount = 0;
+
+
+            vNorm.Add(new Complex[2]);
+
+            Complex number1 = new Complex();
+            Complex number2 = new Complex();
+
+
+            Complex[] vector1 = new Complex[2];
+            Complex[] vector2 = new Complex[2];
+
+            while (true)
+            {
+                Complex[] v = MatrixMultiplication(A, u);
+
+                u = v;
+
+                //Doing next step
+                vNorm.Add(MatrixMultiplication(A, uNorm[uNorm.Count - 1]));
+                uNorm.Add(VectorWithScalarDivison(vNorm[vNorm.Count - 1], GetMax(vNorm[vNorm.Count - 1])));
+
+
+                iterationCount++;
+
+                //Check case 1 (one max absolute eigenvalue)
+
+                number1 = vNorm[vNorm.Count - 1][0] / uNorm[vNorm.Count - 2][0];
+                vector1 = uNorm[vNorm.Count - 2];
+
+                if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A,vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
+                {
+                    Console.WriteLine("First case method could succeed! Iterations done: " + iterationCount);
+                    Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[1];
+
+                    result[0] = new Tuple<Complex, Complex[]>(number1, vector1);
+
+                    return  result;
+                }
+
+                //Check case 3 (two opposite but absolutely equal eigenvalues)
+                if (iterationCount > 3)
+                {
+                    int k = iterationCount - 3;
+
+                    double vk2 = (vNorm[k + 2])[0].Real;
+                    double uk = (uNorm[k])[0].Real;
+
+
+                    number1 =Math.Sqrt( ( vk2*GetMax(vNorm[k+1]).Real)/uk);
+                    vector1 =VectorSum( vNorm[k+1],VecotorWithScalarMultiplication(uNorm[k],number1));
+
+                    if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
+                    {
+                        vector2 = VectorSubtraction(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number1));
+
+                        Console.WriteLine("Third case method could succeed! Iterations done: " + iterationCount);
+                        Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[2];
+
+
+
+                        result[0] = new Tuple<Complex, Complex[]>(number1, vector1);
+                        result[1] = new Tuple<Complex, Complex[]>(-number1, vector2);
+
+                        return result;
+                    }
+
+                }
+
+                //Check case 4 ( complex pair)
+                if (iterationCount > 5)
+                {
+                    int k = iterationCount - 3;
+
+                    double vk2 = (vNorm[k + 2])[0].Real;
+                    double vk1 = (vNorm[k + 1])[0].Real;
+                    double vk = (vNorm[k])[0].Real;
+                    double ukm1 = (uNorm[k - 1])[0].Real;
+                    double uk = (uNorm[k])[0].Real;
+
+                    double r = Math.Sqrt(((vk * vk2 * GetMax(vNorm[k + 1]).Real - vk1 * vk1 * GetMax(vNorm[k]).Real)
+                                          / (ukm1 * vk1 - uk * uk * GetMax(vNorm[k]).Real)));
+
+                    double cosPhi = Math.Clamp((vk2 * GetMax(vNorm[k + 1]).Real + r * r * uk) / (2 * r * vk1), -1, 1);
+                    double sinPhi = Math.Sqrt(1 - cosPhi * cosPhi);
+
+                    number1 = new Complex(r * cosPhi, r * sinPhi);
+                    number2 = new Complex(r * cosPhi, -r * sinPhi);
+
+                    vector1 = VectorSubtraction(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number2));
+
+                    vector2 = VectorSubtraction(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number1));
+
+                    //Console.WriteLine(GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude);
+
+                    if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
+                    {
+                        Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[2];
+
+                        result[0] = new Tuple<Complex, Complex[]>(number1, vector1);
+                        result[1] = new Tuple<Complex, Complex[]>(number2, vector2);
+
+                        Console.WriteLine("Fourth case method could succeed! Iterations done: " + iterationCount);
+                        return result;
+                    }
+
+                    //if (iterationCount  %100==0)
+                    //{
+                    //    Console.WriteLine("Fourth case method could not succeed! Iterations done: " + iterationCount);
+                    //}
+                }
+            }
+
+        }

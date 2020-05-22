@@ -1,0 +1,160 @@
+
+vector<vector<double>> hessenberg(vector<vector<double>> A, int n)
+{
+	double norm;
+	vector<double> col(n);
+	vector<double> w(n);
+	vector<vector<double>> U(n, vector<double>(n));
+
+	for (int i = 0; i < n; i++)
+		U[i] = A[i];
+
+	for (int i = 0, k = 0; i < n && k < n - 2; i++, k++)
+	{
+		for (int i = 0; i < n; i++)
+		{
+			col[i] = 0;
+			w[i] = 0;
+		}
+
+		for (int j = i + 1; j < n; j++)
+			col[j] = U[j][i];
+
+		norm = sqrt(scalarMultiply(col, col, n));
+		U[i + 1][i] = -copysign(1.0, U[i + 1][i]) * norm;
+
+		for (int j = i + 2; j < n; j++)
+			U[j][i] = 0;
+
+		for (int j = i + 1; j < n; j++)
+		{
+			w[j] = col[j] - U[j][i];
+		}
+
+		norm = sqrt(scalarMultiply(w, w, n));
+		for (int j = i + 1; j < n; j++)
+			w[j] /= norm;
+
+
+		for (int j = i + 1; j < n; j++)
+		{
+			for (int t = i + 1; t < n; t++)
+			{
+				col[t] = U[t][j];
+			}
+
+			norm = scalarMultiply(col, w, n);
+			for (int t = i + 1; t < n; t++)
+			{
+				U[t][j] = col[t] - 2 * norm * w[t];
+			}
+
+		}
+
+		for (int j = 0; j < n; j++)
+		{
+			for (int t = i + 1; t < n; t++)
+			{
+				col[t] = U[j][t];
+			}
+
+			norm = scalarMultiply(col, w, n);
+			for (int t = i + 1; t < n; t++)
+			{
+				U[j][t] = col[t] - 2 * norm * w[t];
+			}
+		}
+	}
+
+	return U;
+}
+
+vector<vector<double>>  QRHessenberg(vector<vector<double>> A, int n)
+{
+	vector<double> line(n);
+	vector<double> line1(n);
+	vector<vector<double>> U(n, vector<double>(n));
+	vector<vector<double>> Q(n-1, vector<double>(2));
+	vector<complex<double>> old;
+	double eps = 0.0001;
+	double max = eps+0.0001, c = 0;
+
+	for (int i = 0; i < n; i++)
+		U[i] = A[i];
+
+	while (max > eps)
+	{
+		//вращение
+		for (int i = 0; i < n - 1; i++)
+		{
+			Q[i][0] = U[i][i] / sqrt(U[i][i] * U[i][i] + U[i + 1][i] * U[i + 1][i]);
+			Q[i][1] = U[i + 1][i] / sqrt(U[i][i] * U[i][i] + U[i + 1][i] * U[i + 1][i]);
+
+			line = U[i]; line1 = U[i + 1];
+			for (int t = 0; t < n; t++)
+			{
+				U[i][t] = Q[i][0] * line[t] + Q[i][1] * line1[t];
+				U[i + 1][t] = -Q[i][1] * line[t] + Q[i][0] * line1[t];
+			}
+		}
+		for (int i = 0; i < n - 1; i++)
+		{
+			for (int k = 0; k < n; k++)
+			{
+				line[k] = U[k][i];
+				line1[k] = U[k][i + 1];
+			}
+			for (int t = 0; t < n; t++)
+			{
+				U[t][i] = Q[i][0] * line[t] + Q[i][1] * line1[t];
+				U[t][i + 1] = -Q[i][1] * line[t] + Q[i][0] * line1[t];
+			}
+		}
+
+		int i = 0;
+		//извлечь значения
+		vector<complex<double>> eigen;
+		while (i < n)
+		{
+			if (i == n - 1)
+			{
+				eigen.push_back(complex<double>(U[i][i]));
+				i++;
+			}
+			else if (abs(U[i + 1][i]) < eps)
+			{
+				eigen.push_back(complex<double>(U[i][i]));
+				i++;
+			}
+			else
+			{
+				// (Ui,i - x)(Ui+1,i+1 - x) - Ui,i+1*Ui+1,i = 0
+				// x^2 - (Ui,i+Ui+1,i+1)x + Ui,i+Ui+1,i+1 - Ui,i+1*Ui+1,i
+				// D = b^2 - 4ac
+				double b = (U[i][i] + U[i + 1][i + 1]), c = (U[i][i] * U[i + 1][i + 1] - U[i][i + 1] * U[i + 1][i]);
+				double D =  b*b -  4*c;
+				complex<double> x1 = (-b + sqrt(complex<double>(D))) * 0.5;
+				complex<double> x2 = (-b - sqrt(complex<double>(D)))* 0.5;
+				eigen.push_back(x1);
+				eigen.push_back(x2);
+				i += 2;
+			}
+		}
+		cout << "iteration#" << c << ", eigenvalues: ";
+		if (c != 0)
+		{
+			max = 0;
+			for (int i = 0; i < eigen.size(); i++)
+			{
+				cout << eigen[i] << " ";
+				if (abs(eigen[i] - old[i]) > max)
+					max = abs(eigen[i] - old[i]);
+			}
+		}
+		old = eigen;
+		cout << "...........max eigen eps = " << max << endl;
+		c++;
+	}
+
+	return U;
+}
