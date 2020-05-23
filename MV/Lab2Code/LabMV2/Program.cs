@@ -13,7 +13,7 @@ namespace LabMV2
     {
         public static int N = 10;
         public static double epsilon = 1e-8;
-        public static double epsilonEquation = 10e-16;
+        public static double epsilonEquation = 10e-10;
         public static double[,] MainA = new double[10,10]
         {
             {94, 7, -3, 7, -79, 55, 14, 24, -31, 69}, {-19, 7, 19, -19, 19, -19, 0, 0, 19, -19}, {23 / (1.0 * 2), 47 / (1.0 * 2), 31 / (1.0 * 2), 47 / (1.0 * 2), -23 / (1.0 * 2), 31 / (1.0 * 2), 0, -4, -39 / (1.0 * 2), 31 / (1.0 * 2)},
@@ -340,7 +340,7 @@ namespace LabMV2
             streamWriter.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
 
-            h = 15;
+            h = 4;
 
             x = NutonMethodDiscret(a, h, out iterationCount);
 
@@ -368,7 +368,7 @@ namespace LabMV2
             streamWriter.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
 
-            h = 3;
+            h = 5;
 
             x = NutonMethodDiscret(a, h, out iterationCount);
 
@@ -395,7 +395,7 @@ namespace LabMV2
             streamWriter.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
 
-            h = 1;
+            h = 4;
 
             x = NutonMethodDiscret(a, h, out iterationCount);
 
@@ -1126,12 +1126,12 @@ namespace LabMV2
                 double[,] Q = new double[1, 1];
                 double[,] R = new double[1, 1];
 
-                //GetQR(A, ref Q, ref R);
+                GetQR(A, ref Q, ref R);
 
-                QrDecomposition decomposition = new QrDecomposition(A);
+                //QrDecomposition decomposition = new QrDecomposition(A);
 
-                Q = decomposition.OrthogonalFactor;
-                R = decomposition.UpperTriangularFactor;
+                //Q = decomposition.OrthogonalFactor;
+                //R = decomposition.UpperTriangularFactor;
 
                 A = MatrixMultiplication(R, Q);
 
@@ -1611,7 +1611,7 @@ namespace LabMV2
 
              iterationCount = 0;
 
-            while (Math.Abs(b - a) > epsilonEquation)
+            while (Math.Abs(b - a) > 0.00001)
             {
                 x = (a + b) / 2;
                 if (Func(x) * Func(a) < 0)
@@ -1653,7 +1653,7 @@ namespace LabMV2
                 x = newX;
             }
 
-            Console.WriteLine($@"Discrete method exited in {itCount} iterations");
+            Console.WriteLine($@"Classic method exited in {itCount} iterations");
 
             return x;
 
@@ -1701,11 +1701,11 @@ namespace LabMV2
 
 
 
-            b = 1;
+            
 
             var range = besectionMethod(0, 1, out int number);
 
-
+            b = range.Item1;
             //Classic Nuton
             x = b;
 

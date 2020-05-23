@@ -177,7 +177,7 @@ int main()
 	//Wating for all clients to finish
 	for (int i = 0; i < clientCount; ++i)
 	{
-		WaitForSingleObject(allClientsFinishedSemaphore, INFINITY);
+		WaitForSingleObject(allClientsFinishedSemaphore, INFINITE);
 	}
 
 	SetFilePointer(file, 0, NULL, FILE_BEGIN);
