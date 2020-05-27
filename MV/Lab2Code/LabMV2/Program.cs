@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Numerics;
-using Accord.Math.Decompositions;
 
 
 namespace LabMV2
@@ -12,11 +11,13 @@ namespace LabMV2
     static class Program
     {
         public static int N = 10;
-        public static double epsilon = 1e-8;
-        public static double epsilonEquation = 10e-10;
-        public static double[,] MainA = new double[10,10]
+        public static double epsilon = 1e-10;
+        public static double epsilonEquation = 1e-100;
+
+        public static double[,] MainA = new double[,]
         {
-            {94, 7, -3, 7, -79, 55, 14, 24, -31, 69}, {-19, 7, 19, -19, 19, -19, 0, 0, 19, -19}, {23 / (1.0 * 2), 47 / (1.0 * 2), 31 / (1.0 * 2), 47 / (1.0 * 2), -23 / (1.0 * 2), 31 / (1.0 * 2), 0, -4, -39 / (1.0 * 2), 31 / (1.0 * 2)},
+            {94, 7, -3, 7, -79, 55, 14, 24, -31, 69}, {-19, 7, 19, -19, 19, -19, 0, 0, 19, -19},
+            {23 / (1.0 * 2), 47 / (1.0 * 2), 31 / (1.0 * 2), 47 / (1.0 * 2), -23 / (1.0 * 2), 31 / (1.0 * 2), 0, -4, -39 / (1.0 * 2), 31 / (1.0 * 2)},
             {28, 9, 4, 35, -30, 27, -2, 5, -27, 30},
             {31, 1, -1, 1, -40, 36, -10, 15, -16, 21}, {71 / (1.0 * 2), 15 / (1.0 * 2), -15 / (1.0 * 2), 15 / (1.0 * 2), -119 / (1.0 * 2), 113 / (1.0 * 2), -24, 14, -43 / (1.0 * 2), 23 / (1.0 * 2)},
             {61 / (1.0 * 2), 13 / (1.0 * 2), -13 / (1.0 * 2), 13 / (1.0 * 2), -85 / (1.0 * 2), 61 / (1.0 * 2), -13, 12, -37 / (1.0 * 2), 37 / (1.0 * 2)},
@@ -39,8 +40,6 @@ namespace LabMV2
             //MainA[7,0] = -2.5 - 4 * N; MainA[7,1] = -2.5; MainA[7,2] = -1.5; MainA[7,3] = -2.5; MainA[7,4] = 5.5 + 3 * N; MainA[7,5] = -5.5 - 2 * N; MainA[7,6] = 1 - N; MainA[7,7] = 0; MainA[7,8] = 2.5 + N; MainA[7,9] = -0.5 - 2 * N;
             //MainA[8,0] = 5 * 1.0*(5 + 2 * N); MainA[8,1] = 7 + 2 * N; MainA[8,2] = -3 - 2 * N; MainA[8,3] = 7 + 2 * N; MainA[8,4] = -30 - 11 * N; MainA[8,5] = 23 + 8 * N; MainA[8,6] = -3 - N; MainA[8,7] = 3 * 1.0*(3 + N); MainA[8,8] = -4 * 1.0*(4 + N); MainA[8,9] = 21 + 6 * N;
             //MainA[9,0] = 8 + 3 * N; MainA[9,1] = 2 + N; MainA[9,2] = -2 - N; MainA[9,3] = 2 + N; MainA[9,4] = -11 - 4 * N; MainA[9,5] = 8 + 3 * N; MainA[9,6] = -1 - N; MainA[9,7] = 3 + N; MainA[9,8] = -5 - 2 * N; MainA[9,9] = 6 + 2 * N;
-            
-            GetStatisticForNutonOcverage();
 
             SolveGivenMatrix();
 
@@ -51,50 +50,73 @@ namespace LabMV2
 
         public static void DoTest()
         {
-            for (int l = 0; l < 100; l++)
+            //for (int l = 0; l < 100; l++)
+            //{
+
+
+            double[,] A = GetRandomMatrix(10);
+
+            A = new double[,]
             {
+                {0, 0, 0},
+                {2, 3, 13},
+                {2, 1, 4}
+            };
 
 
-                double[,] A = GetRandomMatrix(10);
+            //PrintMatrix(A);
+            //Console.WriteLine("---------------------");
+            //PrintMatrix(GetInverseMatrix(A));
 
+            //Console.WriteLine("A eigen values= \n");
 
-                //PrintMatrix(A);
-                //Console.WriteLine("---------------------");
-                //PrintMatrix(GetInverseMatrix(A));
+            var qrresult2 = GetEigenNumbersQR(A);
 
-                //Console.WriteLine("A eigen values= \n");
+            Console.WriteLine("True qr Max eigenvalue:");
 
-                Console.WriteLine("True qr Max eigenvalue:");
-                Console.WriteLine(GetMax(GetEigenNumbersQR(A)).String());
+            Console.WriteLine(GetMax(qrresult2).String());
 
-                var result = SolveGetMaxAbsoluteEigenValue((A));
+            PrintVector(qrresult2);
+            var result = PowerMethod((A));
 
-                for (int i = 0; i < result.Length; i++)
-                {
-                    Console.WriteLine("Max: \n");
-                    Console.WriteLine(result[i].Item1.String());
-                    Console.WriteLine("Vector: \n");
-                    PrintVector(result[i].Item2);
-                    Console.WriteLine("Norm = " + GetEigenNorm(A, result[i].Item1, result[i].Item2));
+            for (int i = 0; i < result.Length; i++)
+            {
+                Console.WriteLine("Max: \n");
+                Console.WriteLine(result[i].Item1.String());
+                Console.WriteLine("Vector: \n");
+                PrintVector(result[i].Item2);
+                Console.WriteLine("Norm = " + GetEigenNorm(A, result[i].Item1, result[i].Item2));
 
-                }
-
-                //var eigens = GetEigenNumbersQR(GetInverseMatrix(A));
-
-
-                //Console.WriteLine("Eigen values");
-
-                //for (int i = 0; i < eigens.Length; i++)
-                //{
-                //    Console.Write($" {eigens[i].String()} |");
-
-                //}
             }
+
+            result = PowerMethod((A), false);
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                Console.WriteLine("Min: \n");
+                Console.WriteLine(result[i].Item1.String());
+                Console.WriteLine("Vector: \n");
+                PrintVector(result[i].Item2);
+                Console.WriteLine("Norm = " + GetEigenNorm(A, result[i].Item1, result[i].Item2));
+
+            }
+
+            //var eigens = GetEigenNumbersQR(GetInverseMatrix(A));
+
+
+            //Console.WriteLine("Eigen values");
+
+            //for (int i = 0; i < eigens.Length; i++)
+            //{
+            //    Console.Write($" {eigens[i].String()} |");
+
+            //}
+            //}
         }
 
         public static void SolveWraper(double[,] A)
         {
-            
+
             StreamWriter streamWriter = new StreamWriter("MatrixSolve.txt");
 
 
@@ -109,7 +131,12 @@ namespace LabMV2
             }
 
             streamWriter.WriteLine("------------------------------------\n");
+
+            Stopwatch timer = new Stopwatch();
+
+            timer.Start();
             var resultQR = GetEigenNumbersQR(A);
+            timer.Stop();
 
             Console.WriteLine("True qr Max eigenvalue:");
             Console.WriteLine(GetMax(resultQR).String());
@@ -136,10 +163,18 @@ namespace LabMV2
                 streamWriter.WriteLine($"Value {i} = {resultQR[i].String()}");
             }
 
+            streamWriter.WriteLine("Time taken: " + timer.ElapsedMilliseconds + " ms");
+
+            streamWriter.WriteLine("\n Eigenvalues found by power method: ");
 
             Console.WriteLine("Max Min Eigenvalues found using power method: ");
 
-            var result = SolveGetMaxAbsoluteEigenValue((A));
+            timer.Reset();
+            timer.Start();
+
+            var result = PowerMethod(A);
+
+            timer.Stop();
 
             streamWriter.WriteLine("Max Eigenvalues: ");
 
@@ -166,9 +201,15 @@ namespace LabMV2
 
             }
 
-            Console.WriteLine("Solving for inverse");
+            streamWriter.WriteLine("Time taken: " + timer.ElapsedMilliseconds + " ms");
 
-            result = SolveGetMaxAbsoluteEigenValue(inverseA);
+            timer.Reset();
+
+            timer.Start();
+
+            result = PowerMethod(A, false);
+
+            timer.Stop();
 
             streamWriter.WriteLine("Min Eigenvalues: ");
 
@@ -193,6 +234,8 @@ namespace LabMV2
                 streamWriter.WriteLine("Norm = " + GetEigenNorm(A, result[i].Item1, result[i].Item2) + "\n");
 
             }
+
+            streamWriter.WriteLine("Time taken: " + timer.ElapsedMilliseconds + " ms");
 
             streamWriter.Flush();
         }
@@ -220,10 +263,12 @@ namespace LabMV2
             List<long> timeTakenForPowerMethod = new List<long>();
             List<long> timeTakenForQRMethod = new List<long>();
 
-            for (int i = 0; i < 100; i++)
+            int matrixCount = 100;
+
+            for (int i = 0; i < matrixCount; i++)
             {
                 Console.Clear();
-                Console.WriteLine("Calculating... {0}% ", i);
+                Console.WriteLine("Calculating... {0}% ", 100.0f * i / matrixCount);
                 A = GetRandomMatrix(10);
 
 
@@ -231,7 +276,7 @@ namespace LabMV2
 
                 timer.Start();
 
-                var result = SolveGetMaxAbsoluteEigenValue(A);
+                var result = PowerMethod(A);
 
                 timer.Stop();
 
@@ -245,9 +290,10 @@ namespace LabMV2
 
                 timer.Reset();
 
+
                 timer.Start();
 
-                var resultMin = SolveGetMaxAbsoluteEigenValue(GetInverseMatrix(A));
+                var resultMin = PowerMethod(A, false);
 
                 timer.Stop();
 
@@ -256,7 +302,7 @@ namespace LabMV2
                 for (int j = 0; j < resultMin.Length; j++)
                 {
 
-                    normsFound.Add(GetEigenNorm(GetInverseMatrix(A), resultMin[j].Item1, resultMin[j].Item2));
+                    normsFound.Add(GetEigenNorm(A, resultMin[j].Item1, resultMin[j].Item2));
                 }
 
 
@@ -308,30 +354,30 @@ namespace LabMV2
             Console.WriteLine($@"Average time to find all values using QR method  = {timeTakenForQRMethod.Average()} ms");
 
 
-
             double x;
 
             double a;
-                double b;
-                double h;
+            double b;
+            double h;
 
-                int iterationCount;
+            int iterationCount;
 
-                Tuple<double, double> newRange;
+            Tuple<double, double> newRange;
 
 
-                a = 0;
-                b = 1;
-                streamWriter.WriteLine("\n Equations solving: \n");
+            a = 0.08;
+            b = 0.37;
+
+            streamWriter.WriteLine("\n Equations solving: \n");
 
             streamWriter.WriteLine("x1 calculation:");
-                Console.WriteLine("x1 calculation:");
+            Console.WriteLine("x1 calculation:");
 
             newRange = besectionMethod(a, b, out iterationCount);
 
             a = newRange.Item1;
             b = newRange.Item2;
-            
+
             streamWriter.WriteLine($"New range after bisection method applied : [{a}; {b}] ,number of iterations: {iterationCount} ");
 
 
@@ -339,17 +385,19 @@ namespace LabMV2
 
             streamWriter.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
+            Console.WriteLine("F(x) = " + Func(x));
 
-            h = 4;
+            h = 0.1;
 
             x = NutonMethodDiscret(a, h, out iterationCount);
 
             streamWriter.WriteLine($"Discret Nuton's method( h = {h}) : x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Discret Nuton's method( h = {h}) : x = {x}, number of iterations: {iterationCount} ");
+            Console.WriteLine("F(x) = " + Func(x));
 
 
-            a = 1;
-            b = 1.5;
+            a = 0.37;
+            b = 1.38;
 
 
             streamWriter.WriteLine("x2 calculation:");
@@ -361,22 +409,25 @@ namespace LabMV2
             b = newRange.Item2;
 
             streamWriter.WriteLine($"New range after bisection method applied : [{a}; {b}] ,number of iterations: {iterationCount} ");
-           Console.WriteLine($"New range after bisection method applied : [{a}; {b}] ,number of iterations: {iterationCount} ");
+            Console.WriteLine($"New range after bisection method applied : [{a}; {b}] ,number of iterations: {iterationCount} ");
+            Console.WriteLine("F(x) = " + Func(x));
 
             x = NutonMethod(a, out iterationCount);
 
             streamWriter.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
+            Console.WriteLine("F(x) = " + Func(x));
 
-            h = 5;
+            h = 0.0001;
 
             x = NutonMethodDiscret(a, h, out iterationCount);
 
             streamWriter.WriteLine($"Discret Nuton's method( h = {h}) : x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Discret Nuton's method( h = {h}) : x = {x}, number of iterations: {iterationCount} ");
+            Console.WriteLine("F(x) = " + Func(x));
 
-            a = 1.5;
-            b = 2;
+            a = 1.38;
+            b = 1.9;
 
 
             streamWriter.WriteLine("x3 calculation:");
@@ -391,17 +442,17 @@ namespace LabMV2
             Console.WriteLine($"New range after bisection method applied : [{a}; {b}] ,number of iterations: {iterationCount} ");
 
             x = NutonMethod(a, out iterationCount);
-
             streamWriter.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Classic Nuton's method: x = {x}, number of iterations: {iterationCount} ");
+            Console.WriteLine("F(x) = " + Func(x));
 
-            h = 4;
+            h = 0.00001;
 
             x = NutonMethodDiscret(a, h, out iterationCount);
 
             streamWriter.WriteLine($"Discret Nuton's method( h = {h}) : x = {x}, number of iterations: {iterationCount} ");
             Console.WriteLine($"Discret Nuton's method( h = {h}) : x = {x}, number of iterations: {iterationCount} ");
-
+            Console.WriteLine("F(x) = " + Func(x));
 
             streamWriter.Flush();
 
@@ -453,325 +504,80 @@ namespace LabMV2
             return outPut;
         }
 
-        public static Tuple<Complex, Complex[]>[] SolveGetMaxAbsoluteEigenValue(double[,] A)
-        {
-            //Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[A.GetLength(0)];
-
-            //result = GetMaxEigenValueCase1(A);
-
-            //if (result == null)
-            //{
-            //    result = GetMaxEigenValueCase3(A);
-
-            //}
-
-            //if (result == null)
-            //{
-            //    result = GetMaxEigenValueCase4Norm(A);
-            //}
-
-            return GetMaxEigenValues(A);
-        }
 
 #region CasesPowerMethod
 
-        public static Tuple<Complex, Complex[]>[] GetMaxEigenValueCase1(double[,] A_)
+
+        public static bool HasZeroRow(double[,] A)
         {
-            Complex[,] A = ToComplex(A_);
-
-            // initial approximation
-            Complex[] u = new Complex[A.GetLength(0)];
-            u[0] = 1;
-            u[1] = (Complex)(1 + 2m);
-
-            Complex eigenValue = 0.082;
-
-            int iterationCount = 0;
-
-            Complex[] checkVector = u;
-            Complex checkEigen = eigenValue;
-
-            while (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, u)), VecotorWithScalarMultiplication(u, eigenValue))).Magnitude > epsilon)
+            for (int i = A.GetLength(0) - 1; i >= 0; i--)
             {
-                //Console.WriteLine(GetMagnitude(VectorSubtraction(MatrixMultiplication(A, u).ToArray(), VecotorWithScalarMultiplication(u, eigenValue))));
+                bool hasNotZeroElement = false;
 
-                iterationCount++;
-
-                Complex[] v = MatrixMultiplication(A, u);
-
-                eigenValue = GetMax(v);
-
-                u = VectorWithScalarDivison(v, eigenValue);
-
-
-                if (iterationCount > 10000)
+                for (int j = 0; j < A.GetLength(0); j++)
                 {
-                    //Console.WriteLine("First case method could not succeed... Iterations done: " + iterationCount);
-                    return null;
-
-                    double precisionNow = GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, u)), VecotorWithScalarMultiplication(u, eigenValue))).Magnitude;
-                    double precisionPast = GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, checkVector)), VecotorWithScalarMultiplication(u, checkEigen))).Magnitude;
-                    if (Math.Abs(precisionNow) - Math.Abs(precisionPast) > 0)
+                    //not zero
+                    if (Math.Abs(A[i, j]) > epsilon)
                     {
-                        //No chance here... aborting...
-
-                        Console.WriteLine("First case method could not succeed... Iterations done: " + iterationCount);
-                        return null;
-                    }
-                    else
-                    {
-                        checkVector = u;
-                        checkEigen = eigenValue;
-                    }
-                }
-            }
-
-
-            Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[1];
-
-            result[0] = new Tuple<Complex, Complex[]>(eigenValue, u);
-
-            //Console.WriteLine("First case method could succeed! Iterations done: " + iterationCount);
-
-            return result;
-        }
-
-        public static Tuple<Complex, Complex[]>[] GetMaxEigenValueCase3(double[,] A_)
-        {
-            Complex[,] A = ToComplex(A_);
-
-            // initial approximation
-            Complex[] u = new Complex[A.GetLength(0)];
-            Complex[] nextUStep = u;
-
-            u[0] = 1;
-            u[1] = (Complex)(1 + 2m);
-
-            Complex eigenValue = 0.082;
-
-            //precision
-
-            int iterationCount = 0;
-
-            Complex[] checkVector = u;
-            Complex checkEigen = eigenValue;
-
-            while (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, u)), VecotorWithScalarMultiplication(u, eigenValue))).Magnitude > epsilon)
-            {
-                //Console.WriteLine(GetMagnitude(VectorSubtraction(MatrixMultiplication(A, u).ToArray(), VecotorWithScalarMultiplication(u, eigenValue))));
-
-                iterationCount++;
-                u = (MatrixMultiplication(A, MatrixMultiplication(A, u)));
-
-                eigenValue = Complex.Sqrt((GetMax(u)));
-
-                u = VectorWithScalarDivison(u, GetMax(u));
-
-                nextUStep = MatrixMultiplication(A, u);
-
-                if (iterationCount > 10000)
-                {
-                    //Console.WriteLine("Third case method could not succeed... Iterations done: " + iterationCount);
-                    return null;
-
-                    double precisionNow = GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, u)), VecotorWithScalarMultiplication(u, eigenValue))).Magnitude;
-                    double precisionPast = GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, checkVector)), VecotorWithScalarMultiplication(u, checkEigen))).Magnitude;
-                    if (Math.Abs(precisionNow) - Math.Abs(precisionPast) > 0)
-                    {
-                        //No chance here... aborting...
-                        Console.WriteLine("Third case method could not succeed... Iterations done: " + iterationCount);
-                        return null;
-                    }
-                    else
-                    {
-                        checkVector = u;
-                        checkEigen = eigenValue;
+                        hasNotZeroElement = true;
+                        break;
                     }
                 }
 
-            }
-
-            //Console.WriteLine("Difference Vector");
-            //PrintVector(VectorSubtraction(MatrixMultiplication(A, u).ToArray(), VecotorWithScalarMultiplication(u, eigenValue)));
-
-            Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[2];
-
-            result[0] = new Tuple<Complex, Complex[]>(eigenValue, VectorSum(nextUStep, VecotorWithScalarMultiplication(u, eigenValue)));
-            result[1] = new Tuple<Complex, Complex[]>(-eigenValue, VectorSubtraction(nextUStep, VecotorWithScalarMultiplication(u, eigenValue)));
-
-            //Console.WriteLine("Third case method could succeed! Iterations done: " + iterationCount);
-
-            return result;
-        }
-
-        public static Tuple<Complex, Complex[]>[] GetMaxEigenValueCase4(double[,] A_)
-        {
-            Complex[,] A = ToComplex(A_);
-
-            // initial approximation
-            Complex[] u = new Complex[A.GetLength(0)];
-            u[0] = 2.4;
-
-
-            List<Complex[]> vNorm = new List<Complex[]>();
-            List<Complex[]> uNorm = new List<Complex[]>();
-
-            uNorm.Add(u);
-
-
-            Complex eigenValue = 0;
-
-            //precision
-
-            int iterationCount = 0;
-
-            List<Complex[]> vectors = new List<Complex[]>();
-
-            vNorm.Add(new Complex[2]);
-
-            while (true)
-            {
-                Complex[] v = MatrixMultiplication(A, u);
-
-                u = v;
-
-                vectors.Add(u);
-
-                vNorm.Add(MatrixMultiplication(A, uNorm[uNorm.Count - 1]));
-                uNorm.Add(VectorWithScalarDivison(vNorm[vNorm.Count - 1], GetMax(vNorm[vNorm.Count - 1])));
-
-
-                iterationCount++;
-
-                if (iterationCount > 5)
+                if (!hasNotZeroElement)
                 {
-                    double yk2 = (vectors[iterationCount - 1])[0].Real;
-                    double yk1 = (vectors[iterationCount - 2])[0].Real;
-                    double yk = (vectors[iterationCount - 3])[0].Real;
-                    double ykm1 = (vectors[iterationCount - 4])[0].Real;
-
-                    double r = Math.Sqrt(Math.Abs((yk * yk2 - yk1 * yk1)
-                                                  / (ykm1 * yk1 - yk * yk)));
-
-                    double cosPhi = (yk2 + r * r * yk) / (2 * r * yk1);
-                    double sinPhi = Math.Sqrt(1 - cosPhi * cosPhi);
-
-                    Complex number1 = new Complex(r * cosPhi, r * sinPhi);
-                    Complex number2 = new Complex(r * cosPhi, -r * sinPhi);
-
-                    Complex[] vector1 = VectorSubtraction(vNorm[iterationCount - 2], VecotorWithScalarMultiplication(uNorm[iterationCount - 3], number2));
-
-                    Complex[] vector2 = VectorSubtraction(vNorm[iterationCount - 2], VecotorWithScalarMultiplication(uNorm[iterationCount - 3], number1));
-
-                    //Console.WriteLine(GetMagnitude(VectorSubtraction(MatrixMultiplication(A, vector1).ToArray(), VecotorWithScalarMultiplication(vector1, number1))).Magnitude);
-
-                    if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
-                    {
-                        Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[2];
-
-                        result[0] = new Tuple<Complex, Complex[]>(number1, vector1);
-                        result[1] = new Tuple<Complex, Complex[]>(number2, vector2);
-
-                        //Console.WriteLine("Fourth case method could succeed! Iterations done: " + iterationCount);
-                        return result;
-                    }
-
-                    //if (iterationCount  %100==0)
-                    //{
-                    //    Console.WriteLine("Fourth case method could not succeed! Iterations done: " + iterationCount);
-                    //}
+                    return true;
                 }
             }
 
+            return false;
         }
 
-        public static Tuple<Complex, Complex[]>[] GetMaxEigenValueCase4Norm(double[,] A_)
+        /// <summary>
+        /// Solves eigen values partial problem. 
+        /// </summary>
+        /// <param name="A_"></param>
+        /// <param name="finMax">if true gets max eigenvalue, over vise gets min eigenvalue</param>
+        /// <returns></returns>
+        public static Tuple<Complex, Complex[]>[] PowerMethod(double[,] A_, bool findMax = true)
         {
-            Complex[,] A = ToComplex(A_);
+            double[,] L = new double[1, 1];
+            double[,] U = new double[1, 1];
+            int[] P = new int[1];
 
-            // initial approximation
-            Complex[] u = new Complex[A.GetLength(0)];
-            u[0] = 0.01;
-
-
-            List<Complex[]> vNorm = new List<Complex[]>();
-            List<Complex[]> uNorm = new List<Complex[]>();
-
-            uNorm.Add(u);
-
-
-            Complex eigenValue = 0;
-
-            //precision
-
-            int iterationCount = 0;
-
-            List<Complex[]> vectors = new List<Complex[]>();
-
-            vNorm.Add(new Complex[2]);
-
-            while (true)
+            if (findMax == false)
             {
-                Complex[] v = MatrixMultiplication(A, u);
+                GetLUP(ref L, ref U, ref P, A_);
 
-                u = v;
-
-                vectors.Add(u);
-
-                vNorm.Add(MatrixMultiplication(A, uNorm[uNorm.Count - 1]));
-                uNorm.Add(VectorWithScalarDivison(vNorm[vNorm.Count - 1], GetMax(vNorm[vNorm.Count - 1])));
-
-
-                iterationCount++;
-
-                if (iterationCount > 5)
+                //Adrenerated matrix detected
+                if (HasZeroRow(U))
                 {
-                    int k = iterationCount - 3;
+                    Console.WriteLine("Adjenerated matrix detected!");
 
-                    double vk2 = (vNorm[k + 2])[0].Real;
-                    double vk1 = (vNorm[k + 1])[0].Real;
-                    double vk = (vNorm[k])[0].Real;
-                    double ukm1 = (uNorm[k - 1])[0].Real;
-                    double uk = (uNorm[k])[0].Real;
+                    var result = new Tuple<Complex, Complex[]>[1];
 
-                    double r = Math.Sqrt(((vk * vk2 * GetMax(vNorm[k + 1]).Real - vk1 * vk1 * GetMax(vNorm[k]).Real)
-                                          / (ukm1 * vk1 - uk * uk * GetMax(vNorm[k]).Real)));
+                    Complex[] zeroes = new Complex[A_.GetLength(0)];
 
-                    double cosPhi = Math.Clamp((vk2 * GetMax(vNorm[k + 1]).Real + r * r * uk) / (2 * r * vk1), -1, 1);
-                    double sinPhi = Math.Sqrt(1 - cosPhi * cosPhi);
-
-                    Complex number1 = new Complex(r * cosPhi, r * sinPhi);
-                    Complex number2 = new Complex(r * cosPhi, -r * sinPhi);
-
-                    Complex[] vector1 = VectorSubtraction(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number2));
-
-                    Complex[] vector2 = VectorSubtraction(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number1));
-
-                    Console.WriteLine(GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude);
-
-                    if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
+                    for (int i = 0; i < zeroes.Length; i++)
                     {
-                        Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[2];
-
-                        result[0] = new Tuple<Complex, Complex[]>(number1, vector1);
-                        result[1] = new Tuple<Complex, Complex[]>(number2, vector2);
-
-                        //Console.WriteLine("Fourth case method could succeed! Iterations done: " + iterationCount);
-                        return result;
+                        zeroes[i] = 0;
                     }
 
-                    //if (iterationCount  %100==0)
-                    //{
-                    //    Console.WriteLine("Fourth case method could not succeed! Iterations done: " + iterationCount);
-                    //}
+                    var vector = SolveLUPForm(L, U, P, zeroes);
+
+                    result[0] = new Tuple<Complex, Complex[]>(0, (vector));
+
+                    return result;
                 }
+                //LuDecomposition decomposition=new LuDecomposition(A_);
+
+                //L = decomposition.LowerTriangularFactor;
+                //U = decomposition.UpperTriangularFactor;
+                //P = decomposition.PivotPermutationVector;
+
+                //A_ = GetInverseMatrix(A_);
             }
 
-        }
-
-
-        public static Tuple<Complex, Complex[]>[] GetMaxEigenValues(double[,] A_)
-        {
             Complex[,] A = ToComplex(A_);
 
             // initial approximation
@@ -803,7 +609,19 @@ namespace LabMV2
                 u = v;
 
                 //Doing next step
-                vNorm.Add(MatrixMultiplication(A, uNorm[uNorm.Count - 1]));
+
+                if (findMax == false)
+                {
+                    Complex[] newV = (SolveLUPForm(L, U, P, (uNorm[uNorm.Count - 1])));
+
+                    vNorm.Add(newV);
+
+                }
+                else
+                {
+                    vNorm.Add(MatrixMultiplication(A, uNorm[uNorm.Count - 1]));
+                }
+
                 uNorm.Add(VectorWithScalarDivison(vNorm[vNorm.Count - 1], GetMax(vNorm[vNorm.Count - 1])));
 
 
@@ -811,17 +629,27 @@ namespace LabMV2
 
                 //Check case 1 (one max absolute eigenvalue)
 
-                number1 = vNorm[vNorm.Count - 1][0] / uNorm[vNorm.Count - 2][0];
+                int indexToTake = GetMaxIndex(vNorm[vNorm.Count - 1]);
+
+
+                number1 = vNorm[vNorm.Count - 1][indexToTake] / uNorm[vNorm.Count - 2][indexToTake];
                 vector1 = uNorm[vNorm.Count - 2];
 
-                if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A,vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
+                if (!findMax && number1 != 0)
+                {
+                    number1 = 1 / number1;
+                }
+
+                //Console.WriteLine(GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude);
+
+                if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
                 {
                     Console.WriteLine("First case method could succeed! Iterations done: " + iterationCount);
                     Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[1];
 
                     result[0] = new Tuple<Complex, Complex[]>(number1, vector1);
 
-                    return  result;
+                    return result;
                 }
 
                 //Check case 3 (two opposite but absolutely equal eigenvalues)
@@ -829,20 +657,29 @@ namespace LabMV2
                 {
                     int k = iterationCount - 3;
 
-                    double vk2 = (vNorm[k + 2])[0].Real;
-                    double uk = (uNorm[k])[0].Real;
+                    indexToTake = GetMaxIndex(vNorm[k + 2]);
+
+                    double vk2 = (vNorm[k + 2])[indexToTake].Real;
+                    double uk = (uNorm[k])[indexToTake].Real;
 
 
-                    number1 =Math.Sqrt( ( vk2*GetMax(vNorm[k+1]).Real)/uk);
-                    vector1 =VectorSum( vNorm[k+1],VecotorWithScalarMultiplication(uNorm[k],number1));
+                    number1 = Math.Sqrt((vk2 * GetMax(vNorm[k + 1]).Real) / uk);
+                    vector1 = VectorSum(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number1));
+                    vector2 = VectorSubtraction(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number1));
+
+                    if (!findMax && number1 != 0)
+                    {
+                        number1 = 1 / number1;
+                    }
+
+                    //Console.WriteLine(GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude);
 
                     if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
                     {
-                        vector2 = VectorSubtraction(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number1));
+                        //vector2 = VectorSubtraction(vNorm[k + 1], VecotorWithScalarMultiplication(uNorm[k], number1));
 
-                        Console.WriteLine("Third case method could succeed! Iterations done: " + iterationCount);
+                        Console.WriteLine("Second case method could succeed! Iterations done: " + iterationCount);
                         Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[2];
-
 
 
                         result[0] = new Tuple<Complex, Complex[]>(number1, vector1);
@@ -858,11 +695,13 @@ namespace LabMV2
                 {
                     int k = iterationCount - 3;
 
-                    double vk2 = (vNorm[k + 2])[0].Real;
-                    double vk1 = (vNorm[k + 1])[0].Real;
-                    double vk = (vNorm[k])[0].Real;
-                    double ukm1 = (uNorm[k - 1])[0].Real;
-                    double uk = (uNorm[k])[0].Real;
+                    indexToTake = GetMaxIndex(vNorm[k + 2]);
+
+                    double vk2 = (vNorm[k + 2])[indexToTake].Real;
+                    double vk1 = (vNorm[k + 1])[indexToTake].Real;
+                    double vk = (vNorm[k])[indexToTake].Real;
+                    double ukm1 = (uNorm[k - 1])[indexToTake].Real;
+                    double uk = (uNorm[k])[indexToTake].Real;
 
                     double r = Math.Sqrt(((vk * vk2 * GetMax(vNorm[k + 1]).Real - vk1 * vk1 * GetMax(vNorm[k]).Real)
                                           / (ukm1 * vk1 - uk * uk * GetMax(vNorm[k]).Real)));
@@ -879,6 +718,14 @@ namespace LabMV2
 
                     //Console.WriteLine(GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude);
 
+                    if (!findMax)
+                    {
+                        number1 = 1 / number1;
+                        number2 = 1 / number2;
+                    }
+
+                    //Console.WriteLine(GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude);
+
                     if (GetMagnitude(VectorSubtraction(Enumerable.ToArray(MatrixMultiplication(A, vector1)), VecotorWithScalarMultiplication(vector1, number1))).Magnitude < epsilon)
                     {
                         Tuple<Complex, Complex[]>[] result = new Tuple<Complex, Complex[]>[2];
@@ -886,7 +733,7 @@ namespace LabMV2
                         result[0] = new Tuple<Complex, Complex[]>(number1, vector1);
                         result[1] = new Tuple<Complex, Complex[]>(number2, vector2);
 
-                        Console.WriteLine("Fourth case method could succeed! Iterations done: " + iterationCount);
+                        Console.WriteLine("Third case method could succeed! Iterations done: " + iterationCount);
                         return result;
                     }
 
@@ -920,9 +767,9 @@ namespace LabMV2
             return VectorWithScalarDivison(vector, GetMagnitude(vector));
         }
 
-        public static float ScalarMultiplication(float[] A, float[] B)
+        public static double ScalarMultiplication(double[] A, double[] B)
         {
-            float sum = 0;
+            double sum = 0;
 
             for (int i = 0; i < A.GetLength(0); i++)
             {
@@ -945,6 +792,23 @@ namespace LabMV2
             }
 
             return max;
+        }
+
+        public static int GetMaxIndex(Complex[] complexes)
+        {
+            Complex max = Complex.Zero;
+
+            int index = 0;
+            for (int i = 0; i < complexes.Length; i++)
+            {
+                if (max.Magnitude < complexes[i].Magnitude)
+                {
+                    max = complexes[i];
+                    index = i;
+                }
+            }
+
+            return index;
         }
 
         public static Complex GetMin(Complex[] complexes)
@@ -1111,6 +975,7 @@ namespace LabMV2
         public static Complex[] GetEigenNumbersQR(double[,] A)
         {
             A = (double[,])A.Clone();
+            var Aconverted = MatrixToMatrix(A);
 
             List<Complex> result = new List<Complex>();
 
@@ -1123,37 +988,31 @@ namespace LabMV2
 
             while (true)
             {
-                double[,] Q = new double[1, 1];
-                double[,] R = new double[1, 1];
 
-                GetQR(A, ref Q, ref R);
+                GetQR(Aconverted, out double[][] q, out double[][] r);
 
-                //QrDecomposition decomposition = new QrDecomposition(A);
 
-                //Q = decomposition.OrthogonalFactor;
-                //R = decomposition.UpperTriangularFactor;
+                Aconverted = MatrixMultiplication(r, q);
 
-                A = MatrixMultiplication(R, Q);
+                Complex[] currentValues = new Complex[A.GetLength(0)];
 
-                Complex[] currentValues=new Complex[A.GetLength(0)];
-
-                for (int i = 0; i < A.GetLength(0); i++)
+                for (int i = 0; i < Aconverted.GetLength(0); i++)
                 {
-                    if (i < A.GetLength(0) - 1 && Math.Abs(A[i + 1, i]) > 0.0000001)
+                    if (i < Aconverted.GetLength(0) - 1 && Math.Abs(Aconverted[i + 1][ i]) > epsilon)
                     {
-                        double D = (A[i, i] + A[i + 1, i + 1]) * (A[i, i] + A[i + 1, i + 1]) - 4 * ((A[i, i] * A[i + 1, i + 1]) - (A[i + 1, i] * A[i, i + 1]));
+                        double D = (Aconverted[i][ i] + Aconverted[i + 1][ i + 1]) * (Aconverted[i][ i] + Aconverted[i + 1][ i + 1]) - 4 * ((Aconverted[i][ i] * Aconverted[i + 1][ i + 1]) - (Aconverted[i + 1][ i] * Aconverted[i][ i + 1]));
 
-                        Complex x1 = (-(A[i, i] + A[i + 1, i + 1]) + Complex.Sqrt(D)) / 2;
-                        Complex x2 = (-(A[i, i] + A[i + 1, i + 1]) - Complex.Sqrt(D)) / 2;
+                        Complex x1 = (-(Aconverted[i][ i] + Aconverted[i + 1][ i + 1]) + Complex.Sqrt(D)) / 2;
+                        Complex x2 = (-(Aconverted[i][ i] + Aconverted[i + 1][ i + 1]) - Complex.Sqrt(D)) / 2;
 
                         currentValues[i] = x1;
                         currentValues[i + 1] = x2;
-                      
+
                         i++;
                     }
                     else
                     {
-                        currentValues[i] = A[i, i];
+                        currentValues[i] = Aconverted[i][ i];
                     }
                 }
 
@@ -1163,14 +1022,14 @@ namespace LabMV2
                 {
                     if (maxDiff < Math.Abs(prevLambda[i] - currentValues[i].Magnitude))
                     {
-                        maxDiff = Math.Abs(prevLambda[i] - currentValues[ i].Magnitude);
+                        maxDiff = Math.Abs(prevLambda[i] - currentValues[i].Magnitude);
                     }
                 }
 
 
                 //Console.WriteLine(maxDiff);
 
-                if (maxDiff < 0.000001)
+                if (maxDiff < epsilon * 100)
                 {
                     break;
                 }
@@ -1181,15 +1040,15 @@ namespace LabMV2
                 }
             }
 
-            //PrintMatrix(A);
-            for (int i = 0; i < A.GetLength(0); i++)
+            //PrintMatrix(Aconverted);
+            for (int i = 0; i < Aconverted.GetLength(0); i++)
             {
-                if (i < A.GetLength(0) - 1 && Math.Abs(A[i + 1, i]) > epsilon)
+                if (i < Aconverted.GetLength(0) - 1 && Math.Abs(Aconverted[i + 1][ i]) > epsilon)
                 {
-                    double D = (A[i, i] + A[i + 1, i + 1]) * (A[i, i] + A[i + 1, i + 1]) -4*((A[i, i] * A[i + 1, i + 1])- (A[i+1, i] * A[i, i + 1]));
+                    double D = (Aconverted[i][ i] + Aconverted[i + 1][ i + 1]) * (Aconverted[i][ i] + Aconverted[i + 1][ i + 1]) - 4 * ((Aconverted[i][ i] * Aconverted[i + 1][ i + 1]) - (Aconverted[i + 1][ i] * Aconverted[i][ i + 1]));
 
-                    Complex x1 = (-(A[i, i] + A[i + 1, i + 1]) + Complex.Sqrt(D)) / 2;
-                    Complex x2 = (-(A[i, i] + A[i + 1, i + 1]) - Complex.Sqrt(D)) / 2;
+                    Complex x1 = (-(Aconverted[i][ i] + Aconverted[i + 1][ i + 1]) + Complex.Sqrt(D)) / 2;
+                    Complex x2 = (-(Aconverted[i][ i] + Aconverted[i + 1][ i + 1]) - Complex.Sqrt(D)) / 2;
 
                     result.Add(x1);
                     result.Add(x2);
@@ -1198,7 +1057,7 @@ namespace LabMV2
                 }
                 else
                 {
-                    result.Add(new Complex(A[i, i], 0));
+                    result.Add(new Complex(Aconverted[i][ i], 0));
                 }
             }
 
@@ -1206,6 +1065,60 @@ namespace LabMV2
             return result.ToArray();
         }
 
+
+        public static Complex[] SolveLUPForm(double[,] L, double[,] U, int[] P, Complex[] B)
+        {
+            return SolveUpperTriangularMatrix(U, SolveLowerTriangularMatrix(L, GetSwapedMatrix(B, P)));
+        }
+
+        public static double[][] MatrixToMatrix(double[,] A)
+        {
+
+            double[][] result = new double[A.GetLength(0)][];
+
+            for (int i = 0; i < result.GetLength(0); i++)
+            {
+                result[i] = new double[A.GetLength(0)];
+
+                for (int j = 0; j < A.GetLength(0); j++)
+                {
+                    result[i][j] = A[i, j];
+                }
+            }
+
+            return result;
+        }
+
+        public static double[,] MatrixToMatrix(double[][] A)
+        {
+
+            double[,] result = new double[A.GetLength(0), A[0].Length];
+
+            for (int i = 0; i < result.GetLength(0); i++)
+            {
+
+
+                for (int j = 0; j < A.GetLength(0); j++)
+                {
+                    result[i, j] = A[i][j];
+                }
+            }
+
+            return result;
+        }
+
+        public static Complex[] GetSwapedMatrix(Complex[] A, int[] P)
+        {
+            Complex[] answer = (Complex[])A.Clone();
+
+            for (int i = 0; i < A.GetLength(0); i++)
+            {
+                answer[i] = A[P[i]];
+
+            }
+
+            return answer;
+        }
 
         public static double[] VecotorWithScalarMultiplication(double[] vector, double scalar)
         {
@@ -1247,29 +1160,6 @@ namespace LabMV2
             }
             return C;
         }
-
-        public static double[] VectorSubtraction(double[] a, double[] b)
-        {
-            a = (double[])a.Clone();
-            for (int i = 0; i < a.Length; i++)
-            {
-                a[i] -= b[i];
-            }
-
-            return a;
-        }
-
-        public static double[] VectorSum(double[] a, double[] b)
-        {
-            a = (double[])a.Clone();
-            for (int i = 0; i < a.Length; i++)
-            {
-                a[i] += b[i];
-            }
-
-            return a;
-        }
-
 
         public static double GetMagnitude(double[] A)
         {
@@ -1357,118 +1247,127 @@ namespace LabMV2
         }
 
 
-        public static double ScalarMultiplication(double[] A, double[] B)
+        static void GetQR(double[][] A,
+            out double[][] Q, out double[][] R)
         {
-            double sum = 0;
 
-            for (int i = 0; i < A.GetLength(0); i++)
+            double[][] a = MatTranspose(A);
+            double[][] u = MatDuplicate(a);
+            int rows = a.Length; // of the transpose
+            int cols = a[0].Length;
+
+            Q = CreateMatrix(cols, rows);
+            R = CreateMatrix(cols, rows);
+
+            for (int j = 0; j < cols; ++j)
+                u[0][j] = a[0][j];
+
+            double[] accum = new double[cols];
+
+            for (int i = 1; i < rows; ++i)
             {
-                sum += A[i] * B[i];
-            }
-
-            return sum;
-        }
-
-
-        public static void GetQR(double[,] A, ref double[,] Q, ref double[,] R)
-        {
-            A = (double[,])A.Clone();
-
-            int size = A.GetLength(0);
-
-            List<double[,]> QList = new List<double[,]>();
-
-
-            for (int i = 0; i < size - 1; i++)
-            {
-
-                double[] w = new double[size - i];
-
-                double[] xs = new double[size - i];
-
-                double[] aVector = GetVectorFromMatrix(A, i, i, size - 1);
-
-                xs[0] = GetMagnitude(aVector);
-
-
-                for (int j = 0; j < w.GetLength(0); j++)
+                for (int j = 0; j < cols; ++j)
                 {
-                    w[j] = aVector[j] - xs[j];
-                }
 
-                double magnitudeW = GetMagnitude(w);
-
-                if (magnitudeW == 0)
-                {
-                    continue;
-                }
-
-                for (int j = 0; j < w.GetLength(0); j++)
-                {
-                    w[j] /= magnitudeW;
-                }
-
-                double[,] Qn = GetOnesMatrix(w.GetLength(0));
-
-                double[,] wMatrix = new double[1, w.Length];
-                double[,] wMatrixTransposed = new double[w.Length, 1];
-
-                for (int j = 0; j < w.Length; j++)
-                {
-                    wMatrix[0, j] = w[j];
-                    wMatrixTransposed[j, 0] = w[j];
-                }
-
-                var multiplicationWW = MatrixMultiplication(wMatrixTransposed, wMatrix);
-
-                Qn = MatrixSubtraction(Qn, MatrixWithScalarMultiplication(multiplicationWW, 2));
-
-                QList.Add(Qn);
-
-                int index = 0;
-
-                for (int j = i; j < size; j++)
-                {
-                    A[j, i] = xs[index++];
-                }
-
-                for (int k = i + 1; k < size; k++)
-                {
-                    double[] aP = GetVectorFromMatrix(A, i, k, size - 1);
-                    double scalarMultiplic = ScalarMultiplication(aP, w);
-
-                    int counterW = 0;
-                    for (int j = i; j < size; j++)
+                    accum = new double[cols];
+                    for (int t = 0; t < i; ++t)
                     {
-                        A[j, k] = A[j, k] - 2 * (scalarMultiplic) * w[counterW++];
+                        double[] proj = GetProjection(u[t], a[i]);
+                        for (int k = 0; k < cols; ++k)
+                            accum[k] += proj[k];
                     }
                 }
-
+                for (int k = 0; k < cols; ++k)
+                    u[i][k] = a[i][k] - accum[k];
             }
 
-            double[,] FinalQ;
-
-            //if (QList.Count == 0)
-            //{
-            //    FinalQ = GetOnesMatrix(A.GetLength(0));
-            //}
-            //else
-            //{
-
-
-                FinalQ = ExpandMatrix(GetTransposedMatrix(QList[0]), A.GetLength(0));
-
-                for (int i = 1; i < QList.Count; i++)
+            for (int i = 0; i < rows; ++i)
+            {
+                double norm =GetMagnitude(u[i]);
+                if (norm == 0)
                 {
-                    FinalQ = MatrixMultiplication(FinalQ, GetTransposedMatrix(ExpandMatrix(QList[i], FinalQ.GetLength(0))));
+                    norm = 1;
                 }
-            //}
-            Q = FinalQ;
-            R = A;
+                for (int j = 0; j < cols; ++j)
+                    u[i][j] = u[i][j] / norm;
+            }
 
+            double[][] q = MatTranspose(u);
+            for (int i = 0; i < q.Length; ++i)
+            for (int j = 0; j < q[0].Length; ++j)
+                Q[i][j] = q[i][j];
+
+            double[][] r = MatrixMultiplication(u, A);
+            for (int i = 0; i < r.Length; ++i)
+            for (int j = 0; j < r[0].Length; ++j)
+                R[i][j] = r[i][j];
+
+        } // 
+
+        static double[][] MatDuplicate(double[][] m)
+        {
+            int rows = m.Length;
+            int cols = m[0].Length;
+            double[][] result = CreateMatrix(rows, cols);
+            for (int i = 0; i < rows; ++i)
+            for (int j = 0; j < cols; ++j)
+                result[i][j] = m[i][j];
+            return result;
         }
 
-     
+
+        static double[] GetProjection(double[] u, double[] a)
+        {
+            // proj(u, a) = (inner(u,a) / inner(u, u)) * u
+            // u cannot be all 0s
+            int n = u.Length;
+            double dotUA = ScalarMultiplication(u, a);
+            double dotUU = ScalarMultiplication(u, u);
+            double[] result = new double[n];
+            for (int i = 0; i < n; ++i)
+                result[i] = (dotUA / dotUU) * u[i];
+            return result;
+        }
+
+        static double[][] CreateMatrix(int rows, int cols)
+        {
+            double[][] result = new double[rows][];
+            for (int i = 0; i < rows; ++i)
+                result[i] = new double[cols];
+            return result;
+        }
+
+        static double[][] MatrixMultiplication(double[][] matA,
+            double[][] matB)
+        {
+            int aRows = matA.Length;
+            int aCols = matA[0].Length;
+            int bRows = matB.Length;
+            int bCols = matB[0].Length;
+            if (aCols != bRows)
+                throw new Exception("Non-conformable matrices");
+
+            double[][] result = CreateMatrix(aRows, bCols);
+
+            for (int i = 0; i < aRows; ++i)
+            for (int j = 0; j < bCols; ++j)
+            for (int k = 0; k < aCols; ++k)
+                result[i][j] += matA[i][k] * matB[k][j];
+
+            return result;
+        }
+
+        static double[][] MatTranspose(double[][] m)
+        {
+            int nr = m.Length;
+            int nc = m[0].Length;
+            double[][] result = CreateMatrix(nc, nr); // note
+            for (int i = 0; i < nr; ++i)
+            for (int j = 0; j < nc; ++j)
+                result[j][i] = m[i][j];
+            return result;
+        }
+
 
         public static double[,] GetOnesMatrix(int size)
         {
@@ -1502,17 +1401,51 @@ namespace LabMV2
             return Answer;
         }
 
-        public static double[] GetSubVector(double[] Vector, int start, int end)
+        public static Complex[] SolveUpperTriangularMatrix(double[,] A, double[] B)
         {
-            double[] subVector = new double[(end - start) + 1];
+            int size = A.GetLength(0);
 
-            for (int i = 0; i < subVector.GetLength(0); i++)
+            Complex[] X = new Complex[size];
+
+            for (int i = size - 1; i >= 0; i--)
             {
-                subVector[i] = Vector[start + i];
-            }
+                double sum = 0;
 
-            return subVector;
+                if (Math.Abs(A[i, i]) < epsilon)
+                {
+                    X[i] = 0;
+                    continue;
+                }
+
+                for (int j = size - 1; j > i; j--)
+                {
+                    sum += X[j].Real * A[i, j];
+                }
+                sum = B[i] - sum;
+                X[i] = sum / A[i, i];
+            }
+            return X;
         }
+
+        public static double[] SolveLowerTriangularMatrix(double[,] A, Complex[] B)
+        {
+            int size = A.GetLength(0);
+
+            double[] X = new double[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                double sum = 0;
+                for (int j = 0; j < i; j++)
+                {
+                    sum += X[j] * A[i, j];
+                }
+                sum = B[i].Real - sum;
+                X[i] = sum / A[i, i];
+            }
+            return X;
+        }
+
 
         public static double[,] ExpandMatrix(double[,] A, int newSize)
         {
@@ -1544,20 +1477,130 @@ namespace LabMV2
             return vector;
         }
 
-        public static double[,] MatrixMax(double[,] A, double[,] B)
-        {
-            A = (double[,])A.Clone();
 
-            for (int i = 0; i < A.GetLength(0); i++)
+        public static void KillColumn(double[,] A, double[] B, int mainRowIndex, int columnIndex, double[,] L = null, bool whole = true)
+        {
+            int size = A.GetLength(0);
+
+            double leadValue = A[mainRowIndex, columnIndex];
+
+
+            int i;
+
+            if (whole)
             {
-                for (int j = 0; j < A.GetLength(1); j++)
-                {
-                    A[i, j] += B[i, j];
-                }
+                i = 0;
+            }
+            else
+            {
+                i = mainRowIndex + 1;
             }
 
-            return A;
+            for (i = i; i < size; i++)
+            {
+                if (i == mainRowIndex)
+                {
+                    continue;
+                }
+
+                double coef = -A[i, columnIndex] * 1 / leadValue;
+
+                if (L != null)
+                {
+                    L[i, columnIndex] = -coef;
+                }
+
+                for (int k = 0; k < size; k++)
+                {
+                    A[i, k] += A[columnIndex, k] * coef;
+
+                    //TODO: comment to do not change precision
+                    //if (Math.Abs(A[i, k]) < 0.000001)
+                    //{
+                    //    A[i, k] = 0;
+                    //}
+                }
+                B[i] += B[columnIndex] * coef;
+            }
         }
+
+        public static void SwapRows(ref double[,] A, int rowA, int rowB)
+        {
+            int size = A.GetLength(0);
+
+            double[] temp = new double[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                temp[i] = A[rowA, i];
+            }
+
+            for (int i = 0; i < size; i++)
+            {
+                A[rowA, i] = A[rowB, i];
+            }
+
+            for (int i = 0; i < size; i++)
+            {
+                A[rowB, i] = temp[i];
+            }
+        }
+
+        public static void GetLUP(ref double[,] L, ref double[,] U, ref int[] P, double[,] A)
+        {
+            int size = A.GetLength(0);
+            A = (double[,])A.Clone();
+            P = new int[size];
+            L = new double[size, size];
+
+            for (int i = 0; i < size; i++)
+            {
+                L[i, i] = 1;
+            }
+
+            for (int i = 0; i < size; i++)
+            {
+                P[i] = i;
+            }
+
+            for (int i = 0; i < size; i++)
+            {
+                double max = double.MinValue;
+                int maxIndex = 0;
+
+                for (int j = i; j < size; j++)
+                {
+                    if (max < Math.Abs(A[j, i]))
+                    {
+                        max = Math.Abs(A[j, i]);
+                        maxIndex = j;
+                    }
+                }
+
+
+                SwapRows(ref A, i, maxIndex);
+                SwapInt(P, i, maxIndex);
+
+                for (int j = 0; j < i; j++)
+                {
+                    double temp = L[i, j];
+                    L[i, j] = L[maxIndex, j];
+                    L[maxIndex, j] = temp;
+                }
+
+                KillColumn(A, new double[size], i, i, L, false);
+            }
+
+            U = (double[,])A.Clone();
+        }
+
+        public static void SwapInt(int[] array, int indexA, int indexB)
+        {
+            int temp = array[indexA];
+            array[indexA] = array[indexB];
+            array[indexB] = temp;
+        }
+
 
         public static double[,] MatrixSubtraction(double[,] A, double[,] B)
         {
@@ -1601,7 +1644,7 @@ namespace LabMV2
 
         public static double FuncP(double x)
         {
-            return -2 * Math.Sin(2 * x) / Math.Cos(Math.Cos(2 * x)) + 1 / x;
+            return -2 * Math.Sin(2 * x) / Math.Pow(Math.Cos(Math.Cos(2 * x)), 2) + 1 / x;
         }
 
 
@@ -1609,7 +1652,7 @@ namespace LabMV2
         {
             double x;
 
-             iterationCount = 0;
+            iterationCount = 0;
 
             while (Math.Abs(b - a) > 0.00001)
             {
@@ -1639,7 +1682,7 @@ namespace LabMV2
             Console.WriteLine("epsilonEquation = " + epsilonEquation);
 
 
-             itCount = 1;
+            itCount = 1;
             while (true)
             {
                 double newX = x - Func(x) / FuncP(x);
@@ -1666,7 +1709,7 @@ namespace LabMV2
             itCount = 1;
             while (true)
             {
-                double newX = x - Func(x) / h;
+                double newX = x - ((Func(x) * h) / (Func(x + h) - Func(x)));
 
                 if (Math.Abs(x - newX) < epsilonEquation)
                 {
@@ -1686,7 +1729,7 @@ namespace LabMV2
         {
             StreamWriter writer = new StreamWriter("NutonSolveStats.txt");
 
-            List<Tuple<int,double>> classicNutomCoverage = new List<Tuple<int, double>>();
+            List<Tuple<int, double>> classicNutomCoverage = new List<Tuple<int, double>>();
 
             List<Tuple<int, double>> discreteNutomCoverage1 = new List<Tuple<int, double>>();
             List<Tuple<int, double>> discreteNutomCoverage2 = new List<Tuple<int, double>>();
@@ -1700,20 +1743,17 @@ namespace LabMV2
             int iterationCount;
 
 
-
-            
-
             var range = besectionMethod(0, 1, out int number);
 
             b = range.Item1;
             //Classic Nuton
             x = b;
 
-            for (int i=0;i<30;i++)
+            for (int i = 0; i < 30; i++)
             {
                 double newX = x - Func(x) / FuncP(x);
 
-                classicNutomCoverage.Add(new Tuple<int, double>(i+1,Math.Abs(x-newX)));
+                classicNutomCoverage.Add(new Tuple<int, double>(i + 1, Math.Abs(x - newX)));
 
                 x = newX;
             }
@@ -1730,13 +1770,13 @@ namespace LabMV2
 
             x = b;
 
-            h = 5;
+            h = 0.1;
 
             for (int i = 0; i < 30; i++)
             {
-                double newX = x - Func(x) / h;
+                double newX = x - ((Func(x) * h) / (Func(x + h) - Func(x)));
 
-               discreteNutomCoverage1.Add(new Tuple<int, double>(i + 1, Math.Abs(x - newX)));
+                discreteNutomCoverage1.Add(new Tuple<int, double>(i + 1, Math.Abs(x - newX)));
 
                 x = newX;
             }
@@ -1751,11 +1791,11 @@ namespace LabMV2
 
             x = b;
 
-            h = 2;
+            h = 0.001;
 
             for (int i = 0; i < 30; i++)
             {
-                double newX = x - Func(x) / h;
+                double newX = x - ((Func(x) * h) / (Func(x + h) - Func(x)));
 
                 discreteNutomCoverage2.Add(new Tuple<int, double>(i + 1, Math.Abs(x - newX)));
 
@@ -1773,11 +1813,11 @@ namespace LabMV2
 
             x = b;
 
-            h = 10;
+            h = 0.0001;
 
             for (int i = 0; i < 30; i++)
             {
-                double newX = x - Func(x) / h;
+                double newX = x - ((Func(x) * h) / (Func(x + h) - Func(x)));
 
                 discreteNutomCoverage3.Add(new Tuple<int, double>(i + 1, Math.Abs(x - newX)));
 
@@ -1796,7 +1836,6 @@ namespace LabMV2
 
         }
 
-
-        #endregion
+#endregion
     }
 }

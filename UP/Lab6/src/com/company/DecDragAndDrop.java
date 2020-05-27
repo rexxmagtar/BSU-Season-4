@@ -294,8 +294,6 @@ System.out.println("Drag gesture recongnision");
      * The main method. Creates a simple application using this class. Note the
      * buttons for switching between draw mode and drag mode.
      **/
-
-
     public static void main(String[] args) {
 
         try {

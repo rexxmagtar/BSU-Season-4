@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MultiLineLabel">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../01/MultiLineLabel.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

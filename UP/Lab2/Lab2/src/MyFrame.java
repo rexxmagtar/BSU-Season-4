@@ -37,10 +37,10 @@ public class MyFrame extends JFrame {
     }
 
     public BufferedImage processImage(BufferedImage image) {
-        float[] sharpenMatrix = { 0, -1.0f, 0.0f, -1.0f, 5.0f, -1.0f, 0.0f, -1.0f, 0.0f };
-        BufferedImageOp sharpenFilter = new ConvolveOp(new Kernel(3, 3, sharpenMatrix),
+        float[] brightonMatrix = { 0, -1.0f, 0.0f, -1.0f, 5.0f, -1.0f, 0.0f, -1.0f, 0.0f };
+        BufferedImageOp brightenFilter = new ConvolveOp(new Kernel(3, 3, brightonMatrix),
                 ConvolveOp.EDGE_NO_OP, null);
-        return sharpenFilter.filter(image, null);
+        return brightenFilter.filter(image, null);
     }
 
 

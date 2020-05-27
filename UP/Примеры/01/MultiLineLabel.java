@@ -3,10 +3,8 @@ import java.util.*;
 
 /**
  * A custom component that displays multiple lines of text with specified
- * margins and alignment.  In Java 1.1 we could also subclass Component, 
- * making this a "lightweight" component.  Instead, we try to maintain 
- * Java 1.0 compatibility for this component.  This means that you will see
- * deprecation warnings when you compile this class with Java 1.1 or later.
+ * margins and alignment.  We could also subclass Component, making this 
+ * a "lightweight" component.  
  **/
 public class MultiLineLabel extends Canvas {
     // User-specified properties

@@ -1,2 +1,0 @@
-#! /bin/sh
-jar cmf manifest.stub YesNoPanelBean.jar Alignment.class Alignment.java AlignmentEditor.class AlignmentEditor.java AnswerEvent.class AnswerEvent.java AnswerListener.class AnswerListener.java MultiLineLabel.class MultiLineLabel.java YesNoPanel$1.class YesNoPanel$2.class YesNoPanel$3.class YesNoPanel$4.class YesNoPanel.class YesNoPanel.java YesNoPanelBeanInfo.class YesNoPanelBeanInfo.java YesNoPanelCustomizer.class YesNoPanelCustomizer.java YesNoPanelIcon.gif YesNoPanelMessageEditor$1.class YesNoPanelMessageEditor.class YesNoPanelMessageEditor.java

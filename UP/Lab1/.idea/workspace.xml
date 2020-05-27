@@ -1,8 +1,436 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8299eb67-bf3c-457c-8a97-8ff37151598d" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="8299eb67-bf3c-457c-8a97-8ff37151598d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2/.idea/Lab2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2/Lab2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab8/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MM/Lab3/Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../MM/Lab3/Отчет.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MV/Lab2Code/LabMV2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../MV/Lab2Code/LabMV2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MV/Lab2Code/Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../MV/Lab2Code/Отчет.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP/Lab5" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP/Lab5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/META-INF/Lab1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/MyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1/MyFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/Lab10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/AnswerEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/AnswerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/ButtonPropertyEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/LabelPropertyEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/Message$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/MessageBeanInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/MyJPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/MyJPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/MyJPanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/MyJPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/RadioPropertyEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/TesterFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/out/production/Lab10/src/bsu/fpmi/educational_practice/TesterFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/AnswerEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/AnswerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/ButtonPropertyEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/LabelPropertyEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/MessageBeanInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/MyJPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/RadioPropertyEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/TesterFrame.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/TesterFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10/src/src/bsu/fpmi/educational_practice/educational_practice.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/Lab9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/AcceptEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/AcceptListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/BeanInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/ButtonPropertyEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/DemoFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/DemoFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/LabelPropertyEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/Message$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/out/production/Lab9/bsu/fpmi/educational_practice/RadioPropertyEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/AcceptEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/AcceptListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/BeanInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/ButtonPropertyEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/DemoFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/LabelPropertyEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/NewJPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab10L/src/bsu/fpmi/educational_practice/RadioPropertyEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/IvanLab11.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/IvanLab11/FontsServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/IvanLab11/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/IvanLab11/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/IvanLab11/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/RogozenkoLab11Var10.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/RogozenkoLab11Var10/RogozenkoLab11Var10/src/conf/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/RogozenkoLab11Var10/RogozenkoLab11Var10/src/java/RegUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/RogozenkoLab11Var10/RogozenkoLab11Var10/src/java/RegistrationServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/RogozenkoLab11Var10/RogozenkoLab11Var10/web/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/RogozenkoLab11Var10/RogozenkoLab11Var10/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/RogozenkoLab11Var10/RogozenkoLab11Var10/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/apache-tomcat-8.0.12-windows-x64.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/apache-tomcat-8.0.12.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/apache-tomcat-8.5.54.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/lab v.11 var.6 au.Podmazko-20200505T185440Z-001.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/lab v.11 var.6 au.Podmazko-20200505T185440Z-001/lab v.11 var.6 au.Podmazko/FontsServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/lab v.11 var.6 au.Podmazko-20200505T185440Z-001/lab v.11 var.6 au.Podmazko/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/lab v.11 var.6 au.Podmazko-20200505T185440Z-001/lab v.11 var.6 au.Podmazko/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/.idea/FirstProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/WEB-INF/src/test/com/FirstServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/WEB-INF/src/test/com/FormRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/WEB-INF/src/test/com/InfoFromRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab11/Примеры-11/Примеры/FirstProject/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab12/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Dimas_intellij_source_Lab12_var10.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Dimas_intellij_source_Lab12_var10/src/BattleManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Dimas_intellij_source_Lab12_var10/src/BattleRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Dimas_intellij_source_Lab12_var10/src/RemoteSeaServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Dimas_intellij_source_Lab12_var10/src/RemoteSeaServerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Dimas_intellij_source_Lab12_var10/src/SeaClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Lab12.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/apache-tomcat-8.5.55.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/out/production/Lab12/META-INF/Lab12.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/rmiregistry.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/src/Mud.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/src/MudClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/src/MudPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/src/MudPlace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/src/MudServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/Bank$BankingException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/Bank$Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/Bank$FunnyMoney.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/Bank$RemoteBank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/Bank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/RemoteBankServer$Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/RemoteBankServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/RemoteBankServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/RemoteBankServer_Stub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/01/rmiregistry.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$AlreadyThere.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$BadPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$ExitAlreadyExists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$LinkFailed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$MudException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$NoSuchExit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$NoSuchPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$NoSuchPlace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$NoSuchThing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$NotThere.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$PlaceAlreadyExists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$RemoteMudPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$RemoteMudPlace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud$RemoteMudServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/Mud.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudPlace$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudPlace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudPlace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/MudServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/rmiregistry.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/02/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12/Примеры-12/RemoteBankServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Dimas_intellij_source_Lab12_var10 (1).rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Dimas_intellij_source_Lab12_var10 (1)/src/BattleManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Dimas_intellij_source_Lab12_var10 (1)/src/BattleRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Dimas_intellij_source_Lab12_var10 (1)/src/RemoteSeaServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Dimas_intellij_source_Lab12_var10 (1)/src/RemoteSeaServerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Dimas_intellij_source_Lab12_var10 (1)/src/SeaClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Lab10L (1).rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Lab10L.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Lab12Final.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/fd (1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/fd (2).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/fd (3).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/fd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/out/production/Lab12Final/META-INF/Lab12Final.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/out/production/Lab12Final/rmiregistry.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/ЕЗ.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Конспект лекций по курсу Вычислительне методы алгебры.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Пособие по Методам вычислений (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Пособие по Методам вычислений (часть 2) (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Пособие по Методам вычислений (часть 2).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12Final/Пособие по Методам вычислений.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12ReadyJava/GameClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12ReadyJava/GameManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12ReadyJava/GameRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12ReadyJava/RemoteGameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab12ReadyJava/RemoteGameServerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/Lab2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Lab2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/Lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Lab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/Lab2/out/production/Lab2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Lab2/out/production/Lab2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/Lab2/out/production/Lab2/MyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Lab2/out/production/Lab2/MyFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/Lab2/out/production/Lab2/MyShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Lab2/out/production/Lab2/MyShape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/Lab2/src/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/Lab2/src/MyFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/Lab5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/SP_lab5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/_classpath.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/_project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Classical/ACER/Acer Aspire 5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Classical/ACER/Acer Aspire 7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Classical/ASUS/Asus Vivobook 15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Classical/ASUS/Asus Vivobook 17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Gaming/ASUS/Asus ROG Strix SCAR III.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Gaming/ASUS/Asus ROG Zephyrus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Gaming/MSI/MSI GS75 Stealth.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Gaming/MSI/MSI GT76 Titan.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Ultrabooks/ASUS/Asus ZenBook 15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Ultrabooks/ASUS/Asus ZenBook Pro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Ultrabooks/Apple/AirSeries/Macbook Air 13 2019.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Ultrabooks/Apple/ProSeries/MacBook Pro 13 2019.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Workstation/ASUS/Asus ProArt StudioBook Pro 17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Workstation/MSI/MSI WE63.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/notebooks/Workstation/MSI/MSI WE73.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/DynamicTree$MyTreeModelListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/DynamicTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/TableInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/GraphicsTablet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/Headphone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/Keyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/MechanicalKeyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/MembraneKeyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/Microphone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/Mouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/Peripheral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/ScreenGraphicsTablet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/UnscreenGraphicsTablet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/WiredHeadphone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/WiredKeyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/WiredMicrophone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/WiredMouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/WirelessHeadphone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/WirelessKeyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/WirelessMicrophone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/out/production/SP_lab5/peripherals/WirelessMouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/DynamicTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/TableInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/GraphicsTablet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/Headphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/Keyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/MechanicalKeyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/MembraneKeyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/Microphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/Mouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/Peripheral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/ScreenGraphicsTablet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/UnscreenGraphicsTablet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/WiredHeadphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/WiredKeyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/WiredMicrophone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/WiredMouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/WirelessHeadphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/WirelessKeyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/WirelessMicrophone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/UP_Laba_5_Variant_12_pupailupa/УП (Лаба 5, Вариант 12)/src/peripherals/WirelessMouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/com/company/PhotoStoreFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5/src/com/company/PhotoStoreNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Aucustic/Edifier/r1280t.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Aucustic/Microlab/B70.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Aucustic/Microlab/B77.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/CD/AC_DC/AreYouReady.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/CD/AC_DC/HellsBells.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/CD/LMFAO/PartyRockAnthem.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/CD/LMFAO/SorryForPartyRocking.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Guitars/Classic/Kremona_Romida.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Guitars/Classic/Lucero_LC100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Guitars/Electric/Friedman_Cali.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Guitars/Electric/Mitchell_MD200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Player/Cowon/The_Agile_Ultra-High.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Player/Cowon/iAUDIO_U7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Player/Walkman/WM1Z.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Audio/Player/Walkman/ZX500.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/Lab5Ivan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/out/production/Lab5Ivan/DynamicTree$MyTreeModelListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/out/production/Lab5Ivan/DynamicTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/out/production/Lab5Ivan/META-INF/Lab5Ivan.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/out/production/Lab5Ivan/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/out/production/Lab5Ivan/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/out/production/Lab5Ivan/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/out/production/Lab5Ivan/TableInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/src/DynamicTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab5Ivan/src/TableInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/out/production/Lab6/META-INF/Lab6.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/com/company/DecDragAndDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/com/company/DecDragAndDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/out/production/Lab7/META-INF/Lab7.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/out/production/Lab7/com/company/AudioshopViewer$Audio.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/out/production/Lab7/com/company/AudioshopViewer$Audio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/out/production/Lab7/com/company/AudioshopViewer$audiotype.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/out/production/Lab7/com/company/AudioshopViewer$audiotype.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/out/production/Lab7/com/company/AudioshopViewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/out/production/Lab7/com/company/AudioshopViewer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/out/production/Lab7/com/company/cookbook.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/src/com/company/AudioshopViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/src/com/company/AudioshopViewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/src/com/company/cookbook.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/src/com/company/audio.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/out/production/Lab8/com/company/Information.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8/out/production/Lab8/com/company/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/AcceptEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/AcceptEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/out/production/Lab9/bsu/fpmi/educational_practice/NewJPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/src/bsu/fpmi/educational_practice/AcceptEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/src/bsu/fpmi/educational_practice/AcceptEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/src/bsu/fpmi/educational_practice/AcceptListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/src/bsu/fpmi/educational_practice/AcceptListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/src/bsu/fpmi/educational_practice/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/src/bsu/fpmi/educational_practice/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab9/src/bsu/fpmi/educational_practice/NewJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab9/src/bsu/fpmi/educational_practice/NewJPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/src/FontsServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServ/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServ/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServ/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServ/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServ/TestServ.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServ/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServ/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/TestServelet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/out/production/TestServelet/FontsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/src/FontsServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestServelet/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/Lab12.Shishlyannikov.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/fimalaaaalab.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/GameClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/GameManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/GameRoom$GameMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/GameRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/GameRoomStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/Lab12_Shihslyannikov.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/META-INF/fimalaaaalab.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/RemoteGameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/out/production/fimalaaaalab/RemoteGameServerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/src/GameClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/src/GameManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/src/GameRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/src/Lab12_Shihslyannikov.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/src/RemoteGameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fimalaaaalab/src/RemoteGameServerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/Alignment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/Alignment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/AlignmentEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/AlignmentEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/AnswerEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/AnswerEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/AnswerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/AnswerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/MultiLineLabel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/MultiLineLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanel$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelBean.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelBeanInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelBeanInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelCustomizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelCustomizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelIcon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelMessageEditor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelMessageEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/YesNoPanelMessageEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/makejar.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/makejar.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Примеры/01/manifest.stub" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,26 +443,30 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1Xeh9xVIV5HmiO49xp7Y9idsInc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab12" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$APPLICATION_HOME_DIR$/jbr" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Lab1" />
       <option name="PROGRAM_PARAMETERS" value="#000000 #000000 4" />
@@ -63,10 +495,42 @@
       <workItem from="1581412321872" duration="11801000" />
       <workItem from="1582013895416" duration="4294000" />
       <workItem from="1582023213075" duration="1190000" />
+      <workItem from="1590342539526" duration="787000" />
+      <workItem from="1590475894811" duration="832000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590480127597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1590480127597" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1590480145326">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590480145326" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1590480147073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590480147073" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1590480147073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590480147073" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1590480147073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590480147073" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1590480147073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590480147073" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1590342657129">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590342657129" />
   </component>
 </project>

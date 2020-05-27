@@ -1,10 +1,20 @@
 package bsu.fpmi.educational_practice;
 
 
+import javax.swing.*;
+
 public class AcceptEvent extends java.util.EventObject {
     public static final int MESS = 0;   // Button constants
     protected int id;           		// Which button was pressed?
-    
+
+    public String msg;
+public JPanel panel;
+
+public  AcceptEvent(JPanel panel, String msg){
+    super(msg);
+    this.msg=msg;
+}
+
     public AcceptEvent(Object source, int id) {
     	super(source);
 		this.id = id;

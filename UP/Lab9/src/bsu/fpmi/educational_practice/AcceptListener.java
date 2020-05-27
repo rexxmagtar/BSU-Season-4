@@ -6,10 +6,7 @@
 
 package bsu.fpmi.educational_practice;
 
-/**
- *
- * @author Suerte.Mind
- */
+
 public interface AcceptListener extends java.util.EventListener {
     public void Result(AcceptEvent e);
 }

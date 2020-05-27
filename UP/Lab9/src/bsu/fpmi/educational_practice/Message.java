@@ -12,7 +12,7 @@ import java.util.Vector;
 import javax.swing.*;
 
 
-public class Message extends Panel{
+public class Message   extends Panel implements AcceptListener  {
     protected String label;
     protected String button;
     protected char in;
@@ -52,6 +52,11 @@ public class Message extends Panel{
         setLabel(label);
 	setButton(button);
     }
+
+    public Message() {
+
+    }
+
     private void okJButtonKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_okJButtonKeyTyped
         if (evt.getKeyCode() == key) {
             okJButton.doClick();
@@ -106,6 +111,11 @@ public class Message extends Panel{
 	    case AcceptEvent.MESS: listener.Result(e); break;
 	    }
 	}
+    }
+
+    @Override
+    public void Result(AcceptEvent e) {
+        JOptionPane.showMessageDialog(e.panel, e.msg);
     }
 }
     

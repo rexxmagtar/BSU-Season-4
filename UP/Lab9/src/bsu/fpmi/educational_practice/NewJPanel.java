@@ -10,6 +10,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.List;
+import java.util.Vector;
 
 import javax.swing.ButtonGroup;
 import javax.swing.GroupLayout.Group;
@@ -27,6 +29,8 @@ public class NewJPanel extends javax.swing.JPanel {
         }
     };
 
+
+	private Vector<AcceptListener> listeners;
     private char c;
 
     /**
@@ -34,6 +38,9 @@ public class NewJPanel extends javax.swing.JPanel {
      */
     public NewJPanel(String staticText, String normalButtonText, String radioButton1, String radioButton2, char confirmButton) {
 
+        listeners=new Vector<>();
+
+        listeners.add(new Message());
         initComponents();
 //        setEnterKey("a");
         initEnterKey();
@@ -116,6 +123,20 @@ public class NewJPanel extends javax.swing.JPanel {
         );
     }
 
+    public void fireEvent(AcceptEvent e) {
+        Vector list = (Vector) listeners.clone();
+
+        for (int i = 0; i < list.size(); i++) {
+            AcceptListener listener = (AcceptListener) list.elementAt(i);
+            switch (e.getID()) {
+                case AcceptEvent.MESS:
+                    listener.Result(e);
+                    break;
+            }
+        }
+    }
+
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
         ShowMessge(jButton1.getText());
@@ -137,7 +158,9 @@ private void ShowMessge(String invokername){
     else{
         STR+=jRadioButton2.getText()+" is OFF \n";
     }
-    JOptionPane.showMessageDialog(this, STR);
+
+    fireEvent(new AcceptEvent(this,STR));
+
     this.setFocusable(true);
 }
 

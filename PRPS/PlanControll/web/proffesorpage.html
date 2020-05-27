@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                   <style>
+            body {
+
+                margin: 0;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+              background-size: 100% auto;
+                background-image: url('sandB.jpg');
+            }
+             div{
+                margin: 20px;
+            }
+            .metro {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background: #f0f0f0;
+    /* Font styles */
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.metro:hover {
+    background: #b3b1b1
+}
+
+input[type="submit"] {
+  width:240px;
+  height:35px;
+  display:block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:black;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #37a69b;
+  padding-top:6px;
+  margin: 29px 0 0 29px;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: #e3e8e5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
+
+input[type="submit"]:hover {
+    background-color: #bcc2be;
+}
+
+.shadow {
+  background: #000;
+  border-radius: 12px 12px 4px 4px;
+  box-shadow: 0 0 20px 10px #000;
+  height: 12px;
+  margin: 30px auto;
+  opacity: 0.2;
+  width: 270px;
+}
+
+
+input[type="submit"]:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+}
+
+
+            
+  </style>
+    </head>
+    <body>
+        
+        <form action="LoginServlet">
+            <div align='center' ><input   style="width:250px" align='center' type="submit" name="button" value="Show all plans"></div>
+          <div align='center'><input  style="width:250px" align='center' type="submit" name="button" value="Add new plan"></div>
+           <div align='center'><input  style="width:250px" align='center' type="submit" name="button" value="Complete plan"></div>
+            <div align='center'><input  style="width:250px" align='center' type="submit" name="button" value="Checksum"></div>
+            <div align='center'><input style="width:250px" align='center' type="submit" name="button" value="Exit"></div>
+        </form>
+    </body>
+</html>

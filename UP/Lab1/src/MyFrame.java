@@ -17,7 +17,8 @@ public class MyFrame  extends JFrame implements  Runnable  {
     public float LineWidth;
     Shape r1 ;
 
-Thread thread;
+
+    Thread thread;
 
     public  MyFrame(Rectangle rect, Color FigureColor,Color EntireC,float lineWidth){
 

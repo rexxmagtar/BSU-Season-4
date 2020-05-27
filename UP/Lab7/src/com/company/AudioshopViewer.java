@@ -38,6 +38,7 @@ public class AudioshopViewer extends Application {
     private int preferamountColumnWidth = 200;
 
     public static void main(String[] args) {
+
         connectionDB();
         createDB();
 
