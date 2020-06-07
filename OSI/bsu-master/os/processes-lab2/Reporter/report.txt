@@ -1,4 +1,0 @@
-binary.bin report
-3 name3 20.110
-1 name1 20.100
-2 name2 20.090

@@ -1,0 +1,311 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using CA.CourseWork.Crypto;
+using CA.CourseWork.Crypto.Interfaces;
+
+namespace Krypt5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+
+
+            Console.WriteLine("Choose option \n 1. Create sign \n 2. Validate sign");
+
+            int option = int.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+
+                case 1:
+                {
+
+                    Random rng = new Random();
+
+                    int primeNumberCount = 1000;
+
+
+
+                    List<long> primeNumbers = GeneratePrimesNaive(primeNumberCount);
+
+                    long p = primeNumbers[rng.Next(0, primeNumberCount - 1)];
+
+                    long q;
+
+                    while ((q = primeNumbers[rng.Next(0, primeNumberCount - 1)]) == p)
+                    {
+                        //generating...
+                    }
+
+                    Console.WriteLine($"Generated p = {p}, q = {q}");
+
+                    long phiValue = (p - 1) * (q - 1);
+
+                    long e = GetCoprimeNumber(phiValue, 4)[rng.Next(0, 4)];
+
+                    Console.WriteLine($"Generated open key = {e}");
+
+                    long secretKey = 0;
+
+                    gcdext(e, phiValue, 0, out secretKey, out long y);
+
+
+                    while (secretKey < 0)
+                    {
+                        secretKey += phiValue;
+                    }
+
+                    Console.WriteLine($"Generated secret key = {secretKey} \np*q = {p * q}");
+
+                    StreamWriter writer = new StreamWriter("Keys.txt");
+
+                    writer.WriteLine($"Open key: ({e},{p * q})");
+                    writer.WriteLine($"Secret key: ({secretKey},{p * q})");
+
+                    writer.Flush();
+
+                    Console.WriteLine("Insert your message");
+
+                    string msg = Console.ReadLine();
+
+                    while (msg.Length % 4 != 0)
+                    {
+                        msg += "A";
+                    }
+
+
+                    long hash = H(msg, e) % (q * p);
+
+
+                    long sign = powerMode(hash, secretKey, p * q);
+
+                    Console.WriteLine($"sign = {sign}");
+
+                    writer.WriteLine("Sign = "+sign);
+
+                    Console.WriteLine($"sent message = {msg}");
+
+                    writer.WriteLine($"sent message = {msg}");
+
+                    writer.Flush();
+
+                        break;
+                }
+                case 2:
+                {
+                    long n,sign,e;
+                    string msg;
+
+                    Console.WriteLine("Insert your n");
+
+                    n = long.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Insert your sign");
+
+                    sign = long.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Insert your open key (e)");
+
+                    e = long.Parse(Console.ReadLine());
+
+
+                    Console.WriteLine("Insert your received  message");
+
+                    msg = (Console.ReadLine());
+
+
+                    long h = powerMode(sign, e, n);
+
+
+                    if (h == H(msg, e))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Sign is valid!");
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Sign is invalid!");
+                    }
+
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                        break;
+
+                }
+                default:
+                {
+                    Console.WriteLine("Invalid option");
+                    break;
+                }
+
+                    
+            }
+            Console.ReadKey();
+
+
+        }
+
+
+
+        public static long H(string msg, long e)
+        {
+            IEncryptable encoder = new DESCryptoEncoder();
+
+            string key = getKey(e);
+
+            string coded = encoder.Encode(msg, key);
+
+            long hash = getHash(coded);
+
+
+            return hash;
+        }
+
+        public static long getHash(string msg)
+        {
+            long sum = 0;
+
+            for (int i = 0; i < msg.Length; i++)
+            {
+                sum += msg[i]%1000000;
+            }
+
+            return sum;
+
+        }
+
+        public static long powerMode(long a, long power, long mode)
+        {
+            long c = 1;
+            long e = 0;
+
+            while (true)
+            {
+                e++;
+
+                c = (a *  c) % mode;
+
+                if (e == power)
+                {
+                    break;
+                }
+            }
+
+            return c;
+        }
+
+        /// <summary>
+        /// Gets key generated by seed
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        public static string getKey(long number)
+        {
+            string key = number.ToString();
+
+            while (key.Length<56)
+            {
+                key += "A";
+            }
+
+            return key;
+        }
+
+        public static void gcdext(long a, long b,long d,out long x,out long y)
+        {
+            long s;
+
+            if (b == 0)
+            {
+
+                d = a; 
+                x = 1; 
+                y = 0;
+
+                return;
+
+            }
+
+            gcdext(b, a % b, d,out x,out y);
+
+            s = y;
+
+            y = x - (a / b) * (y);
+
+            x = s;
+
+        }
+
+
+
+        public static List<long> GetCoprimeNumber(long number,long count)
+        {
+            long startNumber = 5;
+            
+            List<long> result = new List<long>();
+
+            while (result.Count<count)
+            {
+                if (GCD(startNumber, number) == 1)
+                {
+                    result.Add(startNumber);
+                }
+                startNumber++;
+            }
+
+            return result;
+        }
+
+        public static List<long> GeneratePrimesNaive(long n)
+        {
+            List<long> primes = new List<long>();
+            primes.Add(2);
+            long nextPrime = 3;
+            while (primes.Count < n)
+            {
+                long sqrt = (long)Math.Sqrt(nextPrime);
+                bool isPrime = true;
+                for (int i = 0; (long)primes[i] <= sqrt; i++)
+                {
+                    if (nextPrime % primes[i] == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime)
+                {
+                    primes.Add(nextPrime);
+                }
+                nextPrime += 2;
+            }
+            return primes;
+        }
+
+
+        private static long GCD(long a, long b)
+        {
+            while (a != 0 && b != 0)
+            {
+                if (a > b)
+                    a %= b;
+                else
+                    b %= a;
+            }
+
+            return a == 0 ? b : a;
+        }
+
+
+    }
+
+
+
+
+
+}

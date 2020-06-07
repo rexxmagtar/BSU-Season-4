@@ -5,58 +5,74 @@
  */
 package bsu.fpmi.educational_practice;
 
-import javax.swing.*;
 import java.awt.*;
 import java.beans.PropertyEditorSupport;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
-public class ButtonPropertyEditor extends PropertyEditorSupport{
-    	
-        public static final String BUT_BLUE = "BUT_BLUE",
-                                   BUT_GREEN = "BUT_GREEN",
-                                   BUT_WHITE = "BUT_WHITE";
-	@Override
-	public String[] getTags() {
-		return new String[] {BUT_BLUE, BUT_GREEN, BUT_WHITE};
-        }
+public class ButtonPropertyEditor extends PropertyEditorSupport {
         
-        public static JButton getColoredButton(String tag){
-            JButton but = new JButton();
+        public static final String BLACK = "BLACK",
+                                   YELLOW = "YELLOW",
+                                   WHITE = "WHITE";
+	
+        @Override
+	public String[] getTags() {
+            System.out.println("getting tags");
+		return new String[] {"BLACK", "YELLOW", "WHITE"};
+	}
+                
+        
+        
+        public static Color getColoredRadioButton(String tag) throws Exception{
             switch (tag){
-                case BUT_BLUE:
-                    but.setBackground(Color.BLUE);
-                    break;
-                case BUT_GREEN:
-                    but.setBackground(Color.GREEN);
-                    break;
-                case BUT_WHITE:
-                    but.setBackground(Color.WHITE);
-                    break;
+                case BLACK:
+                    return(Color.BLACK);
+
+                case YELLOW:
+                    return(Color.YELLOW);
+
+                case WHITE:
+                    return(Color.WHITE);
+
             }
             
-            return but;
+            throw new Exception("Unknown color");
         }
 	
-	@Override
+	
+@Override
 	public void setAsText(String s) {
-		setValue(new JButton(s));
+    
+            try {
+                setValue(new java.awt.Color( getColoredRadioButton(s).getRGB()));
+            } catch (Exception ex) {
+                Logger.getLogger(RadioPropertyEditor.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                System.out.println("Setting text");
 	}
 
-	@Override 
-	public String getAsText() {
-		return ((JButton)getValue()).getText();
-	}
 
-	@Override
-	public String getJavaInitializationString() {
-            Object o = getValue();
-            if (o == getColoredButton(BUT_BLUE))
-                return "bsu.fpmi.educational_practice.ButtonPropertyEditor.BLUE";
-            else if (o == getColoredButton(BUT_GREEN))
-                return "bsu.fpmi.educational_practice.ButtonPropertyEditor.GREEN";
-            else if (o == getColoredButton(BUT_WHITE))
-                return "bsu.fpmi.educational_practice.ButtonPropertyEditor.WHITE";
-            else 
-                return null;
-	}	
+        
+@Override
+	public String getJavaInitializationString(){
+            System.out.println("getting java initialisation");
+            
+            Color o = (Color)getValue();
+            try {
+                if (o.getRGB() == getColoredRadioButton(BLACK).getRGB())
+                    return "java.awt.Color.BLACK";
+                else if (o.getRGB() == getColoredRadioButton(YELLOW).getRGB())
+                    return "java.awt.Color.YELLOW";
+                else if (o.getRGB() == getColoredRadioButton(WHITE).getRGB())
+                    return "java.awt.Color.WHITE";
+                else
+                    return "java.awt.Color.BLACK";
+            } catch (Exception ex) {
+               return "java.awt.Color.YELLOW";
+            }
+            
+            
+	}
 }
